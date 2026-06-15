@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/0xRadikal/iran-protests-memorial/main/assets/img/og-image.png" alt="Iran Protests Memorial" width="100%"/>
+<img src="https://raw.githubusercontent.com/0xRadikal/Javid-Naman/main/assets/img/og-image.png" alt="Iran Protests Memorial" width="100%"/>
 
 <br/><br/>
 
@@ -9,15 +9,15 @@
 ### Iran Protests Timeline & Javidnam Memorial Archive
 
 <p align="center">
-  <a href="https://0xradikal.github.io/iran-protests-memorial/">
+  <a href="https://0xradikal.github.io/Javid-Naman/">
     <img src="https://img.shields.io/badge/🌐_وب‌سایت-Live-2ea44f?style=for-the-badge" alt="Live Website"/>
   </a>
   &nbsp;
-  <a href="https://0xradikal.github.io/iran-protests-memorial/javidnam.html">
+  <a href="https://0xradikal.github.io/Javid-Naman/javidnam.html">
     <img src="https://img.shields.io/badge/🕯️_جاویدنام‌ها-6٬232_نام-be1234?style=for-the-badge" alt="Memorial"/>
   </a>
   &nbsp;
-  <a href="https://github.com/0xRadikal/iran-protests-memorial/blob/main/assets/data/javidnam.json">
+  <a href="https://github.com/0xRadikal/Javid-Naman/blob/main/assets/data/javidnam.json">
     <img src="https://img.shields.io/badge/📦_Open_Data-JSON_|_CSV-0078d4?style=for-the-badge" alt="Open Data"/>
   </a>
 </p>
@@ -45,7 +45,7 @@
 
 <br/>
 
-**[🌐 مشاهده وب‌سایت](https://0xradikal.github.io/iran-protests-memorial/)** · **[🕯️ یادبود جاویدنام‌ها](https://0xradikal.github.io/iran-protests-memorial/javidnam.html)** · **[📊 دادهٔ باز](#-دادهٔ-باز--open-data)** · **[🤝 مشارکت](#-مشارکت--contributing)**
+**[🌐 مشاهده وب‌سایت](https://0xradikal.github.io/Javid-Naman/)** · **[🕯️ یادبود جاویدنام‌ها](https://0xradikal.github.io/Javid-Naman/javidnam.html)** · **[📊 دادهٔ باز](#-دادهٔ-باز--open-data)** · **[🤝 مشارکت](#-مشارکت--contributing)**
 
 </div>
 
@@ -205,7 +205,7 @@ An **open, documented, interactive archive** in two parts:
 ## 📂 ساختار پروژه / Project Structure
 
 ```
-iran-protests-memorial/
+Javid-Naman/
 │
 ├── 📄 index.html                    # گاهشمار اعتراضات (Timeline)
 ├── 📄 javidnam.html                 # یادبود جاویدنام‌ها (Memorial)
@@ -341,7 +341,7 @@ iran-protests-memorial/
 ```javascript
 // دریافت بانک کامل
 const response = await fetch(
-  'https://0xradikal.github.io/iran-protests-memorial/assets/data/javidnam.json'
+  'https://0xradikal.github.io/Javid-Naman/assets/data/javidnam.json'
 );
 const { metadata, events, people } = await response.json();
 
@@ -385,8 +385,8 @@ khizesh_1404         →  خیزش ۱۴۰۴
 
 ```bash
 # کلون مخزن
-git clone https://github.com/0xRadikal/iran-protests-memorial.git
-cd iran-protests-memorial
+git clone https://github.com/0xRadikal/Javid-Naman.git
+cd Javid-Naman
 
 # اجرا با Python
 python3 -m http.server 8080
@@ -561,18 +561,18 @@ git checkout -b add/new-records
 
 <br/>
 
-[![گاهشمار](https://img.shields.io/badge/🌐_مشاهدهٔ_وب‌سایت-0xradikal.github.io-1a1a2e?style=for-the-badge)](https://0xradikal.github.io/iran-protests-memorial/)
-[![یادبود](https://img.shields.io/badge/🕯️_یادبود_جاویدنام‌ها-۶٬۲۳۲_نام-be1234?style=for-the-badge)](https://0xradikal.github.io/iran-protests-memorial/javidnam.html)
+[![گاهشمار](https://img.shields.io/badge/🌐_مشاهدهٔ_وب‌سایت-0xradikal.github.io-1a1a2e?style=for-the-badge)](https://0xradikal.github.io/Javid-Naman/)
+[![یادبود](https://img.shields.io/badge/🕯️_یادبود_جاویدنام‌ها-۶٬۲۳۲_نام-be1234?style=for-the-badge)](https://0xradikal.github.io/Javid-Naman/javidnam.html)
 
 <br/><br/>
 
 <sub>ساخته‌شده با 🤍 برای حفظ حافظهٔ تاریخی ایران · Built with 🤍 to preserve Iran's historical memory</sub>
 
 <sub>
-<a href="https://github.com/0xRadikal/iran-protests-memorial/blob/main/LICENSE">MIT</a> ·
+<a href="https://github.com/0xRadikal/Javid-Naman/blob/main/LICENSE">MIT</a> ·
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> ·
 <a href="CONTRIBUTING.md">Contributing</a> ·
-<a href="https://github.com/0xRadikal/iran-protests-memorial/issues">Issues</a>
+<a href="https://github.com/0xRadikal/Javid-Naman/issues">Issues</a>
 </sub>
 
 </div>
