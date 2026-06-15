@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/0xRadikal/Javid-Naman/main/assets/img/og-image.png" alt="Iran Protests Memorial" width="100%"/>
+<img src="https://raw.githubusercontent.com/0xRadikal/Javid-Naman/main/assets/img/og-image-1.png" alt="Iran Protests Memorial" width="100%"/>
 
 <br/><br/>
 
