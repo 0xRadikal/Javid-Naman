@@ -302,31 +302,256 @@ img.jv-photo.lazy{ background:radial-gradient(circle at 50% 35%, rgba(244,63,94,
   #audio-dock .ad-meta{ display:none; }
 }
 
+/* ════════════════════════════════════════════════════════════════
+   ریسپانسیو حرفه‌ای و پیشرفته — موبایل، تبلت، دسکتاپ و نمایشگرهای بزرگ
+   ════════════════════════════════════════════════════════════════ */
+
+/* --- موبایل کوچک (≤400px): فشرده‌سازی هدر و کارت‌ها --- */
+@media (max-width:400px){
+  header .candle-wrap{ width:52px; height:78px; }
+  h1.text-4xl, h1{ font-size:2rem !important; }
+  .jv-card{ padding:7px; }
+  .jv-card h3{ font-size:13px; }
+  #jv-footer-jump{ padding:9px 13px; font-size:12px; }
+  #jv-footer-jump .jv-fj-text{ display:none; }
+}
+
+/* --- موبایل (≤640px): چیدمان تک‌ستونه‌ترِ کنترل‌ها --- */
+@media (max-width:640px){
+  .max-w-6xl, .max-w-4xl{ padding-left:14px; padding-right:14px; }
+  header{ padding-top:8px; }
+  /* در موبایل، دکمهٔ پرش به فوتر متن کوتاه‌تر */
+  #jv-footer-jump{ bottom:14px; right:14px; }
+  #jv-back-top{ bottom:14px; right:14px; }
+  #jv-footer-jump[style*="flex"] ~ #jv-back-top.show{ bottom:66px; }
+  /* پلیر صوتی کمی فشرده‌تر در گوشهٔ چپ */
+  #audio-dock{ bottom:14px; left:14px; padding:8px 10px; gap:8px; }
+  #audio-revive{ bottom:14px; left:14px; }
+  #audio-hint{ bottom:66px; left:14px; font-size:11.5px; padding:8px 13px; }
+  /* مودال‌ها فضای بیشتری بگیرند */
+  .modal-box{ padding:18px !important; }
+  .jv-modal-photo-wrap, .jv-modal-ph{ width:118px; height:118px; }
+}
+
+/* --- تبلت (641px–1023px): شبکهٔ سه‌ستونه و کنترل‌های متعادل --- */
+@media (min-width:641px) and (max-width:1023px){
+  #jv-grid{ gap:14px; }
+}
+
+/* --- دسکتاپ بزرگ (≥1536px): شبکهٔ پنج‌ستونه با فاصلهٔ بیشتر --- */
+@media (min-width:1536px){
+  #jv-grid{ gap:18px; }
+}
+
+/* --- نمایشگرهای فوق‌عریض (≥1800px): شش ستون --- */
+@media (min-width:1800px){
+  .max-w-6xl{ max-width:1500px; }
+  #jv-grid{ grid-template-columns:repeat(6, minmax(0,1fr)); }
+}
+
+/* --- چیدمان افقی موبایل (landscape کوتاه): مودال اسکرول‌پذیر --- */
+@media (max-height:480px) and (orientation:landscape){
+  .modal-box{ max-height:96vh !important; }
+  header{ padding-top:6px; padding-bottom:6px; }
+}
+
+/* --- بهبود لمس: هدف لمسی حداقل ۴۴px روی دستگاه‌های لمسی --- */
+@media (hover:none) and (pointer:coarse){
+  .ev-btn, .verif-btn, .jv-toggle, .jv-chip{ min-height:36px; }
+  .jv-select{ min-height:42px; }
+  .wallet-copy{ min-height:38px; }
+}
+
+/* --- جلوگیری از سرریز افقی متن آدرس کیف پول در صفحات بسیار باریک --- */
+@media (max-width:360px){
+  .wallet-row{ flex-direction:column; align-items:stretch; }
+  .wallet-addr{ white-space:normal; word-break:break-all; font-size:10.5px; }
+  .wallet-copy{ width:100%; }
+}
+
 /* ---------- نوار فیلتر هوشمند ---------- */
 #jv-filterbar .jv-filterbar-inner{
-  transition:background .3s, backdrop-filter .3s;
-  background:rgba(7,9,15,0.92); backdrop-filter:blur(12px);
+  transition:background .3s, backdrop-filter .3s, box-shadow .3s;
+  background:rgba(10,13,22,0.9); backdrop-filter:blur(14px);
   border-radius:18px;
-}
-/* انتقال نرم هنگام پنهان/نمایان شدن نوار */
-#jv-filterbar{
-  transition:transform .4s cubic-bezier(.2,.9,.2,1), opacity .35s ease;
-  will-change:transform;
-}
-#jv-filterbar.bar-hidden{
-  transform:translateY(-130%);
-  opacity:0;
-  pointer-events:none;
 }
 /* بدنهٔ فیلترها هنگام جمع‌شدن دستی */
 #jv-filter-body{
   overflow:hidden;
-  max-height:600px; opacity:1;
-  transition:max-height .4s ease, opacity .3s ease, margin .3s ease;
+  max-height:800px; opacity:1;
+  transition:max-height .45s ease, opacity .3s ease, margin .3s ease;
 }
 #jv-filterbar.filters-collapsed #jv-filter-body{
   max-height:0; opacity:0; margin-top:-4px;
 }
+
+/* ---------- منوهای انتخابی (Sort/فیلترها) ---------- */
+.jv-select{
+  appearance:none; -webkit-appearance:none;
+  background:rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.1);
+  border-radius:12px; color:#e9ecf4; font-family:inherit;
+  font-size:12.5px; padding:9px 14px 9px 12px; cursor:pointer;
+  transition:border-color .2s, background .2s;
+  max-width:100%;
+}
+.jv-select:hover{ background:rgba(255,255,255,.07); }
+.jv-select:focus{ outline:none; border-color:rgba(244,63,94,.5); }
+.jv-select option{ background:#0c1120; color:#e9ecf4; }
+
+/* دکمهٔ پاک‌کردن جستجو */
+.jv-search-clear{
+  position:absolute; left:10px; top:50%; transform:translateY(-50%);
+  width:24px; height:24px; border-radius:50%; border:none; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  background:rgba(255,255,255,.08); color:#9aa3b6; font-size:11px; transition:.2s;
+}
+.jv-search-clear:hover{ background:rgba(244,63,94,.25); color:#fff; }
+
+/* ---------- چیپ‌های فیلتر فعال ---------- */
+.jv-chip{
+  display:inline-flex; align-items:center; gap:6px;
+  padding:5px 11px; border-radius:999px; font-size:12px; cursor:pointer;
+  background:rgba(244,63,94,.12); border:1px solid rgba(244,63,94,.3);
+  color:#fda4af; transition:.2s; font-family:inherit;
+}
+.jv-chip:hover{ background:rgba(244,63,94,.22); color:#fff; }
+.jv-chip i{ font-size:10px; opacity:.85; }
+.jv-chip-reset{
+  background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.15); color:#cbd2e0;
+}
+.jv-chip-reset:hover{ background:rgba(255,255,255,.1); color:#fff; }
+
+/* ---------- نشانگر «برای اطلاعات بیشتر» روی کارت ---------- */
+.jv-hover-hint{
+  position:absolute; inset:0; border-radius:12px;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px;
+  text-align:center; padding:12px;
+  background:linear-gradient(to top, rgba(7,9,15,.92), rgba(7,9,15,.55));
+  color:#fde8ec; font-size:11.5px; font-weight:600; line-height:1.6;
+  opacity:0; transform:scale(1.02);
+  transition:opacity .28s ease, transform .28s ease;
+  pointer-events:none;
+}
+.jv-hover-hint i{
+  font-size:1.5rem; color:#fda4af;
+  filter:drop-shadow(0 0 10px rgba(244,63,94,.55));
+}
+.jv-card:hover .jv-hover-hint,
+.jv-card:focus-visible .jv-hover-hint{ opacity:1; transform:scale(1); }
+.jv-card:focus-visible{ outline:2px solid rgba(244,63,94,.6); outline-offset:2px; }
+/* روی دستگاه‌های لمسی، هینت دائمی کوچک پایین کارت */
+@media (hover:none){
+  .jv-hover-hint{
+    inset:auto 0 0 0; height:auto; padding:6px;
+    background:linear-gradient(to top, rgba(7,9,15,.85), transparent);
+    opacity:1; transform:none; flex-direction:row; gap:5px;
+    font-size:9.5px; border-radius:0 0 12px 12px;
+  }
+  .jv-hover-hint i{ font-size:.85rem; }
+  .jv-hover-hint span{ display:none; }
+  .jv-hover-hint::after{ content:'جزئیات'; }
+}
+
+/* ---------- بخش «به‌زودی کامنت» در مودال ---------- */
+.jv-comment-soon{
+  display:flex; align-items:center; gap:12px;
+  padding:13px 15px; border-radius:14px;
+  background:rgba(168,85,247,.08); border:1px dashed rgba(168,85,247,.35);
+}
+.jv-comment-soon > i{ font-size:1.3rem; color:#c084fc; flex:0 0 auto; }
+.jv-comment-soon strong{ display:block; font-size:13px; color:#e9ecf4; margin-bottom:2px; }
+.jv-comment-soon span{ font-size:12px; color:#9aa3b6; }
+
+/* ---------- دکمه‌های ناوبری حمایت/گیت‌هاب ---------- */
+.nav-support{
+  background:rgba(244,63,94,.14); color:#fda4af; border:1px solid rgba(244,63,94,.3);
+}
+.nav-support:hover{ background:rgba(244,63,94,.26); color:#fff; }
+.nav-github{
+  background:rgba(255,255,255,.06); color:#cbd2e0; border:1px solid rgba(255,255,255,.12);
+}
+.nav-github:hover{ background:rgba(255,255,255,.13); color:#fff; }
+
+/* ---------- دکمهٔ پرش به فوتر ---------- */
+#jv-footer-jump{
+  position:fixed; z-index:38; bottom:18px; right:18px;
+  display:flex; align-items:center; gap:8px;
+  padding:11px 16px; border-radius:999px; border:none; cursor:pointer;
+  font-family:inherit; font-size:13px; font-weight:700; color:#0a0e1a;
+  background:linear-gradient(135deg, #fda4af, #f43f5e 70%);
+  box-shadow:0 10px 30px rgba(244,63,94,.4), 0 0 0 1px rgba(255,255,255,.1);
+  transition:transform .2s, box-shadow .25s;
+}
+#jv-footer-jump:hover{ transform:translateY(-3px); box-shadow:0 16px 40px rgba(244,63,94,.5); }
+#jv-footer-jump i{ animation:fjBounce 1.6s ease-in-out infinite; }
+@keyframes fjBounce{ 0%,100%{transform:translateY(0)} 50%{transform:translateY(4px)} }
+
+/* ---------- دکمهٔ بازگشت به بالا ---------- */
+#jv-back-top{
+  position:fixed; z-index:38; bottom:18px; right:18px;
+  width:44px; height:44px; border-radius:50%; border:none; cursor:pointer;
+  display:flex; align-items:center; justify-content:center; font-size:16px;
+  background:rgba(12,16,28,.86); backdrop-filter:blur(12px); color:#e9ecf4;
+  border:1px solid rgba(255,255,255,.12);
+  box-shadow:0 8px 24px rgba(0,0,0,.45);
+  opacity:0; transform:translateY(20px) scale(.85); pointer-events:none;
+  transition:opacity .3s, transform .3s, background .2s;
+}
+#jv-back-top.show{ opacity:1; transform:none; pointer-events:auto; }
+#jv-back-top:hover{ background:rgba(244,63,94,.25); border-color:rgba(244,63,94,.4); }
+/* وقتی هر دو دکمه نمایش داده می‌شوند، دکمهٔ بالا را بالاتر ببر */
+#jv-footer-jump[style*="flex"] ~ #jv-back-top.show{ bottom:72px; }
+
+/* ---------- نوار راهنمای صدا ---------- */
+#audio-hint{
+  position:fixed; z-index:41; bottom:74px; left:18px;
+  display:none; align-items:center; gap:9px;
+  padding:9px 15px; border-radius:999px; border:none; cursor:pointer;
+  font-family:inherit; font-size:12.5px; font-weight:600; color:#0a0e1a;
+  background:linear-gradient(135deg, #ffe08a, #f5c451 70%);
+  box-shadow:0 8px 26px rgba(245,196,81,.45);
+  animation:hintPop .4s ease both;
+}
+#audio-hint.show{ display:flex; }
+.audio-hint-pulse{
+  display:flex; align-items:center; justify-content:center;
+  width:22px; height:22px; border-radius:50%; background:rgba(10,14,26,.18);
+  animation:hintPulse 1.4s ease-in-out infinite;
+}
+@keyframes hintPop{ from{opacity:0; transform:translateY(12px)} to{opacity:1; transform:none} }
+@keyframes hintPulse{ 0%,100%{transform:scale(1)} 50%{transform:scale(1.18)} }
+
+/* ---------- مودال حمایت ---------- */
+.donate-box{ border-top:3px solid var(--rose); }
+.donate-icon{
+  width:58px; height:58px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center; font-size:1.6rem;
+  background:radial-gradient(circle at 40% 35%, rgba(244,63,94,.3), rgba(244,63,94,.1));
+  color:#fda4af; border:1px solid rgba(244,63,94,.35);
+  box-shadow:0 0 26px rgba(244,63,94,.25);
+}
+.wallet-card{
+  background:rgba(255,255,255,.035); border:1px solid rgba(255,255,255,.1);
+  border-radius:14px; padding:13px 14px; transition:border-color .2s, background .2s;
+}
+.wallet-card:hover{ border-color:rgba(244,63,94,.3); background:rgba(255,255,255,.05); }
+.wallet-head{ display:flex; align-items:center; justify-content:space-between; gap:8px; margin-bottom:9px; flex-wrap:wrap; }
+.wallet-net{ font-weight:800; font-size:13px; color:#f5c451; display:inline-flex; align-items:center; gap:6px; }
+.wallet-tag{ font-size:10.5px; color:#9aa3b6; }
+.wallet-row{ display:flex; align-items:center; gap:8px; }
+.wallet-addr{
+  flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  background:rgba(0,0,0,.3); border-radius:9px; padding:7px 10px;
+  font-size:11.5px; color:#bcd; font-family:ui-monospace, monospace;
+}
+.wallet-copy{
+  flex:0 0 auto; border:none; cursor:pointer; font-family:inherit;
+  padding:7px 12px; border-radius:9px; font-size:11.5px; font-weight:700;
+  background:rgba(244,63,94,.15); color:#fda4af; border:1px solid rgba(244,63,94,.3);
+  transition:.2s; white-space:nowrap;
+}
+.wallet-copy:hover{ background:rgba(244,63,94,.28); color:#fff; }
+.wallet-copy.copied{ background:rgba(34,197,94,.2); color:#86efac; border-color:rgba(34,197,94,.4); }
 
 /* ---------- نشانگر لود خودکار (اسکرول بی‌نهایت) ---------- */
 .jv-loader{

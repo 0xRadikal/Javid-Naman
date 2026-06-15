@@ -1,6 +1,7 @@
 /* ════════════════════════════════════════════════════════════════
-   جاویدنام‌های راه آزادی ایران — منطق صفحهٔ یادبود
-   بارگذاری دیتاست کامل، رندر چهره‌ها، مودال جزئیات و پلیر آهنگ
+   جاویدنام‌های راه آزادی ایران — منطق صفحهٔ یادبود (نسخهٔ ارتقایافته)
+   بارگذاری دیتاست کامل، رندر چهره‌ها، مودال جزئیات، فیلتر/مرتب‌سازی
+   پیشرفته، اسکرول بی‌نهایت + پرش به فوتر، و پلیر آهنگ با پخش خودکار
    ════════════════════════════════════════════════════════════════ */
 
 let ALL = [];
@@ -8,17 +9,22 @@ let EVENTS = {};
 let META = {};
 let filterEvent = 'all';
 let filterVerif = 'all';
-let filterPhoto = true;    // پیش‌فرض: فقط دارای چهره (طبق خواستهٔ کاربر)
+let filterPhoto = true;    // پیش‌فرض: فقط دارای چهره
 let filterNotable = false; // فقط چهره‌های سرشناس
+let filterProvince = 'all'; // فیلتر استان
+let filterGender = 'all';   // فیلتر جنسیت
+let filterAge = 'all';      // فیلتر رده سنی
+let sortBy = 'relevance';   // مرتب‌سازی فعال
 let searchQ = '';
 let shown = 0;
+let footerLock = false; // وقتی کاربر «پرش به فوتر» می‌زند، لود خودکار موقتاً قفل می‌شود
 const PAGE = 48;
 
 const FA = ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
 function toFa(n){ return String(n).replace(/[0-9]/g, d => FA[d]); }
 function escapeHtml(s){ return String(s==null?'':s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m])); }
 
-// نقشهٔ رنگ ثابت برای هر رویداد (رنگ واقعی به‌جای کلاس پویای Tailwind)
+// نقشهٔ رنگ ثابت برای هر رویداد
 const EVENT_COLORS = {
   kuye_daneshgah_78: '#fbbf24', green_88: '#34d399', dey_96: '#fb923c',
   darvish_96: '#2dd4bf', mordad_97: '#facc15', kazerun_97: '#a3e635',
@@ -33,13 +39,16 @@ function hexA(hex, a){
 
 /* ───────────────────────── بارگذاری داده ───────────────────────── */
 async function init(){
+  // پلیر را همان ابتدا (پیش از داده) آماده کن تا پخش خودکار سریع‌تر شروع شود
+  initAudio();
+
   const statusEl = document.getElementById('load-status');
   try {
     const res = await fetch('assets/data/javidnam.full.json', { cache: 'force-cache' });
     if(!res.ok) throw new Error('HTTP '+res.status);
     const data = await res.json();
     META = data.meta; EVENTS = data.events; ALL = data.people;
-    // مرتب‌سازی: ابتدا چهره‌های سرشناس، سپس دارای عکس، سپس بقیه
+    // مرتب‌سازی پیش‌فرض (relevance): ابتدا سرشناس، سپس دارای عکس
     ALL.sort((a,b)=>{
       const sa = (a.nt?2:0) + (a.ph?1:0);
       const sb = (b.nt?2:0) + (b.ph?1:0);
@@ -48,11 +57,14 @@ async function init(){
     if(statusEl) statusEl.style.display = 'none';
     renderStats();
     renderEventFilters();
+    renderProvinceOptions();
     applyAndRender(true);
     wireEvents();
     initInfiniteScroll();
-    initAudio();
     initReveal();
+    initFooterJump();
+    // اگر از صفحهٔ دیگری با #donate آمده‌ایم، مودال حمایت را باز کن
+    if(location.hash === '#donate'){ setTimeout(openDonate, 300); }
   } catch(err){
     if(statusEl){ statusEl.innerHTML = '<span class="text-rose-400"><i class="fa-solid fa-triangle-exclamation"></i> خطا در بارگذاری داده‌ها. صفحه را دوباره بارگذاری کنید.</span>'; }
     console.error(err);
@@ -83,25 +95,96 @@ function renderEventFilters(){
   wrap.innerHTML = html;
 }
 
-/* ───────────────────────── فیلتر و رندر ───────────────────────── */
+/* استان‌های استاندارد و معتبر برای منوی فیلتر (مرتب بر اساس تعداد) */
+function renderProvinceOptions(){
+  const sel = document.getElementById('jv-province');
+  if(!sel) return;
+  const counts = {};
+  ALL.forEach(p=>{
+    const pr = (p.pr||'').trim();
+    // فقط استان‌های فارسی استاندارد و کوتاه (حذف داده‌های خراب/انگلیسی)
+    if(pr && pr.length < 25 && /[\u0600-\u06FF]/.test(pr)) counts[pr] = (counts[pr]||0)+1;
+  });
+  const list = Object.entries(counts)
+    .filter(([k,v])=>v >= 5) // فقط استان‌های با حداقل ۵ نام
+    .sort((a,b)=>b[1]-a[1]);
+  let html = '<option value="all">همهٔ استان‌ها</option>';
+  for(const [pr,c] of list){
+    html += `<option value="${escapeHtml(pr)}">${escapeHtml(pr)} (${toFa(c)})</option>`;
+  }
+  sel.innerHTML = html;
+}
+
+/* ───────────────────────── فیلتر، مرتب‌سازی و رندر ───────────────────────── */
+function ageInRange(a, range){
+  if(a==null) return false;
+  switch(range){
+    case 'child': return a <= 17;
+    case 'youth': return a >= 18 && a <= 30;
+    case 'adult': return a >= 31 && a <= 50;
+    case 'senior': return a >= 51;
+    default: return true;
+  }
+}
+
 function getFiltered(){
-  return ALL.filter(p=>{
+  let arr = ALL.filter(p=>{
     if(filterEvent !== 'all' && p.e !== filterEvent) return false;
     if(filterVerif !== 'all' && p.v !== filterVerif) return false;
     if(filterPhoto && !p.ph) return false;
     if(filterNotable && !p.nt) return false;
+    if(filterProvince !== 'all' && (p.pr||'').trim() !== filterProvince) return false;
+    if(filterGender !== 'all' && p.g !== filterGender) return false;
+    if(filterAge !== 'all' && !ageInRange(p.a, filterAge)) return false;
     if(searchQ){
       const hay = (p.n+' '+(p.ne||'')+' '+(p.c||'')+' '+(p.pr||'')+' '+(p.ca||'')+' '+(p.oc||'')+' '+(p.s||'')).toLowerCase();
       if(!hay.includes(searchQ)) return false;
     }
     return true;
   });
+  return sortFiltered(arr);
+}
+
+/* مرتب‌سازی پیشرفته */
+function sortFiltered(arr){
+  const collator = new Intl.Collator('fa');
+  switch(sortBy){
+    case 'age_asc':
+      return arr.sort((a,b)=> (a.a==null?1:0) - (b.a==null?1:0) || (a.a||0) - (b.a||0));
+    case 'age_desc':
+      return arr.sort((a,b)=> (a.a==null?1:0) - (b.a==null?1:0) || (b.a||0) - (a.a||0));
+    case 'date_desc': // تازه‌ترین جان‌باختن نخست
+      return arr.sort((a,b)=> (a.dg?0:1) - (b.dg?0:1) || (b.dg||'').localeCompare(a.dg||''));
+    case 'date_asc': // قدیمی‌ترین نخست
+      return arr.sort((a,b)=> (a.dg?0:1) - (b.dg?0:1) || (a.dg||'').localeCompare(b.dg||''));
+    case 'name_asc':
+      return arr.sort((a,b)=> collator.compare(a.n||'', b.n||''));
+    case 'name_desc':
+      return arr.sort((a,b)=> collator.compare(b.n||'', a.n||''));
+    case 'event': // بر اساس ترتیب زمانی رویداد
+      return arr.sort((a,b)=>{
+        const oa = (EVENTS[a.e]?.order)||99, ob = (EVENTS[b.e]?.order)||99;
+        return oa - ob;
+      });
+    case 'relevance':
+    default:
+      return arr.sort((a,b)=>{
+        const sa = (a.nt?2:0) + (a.ph?1:0);
+        const sb = (b.nt?2:0) + (b.ph?1:0);
+        return sb - sa;
+      });
+  }
 }
 
 let filteredCache = [];
 function applyAndRender(reset){
   const grid = document.getElementById('jv-grid');
-  if(reset){ filteredCache = getFiltered(); shown = 0; grid.innerHTML=''; }
+  if(reset){
+    filteredCache = getFiltered(); shown = 0; grid.innerHTML='';
+    footerLock = false; // با هر فیلتر/جستجوی جدید، قفل فوتر آزاد می‌شود
+    const txt = document.querySelector('#jv-loader .jv-loader-text');
+    if(txt) txt.textContent = 'در حال بارگذاری نام‌های بیشتر…';
+  }
   const slice = filteredCache.slice(shown, shown + PAGE);
   const frag = document.createDocumentFragment();
   slice.forEach((p,i)=>{
@@ -116,11 +199,34 @@ function applyAndRender(reset){
 
   const remaining = filteredCache.length - shown;
   updateScrollUI(remaining);
+  updateActiveFiltersUI();
 
   const empty = document.getElementById('jv-empty');
   if(empty) empty.style.display = filteredCache.length === 0 ? 'block' : 'none';
-  // لود کسل عکس‌های اضافه‌شده
   lazyObserveNew();
+}
+
+/* خلاصهٔ فیلترهای فعال + دکمهٔ پاک‌سازی */
+function updateActiveFiltersUI(){
+  const box = document.getElementById('jv-active-filters');
+  if(!box) return;
+  const chips = [];
+  if(filterEvent !== 'all') chips.push({k:'event', label: (EVENTS[filterEvent]?.title)||filterEvent});
+  if(filterVerif !== 'all') chips.push({k:'verif', label: filterVerif==='documented'?'مستند':'گزارش‌شده'});
+  if(filterProvince !== 'all') chips.push({k:'province', label: 'استان: '+filterProvince});
+  if(filterGender !== 'all') chips.push({k:'gender', label: filterGender});
+  if(filterAge !== 'all'){
+    const ageLabels = {child:'کودک/نوجوان (≤۱۷)', youth:'جوان (۱۸–۳۰)', adult:'میانسال (۳۱–۵۰)', senior:'سالمند (۵۱+)'};
+    chips.push({k:'age', label: ageLabels[filterAge]});
+  }
+  if(filterNotable) chips.push({k:'notable', label:'سرشناس'});
+  if(searchQ) chips.push({k:'search', label:'«'+searchQ+'»'});
+
+  if(chips.length === 0){ box.innerHTML=''; box.style.display='none'; return; }
+  box.style.display='flex';
+  box.innerHTML = chips.map(ch=>
+    `<button class="jv-chip" data-clear="${ch.k}"><span>${escapeHtml(ch.label)}</span><i class="fa-solid fa-xmark"></i></button>`
+  ).join('') + `<button class="jv-chip jv-chip-reset" data-clear="all"><i class="fa-solid fa-broom ml-1"></i>پاک‌کردن همه</button>`;
 }
 
 /* ───────── مدیریت نشانگر لود خودکار (اسکرول بی‌نهایت) ───────── */
@@ -135,8 +241,12 @@ function updateScrollUI(remaining){
   } else {
     if(sentinel) sentinel.style.display = 'none';
     if(loader)   loader.style.display = 'none';
-    // فقط وقتی واقعاً چیزی نمایش داده شده باشد، پیام پایان را نشان بده
     if(endNote)  endNote.style.display = (filteredCache.length > 0) ? 'flex' : 'none';
+  }
+  // نمایش/پنهان‌سازی دکمهٔ پرش به فوتر (وقتی هنوز نام‌های زیادی مانده)
+  const jumpBtn = document.getElementById('jv-footer-jump');
+  if(jumpBtn){
+    jumpBtn.style.display = (filteredCache.length > PAGE) ? 'flex' : 'none';
   }
 }
 
@@ -146,25 +256,72 @@ function initInfiniteScroll(){
   const sentinel = document.getElementById('jv-sentinel');
   if(!sentinel) return;
   if(!('IntersectionObserver' in window)){
-    // مرورگر قدیمی: لود همه به‌صورت یک‌جا غیرعملی است؛ بازگشت به اسکرول دستی
     window.addEventListener('scroll', ()=>{
-      if(shown < filteredCache.length &&
+      if(!footerLock && shown < filteredCache.length &&
          (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 600){
         applyAndRender(false);
       }
     }, { passive:true });
     return;
   }
-  // rootMargin مثبت پایین: کمی پیش از رسیدن کاربر به سنتینل، صفحهٔ بعد را لود می‌کند
-  // اما نه آن‌قدر زود که فوتر هرگز در دسترس قرار نگیرد.
   scrollObserver = new IntersectionObserver((entries)=>{
     entries.forEach(en=>{
-      if(en.isIntersecting && shown < filteredCache.length){
+      if(en.isIntersecting && !footerLock && shown < filteredCache.length){
         applyAndRender(false);
       }
     });
   }, { rootMargin: '600px 0px' });
   scrollObserver.observe(sentinel);
+}
+
+/* ───────── دکمهٔ هوشمند پرش به فوتر / بازگشت به بالا ───────── */
+function initFooterJump(){
+  const jumpBtn = document.getElementById('jv-footer-jump');
+  const topBtn  = document.getElementById('jv-back-top');
+  if(jumpBtn){
+    jumpBtn.addEventListener('click', ()=>{
+      // مهم: برای دسترسی به فوتر، باید لود خودکار را موقتاً متوقف کنیم تا
+      // اسکرول به پایین باعث افزودن نام‌های بیشتر و دورتر شدن فوتر نشود.
+      footerLock = true;
+      const sentinel = document.getElementById('jv-sentinel');
+      const loader   = document.getElementById('jv-loader');
+      if(sentinel) sentinel.style.display = 'none';
+      if(loader)   loader.style.display = 'none';
+      const footer = document.querySelector('footer');
+      if(footer) footer.scrollIntoView({ behavior:'smooth', block:'start' });
+      // پس از رسیدن، اگر هنوز نام‌هایی مانده، نشانگر «هنوز نام‌های بیشتری هست» را نشان بده
+      setTimeout(()=>{
+        if(shown < filteredCache.length){
+          if(loader){
+            loader.style.display = 'flex';
+            const txt = loader.querySelector('.jv-loader-text');
+            if(txt) txt.textContent = 'برای دیدن نام‌های بیشتر، به بالا برگردید و اسکرول کنید';
+          }
+        }
+      }, 900);
+    });
+  }
+  if(topBtn){
+    topBtn.addEventListener('click', ()=>{
+      // آزادکردن قفل فوتر تا اسکرول دوباره نام‌های بیشتر را لود کند
+      footerLock = false;
+      updateScrollUI(filteredCache.length - shown);
+      const txt = document.querySelector('#jv-loader .jv-loader-text');
+      if(txt) txt.textContent = 'در حال بارگذاری نام‌های بیشتر…';
+      window.scrollTo({ top:0, behavior:'smooth' });
+    });
+    // فقط پس از کمی اسکرول نمایش بده
+    let ticking=false;
+    window.addEventListener('scroll', ()=>{
+      if(!ticking){
+        window.requestAnimationFrame(()=>{
+          topBtn.classList.toggle('show', window.scrollY > 800);
+          ticking=false;
+        });
+        ticking=true;
+      }
+    }, { passive:true });
+  }
 }
 
 function cardHTML(p, idx){
@@ -177,7 +334,6 @@ function cardHTML(p, idx){
     ? '<span class="text-[10px] px-1.5 py-0.5 rounded bg-emerald-500/15 text-emerald-300 border border-emerald-500/20"><i class="fa-solid fa-circle-check"></i> مستند</span>'
     : '<span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-500/15 text-amber-300 border border-amber-500/20"><i class="fa-regular fa-circle"></i> گزارش‌شده</span>';
   const star = p.nt ? '<i class="fa-solid fa-star text-amber-400 text-xs ml-1" title="چهرهٔ سرشناس"></i>' : '';
-  // بخش تصویر
   let photo;
   if(p.ph){
     photo = `<img data-src="${escapeHtml(p.ph)}" alt="${escapeHtml(p.n)}" class="jv-photo lazy" loading="lazy" referrerpolicy="no-referrer"
@@ -186,11 +342,15 @@ function cardHTML(p, idx){
     photo = `<div class="jv-photo-ph"><i class="fa-solid fa-dove"></i></div>`;
   }
   const notableClass = p.nt ? 'jv-notable' : '';
-  return `<article class="jv-card ${notableClass} group rounded-2xl p-2.5 border border-white/10 bg-white/[0.025] hover:bg-white/[0.06] transition cursor-pointer" style="animation-delay:${(idx%PAGE)*0.015}s" onclick="openPerson('${p.id}')">
+  return `<article class="jv-card ${notableClass} group rounded-2xl p-2.5 border border-white/10 bg-white/[0.025] hover:bg-white/[0.06] transition cursor-pointer" style="animation-delay:${(idx%PAGE)*0.015}s" onclick="openPerson('${p.id}')" tabindex="0" role="button" aria-label="جزئیات ${escapeHtml(p.n)}">
     <div class="relative overflow-hidden rounded-xl mb-2.5">
       ${photo}
       <span class="absolute top-2 right-2">${verifBadge}</span>
       <span class="absolute bottom-2 right-2 text-[10px] px-2 py-0.5 rounded-full" style="background:${hexA(c,0.85)};color:#0a0e1a;font-weight:700">${escapeHtml(ev)}</span>
+      <div class="jv-hover-hint" aria-hidden="true">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>برای اطلاعات بیشتر و یادبود کلیک کنید</span>
+      </div>
     </div>
     <h3 class="font-bold text-[14.5px] leading-snug px-1 line-clamp-1">${star}${escapeHtml(p.n)}</h3>
     <div class="text-xs text-gray-400 px-1 mt-0.5 line-clamp-1">${meta.length?'<i class="fa-solid fa-location-dot ml-1 opacity-60"></i>'+meta.map(escapeHtml).join(' · '):'&nbsp;'}</div>
@@ -226,10 +386,8 @@ async function openPerson(id){
   const modal = document.getElementById('jv-modal');
   const box = document.getElementById('jv-modal-content');
   const ev = EVENTS[p.e] ? EVENTS[p.e].title : p.e;
-  const evEn = EVENTS[p.e] ? EVENTS[p.e].title_en : '';
   const c = evColor(p.e);
 
-  // ردیف‌های جزئیات
   const rows = [];
   if(p.a!=null) rows.push(['سن', toFa(p.a)+' سال', 'fa-cake-candles']);
   if(p.g) rows.push(['جنسیت', p.g, p.g==='زن'?'fa-venus':'fa-mars']);
@@ -239,7 +397,6 @@ async function openPerson(id){
   if(p.oc) rows.push(['شغل', p.oc, 'fa-briefcase']);
   if(p.ca) rows.push(['شرح جان‌باختن', p.ca, 'fa-heart-crack']);
 
-  // بخش تصویر بزرگ
   let hero;
   if(p.ph){
     hero = `<div class="jv-modal-photo-wrap"><img src="${escapeHtml(p.ph)}" alt="${escapeHtml(p.n)}" class="jv-modal-photo" referrerpolicy="no-referrer"
@@ -248,7 +405,6 @@ async function openPerson(id){
     hero = `<div class="jv-modal-photo-wrap"><div class="jv-modal-ph" style="color:${c}"><i class="fa-solid fa-dove"></i></div></div>`;
   }
 
-  // لینک‌های یادبود
   let mlHtml = '';
   if(Array.isArray(p.ml) && p.ml.length){
     const links = p.ml.slice(0,6).map(u=>{
@@ -264,7 +420,6 @@ async function openPerson(id){
     mlHtml = `<div class="mt-5"><div class="text-xs text-gray-500 mb-2"><i class="fa-solid fa-share-nodes ml-1"></i> یاد و نشان (منابع و یادبودها)</div><div class="flex flex-wrap gap-2">${links}</div></div>`;
   }
 
-  // داستان فارسی + انگلیسی
   let storyHtml = '';
   if(p.s){
     storyHtml += `<div class="bg-white/[0.03] rounded-xl p-4 text-sm leading-8 text-gray-200 mt-4" style="border-right:3px solid ${hexA(c,0.5)}">${escapeHtml(p.s)}</div>`;
@@ -292,6 +447,13 @@ async function openPerson(id){
     </div>`:''}
     ${storyHtml}
     ${mlHtml}
+    <div class="jv-comment-soon mt-5">
+      <i class="fa-regular fa-comments"></i>
+      <div>
+        <strong>یادبود و کامنت</strong>
+        <span>به‌زودی می‌توانید اینجا برای ${escapeHtml(p.n)} پیام یادبود بگذارید 🤍</span>
+      </div>
+    </div>
     <div class="memorial-quote text-center text-sm mt-6 pt-5 border-t border-white/10">
       «نامت جاودان، یادت گرامی» — جان‌باخته در راه آزادی ایران
     </div>
@@ -323,14 +485,32 @@ function wireEvents(){
       applyAndRender(true);
     });
   });
-  // تاگل عکس‌دار / سرشناس
   const togglePhoto = document.getElementById('toggle-photo');
   if(togglePhoto){
-    togglePhoto.classList.toggle('active', filterPhoto); // همگام‌سازی با حالت پیش‌فرض
+    togglePhoto.classList.toggle('active', filterPhoto);
     togglePhoto.addEventListener('click', ()=>{ filterPhoto=!filterPhoto; togglePhoto.classList.toggle('active',filterPhoto); applyAndRender(true); });
   }
   const toggleNotable = document.getElementById('toggle-notable');
   if(toggleNotable) toggleNotable.addEventListener('click', ()=>{ filterNotable=!filterNotable; toggleNotable.classList.toggle('active',filterNotable); applyAndRender(true); });
+
+  // مرتب‌سازی
+  const sortSel = document.getElementById('jv-sort');
+  if(sortSel) sortSel.addEventListener('change', e=>{ sortBy = e.target.value; applyAndRender(true); });
+
+  // فیلتر استان / جنسیت / رده سنی
+  const provSel = document.getElementById('jv-province');
+  if(provSel) provSel.addEventListener('change', e=>{ filterProvince = e.target.value; applyAndRender(true); });
+  const genderSel = document.getElementById('jv-gender');
+  if(genderSel) genderSel.addEventListener('change', e=>{ filterGender = e.target.value; applyAndRender(true); });
+  const ageSel = document.getElementById('jv-age');
+  if(ageSel) ageSel.addEventListener('change', e=>{ filterAge = e.target.value; applyAndRender(true); });
+
+  // چیپ‌های فیلتر فعال (پاک‌سازی)
+  const activeBox = document.getElementById('jv-active-filters');
+  if(activeBox) activeBox.addEventListener('click', e=>{
+    const btn = e.target.closest('[data-clear]'); if(!btn) return;
+    clearFilter(btn.dataset.clear);
+  });
 
   let t;
   const search = document.getElementById('jv-search');
@@ -338,18 +518,54 @@ function wireEvents(){
     clearTimeout(t);
     t = setTimeout(()=>{ searchQ = e.target.value.trim().toLowerCase(); applyAndRender(true); }, 200);
   });
+  // دکمهٔ پاک‌کردن سریع جستجو
+  const searchClear = document.getElementById('jv-search-clear');
+  if(searchClear && search){
+    search.addEventListener('input', ()=>{ searchClear.style.display = search.value ? 'flex' : 'none'; });
+    searchClear.addEventListener('click', ()=>{ search.value=''; searchQ=''; searchClear.style.display='none'; applyAndRender(true); search.focus(); });
+  }
+
   const modal = document.getElementById('jv-modal');
   if(modal) modal.addEventListener('click', e=>{ if(e.target.id==='jv-modal') closePerson(); });
-  document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ closePerson(); closeMusicNote(); } });
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ closePerson(); closeMusicNote(); closeDonate(); } });
 
-  // پشتیبانی از ?q= در URL (از SearchAction)
+  // کلیک/Enter روی کارت با کیبورد
+  const grid = document.getElementById('jv-grid');
+  if(grid) grid.addEventListener('keydown', e=>{
+    if((e.key==='Enter'||e.key===' ') && e.target.classList.contains('jv-card')){
+      e.preventDefault(); e.target.click();
+    }
+  });
+
+  // پشتیبانی از ?q= در URL
   const params = new URLSearchParams(location.search);
   const q = params.get('q');
-  if(q && search){ search.value=q; searchQ=q.toLowerCase(); applyAndRender(true); }
+  if(q && search){ search.value=q; searchQ=q.toLowerCase(); if(searchClear) searchClear.style.display='flex'; applyAndRender(true); }
+}
+
+function clearFilter(which){
+  switch(which){
+    case 'event': filterEvent='all'; document.querySelectorAll('.ev-btn').forEach(b=>b.classList.toggle('active', b.dataset.ev==='all')); break;
+    case 'verif': filterVerif='all'; document.querySelectorAll('.verif-btn').forEach(b=>b.classList.toggle('active', b.dataset.v==='all')); break;
+    case 'province': filterProvince='all'; { const s=document.getElementById('jv-province'); if(s) s.value='all'; } break;
+    case 'gender': filterGender='all'; { const s=document.getElementById('jv-gender'); if(s) s.value='all'; } break;
+    case 'age': filterAge='all'; { const s=document.getElementById('jv-age'); if(s) s.value='all'; } break;
+    case 'notable': filterNotable=false; { const b=document.getElementById('toggle-notable'); if(b) b.classList.remove('active'); } break;
+    case 'search': searchQ=''; { const s=document.getElementById('jv-search'); if(s) s.value=''; const c=document.getElementById('jv-search-clear'); if(c) c.style.display='none'; } break;
+    case 'all':
+      filterEvent='all'; filterVerif='all'; filterProvince='all'; filterGender='all'; filterAge='all'; filterNotable=false; searchQ='';
+      document.querySelectorAll('.ev-btn').forEach(b=>b.classList.toggle('active', b.dataset.ev==='all'));
+      document.querySelectorAll('.verif-btn').forEach(b=>b.classList.toggle('active', b.dataset.v==='all'));
+      ['jv-province','jv-gender','jv-age'].forEach(id=>{ const s=document.getElementById(id); if(s) s.value='all'; });
+      { const b=document.getElementById('toggle-notable'); if(b) b.classList.remove('active'); }
+      { const s=document.getElementById('jv-search'); if(s) s.value=''; const c=document.getElementById('jv-search-clear'); if(c) c.style.display='none'; }
+      break;
+  }
+  applyAndRender(true);
 }
 
 /* ════════════════════════════════════════════════════════════════
-   پلیر آهنگ شناور — غیرمزاحم، قابل توقف و قابل بستن
+   پلیر آهنگ شناور — پخش خودکار هوشمند، قابل توقف و قابل بستن
    ════════════════════════════════════════════════════════════════ */
 let audio = null;
 let audioStarted = false;
@@ -360,8 +576,10 @@ function initAudio(){
   const revive = document.getElementById('audio-revive');
   if(!audio || !dock) return;
 
-  audio.volume = 0.0; // شروع آرام، fade-in نرم
+  audio.volume = 0.0;
   audio.loop = true;
+  // اطمینان از شروع بارگذاری فایل صوتی (برای پخش خودکار سریع)
+  try{ audio.load(); }catch(e){}
 
   const btn = document.getElementById('ad-toggle');
   const closeBtn = document.getElementById('ad-close');
@@ -386,6 +604,7 @@ function initAudio(){
     audio.play().then(()=>{
       audioStarted = true;
       setPlayingUI(true);
+      if(audio.muted){ audio.muted=false; }
       fadeTo(0.55, 1200);
       try{ localStorage.setItem('jv_audio','playing'); }catch(e){}
     }).catch(()=>{ setPlayingUI(false); });
@@ -399,7 +618,6 @@ function initAudio(){
 
   btn.addEventListener('click', ()=>{ audio.paused ? play() : pause(); });
 
-  // بستن کامل پلیر (آهنگ متوقف، دکمهٔ احیا نمایش داده می‌شود)
   closeBtn.addEventListener('click', ()=>{
     pause();
     dock.style.transform = 'translateY(120%)';
@@ -408,21 +626,18 @@ function initAudio(){
     try{ localStorage.setItem('jv_audio','closed'); }catch(e){}
   });
 
-  // احیای پلیر
   revive.addEventListener('click', ()=>{
     revive.style.display='none';
     dock.style.display='flex';
     requestAnimationFrame(()=>{
       dock.style.transform='';
       dock.style.opacity='1';
-      dock.classList.add('active'); // فوکوس موقت تا کاربر متوجه شود
-      // پس از پایان ترنزیشن، استایل اینلاین را پاک کن تا opacity پیش‌فرض CSS اعمال شود
+      dock.classList.add('active');
       setTimeout(()=>{ dock.style.opacity=''; dock.classList.remove('active'); }, 1600);
     });
     play();
   });
 
-  // فوکوس لمسی روی موبایل: با لمس داک، به‌صورت موقت کاملاً مات می‌شود
   dock.addEventListener('touchstart', ()=>{
     dock.classList.add('active');
     clearTimeout(dock._touchT);
@@ -433,14 +648,21 @@ function initAudio(){
 
   setPlayingUI(false);
 
-  /* ─── پخش خودکار در حالت پیش‌فرض ───
-     کاربر می‌خواهد آهنگ به‌محض باز شدن صفحه پخش شود. سیاست مرورگرها اجازهٔ
-     پخش خودکار صدادار را بدون تعامل کاربر نمی‌دهد، پس از این راهکار استفاده می‌کنیم:
-     ۱) تلاش برای پخش فوری (در برخی مرورگرها/پس از تعامل قبلی موفق می‌شود).
-     ۲) اگر مرورگر رد کرد، تلاش برای پخش بی‌صدا (muted) که معمولاً مجاز است،
-        سپس با نخستین تعامل کاربر صدا را به‌نرمی باز می‌کنیم.
-     ۳) به‌عنوان آخرین راه، با نخستین تعامل به‌صورت کامل پخش می‌شود. */
+  /* ─── پخش خودکار هوشمند ───
+     سیاست مرورگرها پخش خودکارِ صدادار را بدون تعامل کاربر محدود می‌کند.
+     راهکار چندلایه:
+     ۱) تلاش برای پخش صدادار فوری (در مرورگرهایی با تعامل قبلی موفق می‌شود)
+     ۲) اگر رد شد → پخش بی‌صدا (muted) که معمولاً مجاز است + نوار «برای شنیدن کلیک کنید»
+     ۳) با نخستین تعاملِ کاربر (هر نوع)، صدا به‌نرمی باز می‌شود */
   const pref = (()=>{ try{ return localStorage.getItem('jv_audio'); }catch(e){ return null; } })();
+
+  const hintBar = document.getElementById('audio-hint');
+  function showSoundHint(){
+    if(hintBar) hintBar.classList.add('show');
+  }
+  function hideSoundHint(){
+    if(hintBar) hintBar.classList.remove('show');
+  }
 
   function unmuteOnInteraction(){
     const onFirst = ()=>{
@@ -449,42 +671,62 @@ function initAudio(){
         if(audio.paused){ play(); }
         else { audioStarted = true; setPlayingUI(true); fadeTo(0.55, 1200); try{ localStorage.setItem('jv_audio','playing'); }catch(e){} }
       } else if(!audioStarted){ play(); }
-      window.removeEventListener('pointerdown', onFirst);
-      window.removeEventListener('keydown', onFirst);
-      window.removeEventListener('touchstart', onFirst);
-      window.removeEventListener('scroll', onFirst);
+      hideSoundHint();
+      ['pointerdown','keydown','touchstart','scroll','click','mousemove'].forEach(ev=>
+        window.removeEventListener(ev, onFirst));
     };
-    window.addEventListener('pointerdown', onFirst, { once:false });
-    window.addEventListener('keydown', onFirst, { once:false });
-    window.addEventListener('touchstart', onFirst, { once:false, passive:true });
-    window.addEventListener('scroll', onFirst, { once:false, passive:true });
+    ['pointerdown','keydown','touchstart','scroll','click','mousemove'].forEach(ev=>
+      window.addEventListener(ev, onFirst, { passive:true }));
   }
 
-  if(pref === 'closed'){
-    dock.style.display='none'; revive.style.display='flex';
-  } else if(pref === 'paused'){
-    // کاربر قبلاً عمداً متوقف کرده — به انتخاب او احترام می‌گذاریم
-    setPlayingUI(false);
-  } else {
-    // تلاش برای پخش خودکار فوری
+  if(hintBar){
+    hintBar.addEventListener('click', ()=>{
+      audio.muted=false; if(audio.paused) play();
+      else { audioStarted=true; setPlayingUI(true); fadeTo(0.55,1200); }
+      hideSoundHint();
+    });
+  }
+
+  function attemptAutoplay(){
+    // تلاش برای پخش خودکار صدادار
     audio.muted = false;
-    const p = audio.play();
-    if(p && typeof p.then === 'function'){
-      p.then(()=>{
+    const tryPlay = audio.play();
+    if(tryPlay && typeof tryPlay.then === 'function'){
+      tryPlay.then(()=>{
         audioStarted = true; setPlayingUI(true); fadeTo(0.55, 1200);
+        hideSoundHint();
         try{ localStorage.setItem('jv_audio','playing'); }catch(e){}
       }).catch(()=>{
-        // مرورگر پخش صدادار را رد کرد → تلاش برای پخش بی‌صدا و سپس باز کردن صدا با تعامل
+        // پخش بی‌صدا (مجاز در اغلب مرورگرها) سپس باز کردن صدا با تعامل
         audio.muted = true; audio.volume = 0.55;
         const pm = audio.play();
         if(pm && typeof pm.then === 'function'){
-          pm.then(()=>{ setPlayingUI(true); }).catch(()=>{ setPlayingUI(false); });
-        }
+          pm.then(()=>{ setPlayingUI(true); showSoundHint(); }).catch(()=>{ setPlayingUI(false); showSoundHint(); });
+        } else { showSoundHint(); }
         unmuteOnInteraction();
       });
     } else {
       unmuteOnInteraction();
     }
+  }
+
+  if(pref === 'closed'){
+    dock.style.display='none'; revive.style.display='flex';
+  } else if(pref === 'paused'){
+    setPlayingUI(false);
+  } else {
+    attemptAutoplay();
+    // اگر فایل هنوز آماده نبود، پس از آماده‌شدن دوباره تلاش کن
+    audio.addEventListener('canplaythrough', ()=>{
+      if(audio.paused && !audioStarted){ attemptAutoplay(); }
+    }, { once:true });
+    // اگر کاربر تب را ترک و دوباره باز کرد، یک تلاش دیگر
+    document.addEventListener('visibilitychange', ()=>{
+      if(!document.hidden && audio.paused && !audioStarted){
+        const lp = (()=>{ try{ return localStorage.getItem('jv_audio'); }catch(e){ return null; } })();
+        if(lp !== 'paused' && lp !== 'closed') attemptAutoplay();
+      }
+    });
   }
 }
 
@@ -495,6 +737,36 @@ function openMusicNote(){
 function closeMusicNote(){
   const m = document.getElementById('music-note-modal');
   if(m){ m.style.display='none'; document.body.style.overflow=''; }
+}
+
+/* ───────────────── مودال حمایت (Donate) ───────────────── */
+function openDonate(){
+  const m = document.getElementById('donate-modal');
+  if(m){ m.style.display='flex'; document.body.style.overflow='hidden'; }
+}
+function closeDonate(){
+  const m = document.getElementById('donate-modal');
+  if(m){ m.style.display='none'; document.body.style.overflow=''; }
+}
+function copyWallet(addr, btn){
+  const done = ()=>{
+    if(!btn) return;
+    const old = btn.innerHTML;
+    btn.innerHTML = '<i class="fa-solid fa-check"></i> کپی شد';
+    btn.classList.add('copied');
+    setTimeout(()=>{ btn.innerHTML = old; btn.classList.remove('copied'); }, 1800);
+  };
+  if(navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(addr).then(done).catch(()=>fallbackCopy(addr, done));
+  } else { fallbackCopy(addr, done); }
+}
+function fallbackCopy(text, cb){
+  const ta = document.createElement('textarea');
+  ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+  document.body.appendChild(ta); ta.select();
+  try{ document.execCommand('copy'); }catch(e){}
+  document.body.removeChild(ta);
+  if(cb) cb();
 }
 
 /* ───────────────── انیمیشن ظاهرشدن با اسکرول ───────────────── */
@@ -512,4 +784,7 @@ window.openPerson = openPerson;
 window.closePerson = closePerson;
 window.openMusicNote = openMusicNote;
 window.closeMusicNote = closeMusicNote;
+window.openDonate = openDonate;
+window.closeDonate = closeDonate;
+window.copyWallet = copyWallet;
 document.addEventListener('DOMContentLoaded', init);

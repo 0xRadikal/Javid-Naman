@@ -116,11 +116,19 @@
         <span>جاویدنام‌ها</span>
       </a>
       <div class="flex items-center gap-1.5 text-sm">
-        <a href="index.html" class="px-3 py-1.5 rounded-lg bg-rose-500/15 text-rose-200 border border-rose-500/30 transition">
-          <i class="fa-solid fa-dove ml-1"></i>جاویدنام‌ها
+        <a href="index.html" class="px-2.5 sm:px-3 py-1.5 rounded-lg bg-rose-500/15 text-rose-200 border border-rose-500/30 transition">
+          <i class="fa-solid fa-dove sm:ml-1"></i><span class="hidden sm:inline">جاویدنام‌ها</span>
         </a>
-        <a href="gahshomar.html" class="px-3 py-1.5 rounded-lg text-gray-300 transition hover:bg-white/10">
-          <i class="fa-solid fa-timeline ml-1"></i>گاهشمار اعتراضات
+        <a href="gahshomar.html" class="px-2.5 sm:px-3 py-1.5 rounded-lg text-gray-300 transition hover:bg-white/10">
+          <i class="fa-solid fa-timeline sm:ml-1"></i><span class="hidden sm:inline">گاهشمار اعتراضات</span>
+        </a>
+        <span class="w-px h-5 bg-white/15 mx-0.5"></span>
+        <button onclick="openDonate()" class="nav-support px-2.5 sm:px-3 py-1.5 rounded-lg transition" title="حمایت از توسعه‌دهنده">
+          <i class="fa-solid fa-heart sm:ml-1"></i><span class="hidden sm:inline">حمایت</span>
+        </button>
+        <a href="https://github.com/0xRadikal/Javid-Naman" target="_blank" rel="noopener noreferrer"
+          class="nav-github px-2.5 sm:px-3 py-1.5 rounded-lg transition" title="مشاهده در گیت‌هاب">
+          <i class="fa-brands fa-github sm:ml-1"></i><span class="hidden sm:inline">گیت‌هاب</span>
         </a>
       </div>
     </div>
@@ -185,23 +193,66 @@
     </div>
   </section>
 
-  <!-- ===== جستجو و فیلتر (خودپنهان‌شونده هنگام اسکرول رو به پایین) ===== -->
-  <section id="jv-filterbar" class="max-w-6xl mx-auto px-5 mb-8 sticky top-[57px] z-20 py-3">
-    <div class="jv-filterbar-inner protest-card p-4">
-      <div class="relative mb-4 flex items-center gap-2">
+  <!-- ===== جستجو و فیلتر (نوار هوشمند چسبان بدون پوشاندن محتوا) ===== -->
+  <section id="jv-filterbar" class="max-w-6xl mx-auto px-4 sm:px-5 mb-6">
+    <div class="jv-filterbar-inner protest-card p-3.5 sm:p-4">
+      <!-- ردیف جستجو + مرتب‌سازی + دکمهٔ فیلترها -->
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 mb-3">
         <div class="relative flex-1">
           <i class="fa-solid fa-magnifying-glass absolute right-4 top-1/2 -translate-y-1/2 text-gray-500"></i>
-          <input id="jv-search" type="text" placeholder="جستجو بر اساس نام، شهر، استان، شغل…"
-            class="w-full bg-white/5 border border-white/10 rounded-xl py-3 pr-12 pl-4 text-sm focus:outline-none focus:border-rose-500/50 placeholder-gray-500">
+          <input id="jv-search" type="text" inputmode="search" placeholder="جستجو بر اساس نام، شهر، استان، شغل…"
+            class="w-full bg-white/5 border border-white/10 rounded-xl py-2.5 sm:py-3 pr-12 pl-10 text-sm focus:outline-none focus:border-rose-500/50 placeholder-gray-500">
+          <button id="jv-search-clear" type="button" class="jv-search-clear" style="display:none" aria-label="پاک‌کردن جستجو"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <!-- مرتب‌سازی -->
+        <div class="relative shrink-0">
+          <i class="fa-solid fa-arrow-down-wide-short absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 text-xs pointer-events-none"></i>
+          <select id="jv-sort" class="jv-select w-full sm:w-auto pr-9" aria-label="مرتب‌سازی">
+            <option value="relevance">مرتب‌سازی: پیش‌فرض (سرشناس و دارای چهره)</option>
+            <option value="age_asc">سن: کم‌سن‌ترین نخست</option>
+            <option value="age_desc">سن: مسن‌ترین نخست</option>
+            <option value="date_desc">تاریخ: تازه‌ترین نخست</option>
+            <option value="date_asc">تاریخ: قدیمی‌ترین نخست</option>
+            <option value="event">بر اساس رویداد (زمانی)</option>
+            <option value="name_asc">نام: الفبایی (الف→ی)</option>
+            <option value="name_desc">نام: الفبایی (ی→الف)</option>
+          </select>
         </div>
         <!-- دکمهٔ جمع/باز کردن فیلترها -->
-        <button id="jv-filter-collapse" type="button" class="jv-toggle shrink-0" aria-expanded="true"
+        <button id="jv-filter-collapse" type="button" class="jv-toggle shrink-0 justify-center" aria-expanded="true"
           title="نمایش/پنهان‌کردن فیلترها" aria-label="نمایش یا پنهان‌کردن فیلترها">
-          <i class="fa-solid fa-sliders"></i><span class="hidden sm:inline"> فیلترها</span>
+          <i class="fa-solid fa-sliders"></i><span> فیلترها</span>
           <i id="jv-filter-chev" class="fa-solid fa-chevron-up text-[10px] transition-transform"></i>
         </button>
       </div>
+
       <div id="jv-filter-body">
+        <!-- فیلترهای پیشرفته: استان / جنسیت / رده سنی -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 mb-3">
+          <div class="relative">
+            <i class="fa-solid fa-map-location-dot absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 text-xs pointer-events-none"></i>
+            <select id="jv-province" class="jv-select w-full pr-9" aria-label="فیلتر استان"><option value="all">همهٔ استان‌ها</option></select>
+          </div>
+          <div class="relative">
+            <i class="fa-solid fa-venus-mars absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 text-xs pointer-events-none"></i>
+            <select id="jv-gender" class="jv-select w-full pr-9" aria-label="فیلتر جنسیت">
+              <option value="all">همهٔ جنسیت‌ها</option>
+              <option value="مرد">مرد</option>
+              <option value="زن">زن</option>
+            </select>
+          </div>
+          <div class="relative">
+            <i class="fa-solid fa-cake-candles absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 text-xs pointer-events-none"></i>
+            <select id="jv-age" class="jv-select w-full pr-9" aria-label="فیلتر رده سنی">
+              <option value="all">همهٔ رده‌های سنی</option>
+              <option value="child">کودک و نوجوان (≤۱۷)</option>
+              <option value="youth">جوان (۱۸–۳۰)</option>
+              <option value="adult">میانسال (۳۱–۵۰)</option>
+              <option value="senior">سالمند (۵۱ به بالا)</option>
+            </select>
+          </div>
+        </div>
+
         <div class="flex flex-wrap items-center gap-2 mb-3">
           <span class="text-xs text-gray-500 ml-1">سطح اعتبار:</span>
           <button data-v="all" class="verif-btn active px-3 py-1 rounded-full text-xs border border-white/15 transition">همه</button>
@@ -217,9 +268,13 @@
   </section>
 
   <!-- ===== شبکهٔ چهره‌ها ===== -->
-  <section class="max-w-6xl mx-auto px-5 mb-10">
-    <div class="text-sm text-gray-400 mb-4"><i class="fa-solid fa-dove ml-1 text-rose-400"></i> <span id="jv-count">۰</span> نام یافت شد</div>
-    <div id="jv-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3"></div>
+  <section class="max-w-6xl mx-auto px-4 sm:px-5 mb-10">
+    <div class="flex items-center justify-between gap-3 mb-4">
+      <div class="text-sm text-gray-400"><i class="fa-solid fa-dove ml-1 text-rose-400"></i> <span id="jv-count">۰</span> نام یافت شد</div>
+    </div>
+    <!-- چیپ‌های فیلتر فعال -->
+    <div id="jv-active-filters" class="flex flex-wrap gap-2 mb-4" style="display:none"></div>
+    <div id="jv-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4"></div>
     <div id="jv-empty" class="text-center text-gray-500 py-16" style="display:none">
       <i class="fa-solid fa-magnifying-glass text-3xl mb-3 block"></i>
       نتیجه‌ای یافت نشد.
@@ -240,6 +295,16 @@
       <span>همهٔ نام‌ها نمایش داده شد — یادشان جاودان</span>
     </div>
   </section>
+
+  <!-- ===== دکمه‌های ناوبری شناور (پرش به فوتر / بازگشت به بالا) ===== -->
+  <button id="jv-footer-jump" type="button" style="display:none"
+    aria-label="پرش به پایان صفحه و فوتر" title="پرش به پایان صفحه (بدون اسکرول همهٔ نام‌ها)">
+    <i class="fa-solid fa-angles-down"></i>
+    <span class="jv-fj-text">پرش به پایان صفحه</span>
+  </button>
+  <button id="jv-back-top" type="button" aria-label="بازگشت به بالای صفحه" title="بازگشت به بالا">
+    <i class="fa-solid fa-angle-up"></i>
+  </button>
 
   <hr class="divider-glow max-w-3xl mx-auto mb-10">
 
@@ -310,6 +375,12 @@
     <source src="assets/audio/no-more-lullabies.mp3" type="audio/mpeg">
   </audio>
 
+  <!-- نوار راهنمای صدا: اگر مرورگر پخش صدادار خودکار را مسدود کرد ظاهر می‌شود -->
+  <button id="audio-hint" type="button" aria-label="برای شنیدن موسیقی کلیک کنید">
+    <span class="audio-hint-pulse"><i class="fa-solid fa-volume-high"></i></span>
+    <span>برای پخش موسیقی یادبود کلیک کنید</span>
+  </button>
+
   <div id="audio-dock" class="paused" role="region" aria-label="پخش‌کنندهٔ موسیقی یادبود">
     <button id="ad-toggle" class="ad-btn" aria-label="پخش موسیقی"><i class="fa-solid fa-play"></i></button>
     <div class="ad-eq" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
@@ -361,14 +432,74 @@
     </div>
   </div>
 
+  <!-- ===== مودال حمایت (Donate) ===== -->
+  <div id="donate-modal" class="modal-backdrop fixed inset-0 z-50 hidden items-center justify-center p-4">
+    <div class="modal-box donate-box rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 relative">
+      <button onclick="closeDonate()" class="absolute top-4 left-4 w-9 h-9 rounded-full bg-white/10 hover:bg-rose-500/30 transition flex items-center justify-center z-10">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="text-center mb-6">
+        <div class="donate-icon mx-auto mb-3"><i class="fa-solid fa-hand-holding-heart"></i></div>
+        <h2 class="text-xl font-extrabold">حمایت از این پروژه</h2>
+        <p class="text-sm text-gray-400 mt-2 leading-relaxed">
+          این آرشیو رایگان، باز و مستقل است و هیچ درآمدی ندارد.
+          اگر دوست داشتید از توسعه‌دهنده و ادامهٔ این راه حمایت کنید، می‌توانید با ارزهای دیجیتال زیر کمک کنید. 🤍
+        </p>
+      </div>
+
+      <div class="space-y-3">
+        <!-- EVM -->
+        <div class="wallet-card">
+          <div class="wallet-head">
+            <span class="wallet-net"><i class="fa-brands fa-ethereum"></i> EVM</span>
+            <span class="wallet-tag">Ethereum · BSC · Polygon · Arbitrum</span>
+          </div>
+          <div class="wallet-row">
+            <code class="wallet-addr" dir="ltr">0x2F6ec47e416B42C623cF81a64266EE4910a698Cf</code>
+            <button class="wallet-copy" onclick="copyWallet('0x2F6ec47e416B42C623cF81a64266EE4910a698Cf', this)"><i class="fa-regular fa-copy"></i> کپی</button>
+          </div>
+        </div>
+        <!-- TRON -->
+        <div class="wallet-card">
+          <div class="wallet-head">
+            <span class="wallet-net" style="color:#ff5b5b"><i class="fa-solid fa-bolt"></i> TRON (TRC-20)</span>
+            <span class="wallet-tag">USDT · TRX</span>
+          </div>
+          <div class="wallet-row">
+            <code class="wallet-addr" dir="ltr">TYBumju6Mjd8JCn4RTq95Kk2HPsdcinuz5</code>
+            <button class="wallet-copy" onclick="copyWallet('TYBumju6Mjd8JCn4RTq95Kk2HPsdcinuz5', this)"><i class="fa-regular fa-copy"></i> کپی</button>
+          </div>
+        </div>
+        <!-- TON -->
+        <div class="wallet-card">
+          <div class="wallet-head">
+            <span class="wallet-net" style="color:#4fb3ff"><i class="fa-solid fa-gem"></i> TON</span>
+            <span class="wallet-tag">The Open Network</span>
+          </div>
+          <div class="wallet-row">
+            <code class="wallet-addr" dir="ltr">UQBbZrE5aDsdGVi6enpf_vPuG022W4KjkJNzTDkjVEn4gmu6</code>
+            <button class="wallet-copy" onclick="copyWallet('UQBbZrE5aDsdGVi6enpf_vPuG022W4KjkJNzTDkjVEn4gmu6', this)"><i class="fa-regular fa-copy"></i> کپی</button>
+          </div>
+        </div>
+      </div>
+
+      <a href="https://github.com/0xRadikal/Javid-Naman" target="_blank" rel="noopener noreferrer"
+        class="flex items-center justify-center gap-2 w-full mt-5 py-2.5 rounded-xl bg-white/[0.06] hover:bg-white/[0.1] border border-white/10 text-sm font-semibold transition">
+        <i class="fa-brands fa-github"></i> ستاره دادن به پروژه در گیت‌هاب نیز یک حمایت است
+      </a>
+      <p class="text-center text-[12px] text-gray-500 mt-4 leading-relaxed">
+        <i class="fa-solid fa-shield-heart text-rose-400 ml-1"></i>
+        پیش از ارسال، شبکه و آدرس را بادقت بررسی کنید. سپاسگزاریم که این یاد را زنده نگه می‌دارید.
+      </p>
+    </div>
+  </div>
+
   <script src="assets/js/javidnam.js"></script>
   <script>
-  /* ── نوار فیلتر هوشمند: خودپنهان‌شونده هنگام اسکرول رو به پایین،
-        بازگشت هنگام اسکرول رو به بالا + امکان جمع‌کردن دستی ── */
+  /* ── جمع/باز کردن دستی بدنهٔ فیلترها (نوار دیگر چسبان نیست تا محتوا را نپوشاند) ── */
   (function(){
     const bar = document.getElementById('jv-filterbar');
     if(!bar) return;
-    // ۱) جمع/باز کردن دستی بدنهٔ فیلترها
     const collapseBtn = document.getElementById('jv-filter-collapse');
     const body = document.getElementById('jv-filter-body');
     const chev = document.getElementById('jv-filter-chev');
@@ -379,24 +510,6 @@
         if(chev) chev.style.transform = collapsed ? 'rotate(180deg)' : '';
       });
     }
-    // ۲) خودپنهان‌شونده هنگام اسکرول رو به پایین، نمایش هنگام اسکرول رو به بالا
-    let lastY = window.scrollY;
-    let ticking = false;
-    function onScroll(){
-      const y = window.scrollY;
-      const goingDown = y > lastY;
-      // فقط وقتی از بالای صفحه فاصلهٔ کافی گرفتیم پنهان شود
-      if(goingDown && y > 320){
-        bar.classList.add('bar-hidden');
-      } else {
-        bar.classList.remove('bar-hidden');
-      }
-      lastY = y;
-      ticking = false;
-    }
-    window.addEventListener('scroll', ()=>{
-      if(!ticking){ window.requestAnimationFrame(onScroll); ticking = true; }
-    }, { passive:true });
   })();
   </script>
 </body>
