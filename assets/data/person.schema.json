@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/javidnam/person.schema.json",
+  "title": "Javidnam Person Record",
+  "description": "یک رکورد جاویدنامِ راه آزادی ایران",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "event",
+    "verification",
+    "sources"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^jvn_[0-9a-f]{10}$",
+      "description": "شناسهٔ یکتا"
+    },
+    "slug": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "شناسهٔ خوانا برای URL"
+    },
+    "name": {
+      "type": "string",
+      "description": "نام کامل (فارسی)"
+    },
+    "name_en": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "نام لاتین"
+    },
+    "event": {
+      "type": "string",
+      "enum": [
+        "kuye_daneshgah_78",
+        "green_88",
+        "dey_96",
+        "darvish_96",
+        "mordad_97",
+        "kazerun_97",
+        "aban_98",
+        "khuzestan_1400",
+        "khizesh_1401",
+        "khizesh_1404",
+        "executions",
+        "deaths_in_custody"
+      ],
+      "description": "کلید رویداد"
+    },
+    "gender": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "enum": [
+        "مرد",
+        "زن",
+        null
+      ]
+    },
+    "age": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "maximum": 120
+    },
+    "birth_year": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "سال تولد (جلالی)"
+    },
+    "date_jalali": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "تاریخ جاویدنام‌شدن (جلالی، YYYY/MM/DD)"
+    },
+    "date_gregorian": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "تاریخ میلادی (ISO 8601)"
+    },
+    "city": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "province": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "cause": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "علت (محترمانه، فارسی)"
+    },
+    "occupation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "story": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "روایت فارسی"
+    },
+    "story_en": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "روایت انگلیسی"
+    },
+    "photo_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "memorial_links": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "notable": {
+      "type": "boolean",
+      "description": "چهرهٔ سرشناس؟"
+    },
+    "verification": {
+      "type": "string",
+      "enum": [
+        "documented",
+        "reported"
+      ],
+      "description": "سطح اعتبار: مستند یا گزارش‌شده"
+    },
+    "flagged_review": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "نشانهٔ نیاز به بازبینی دستی (مثلاً برچسب شغلیِ مرتبط با رژیم که نامشخص است)"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,69 @@
+{
+  "total": 6232,
+  "notable": 161,
+  "by_event": {
+    "kuye_daneshgah_78": 5,
+    "green_88": 37,
+    "dey_96": 37,
+    "darvish_96": 2,
+    "mordad_97": 1,
+    "kazerun_97": 2,
+    "aban_98": 558,
+    "khuzestan_1400": 14,
+    "khizesh_1401": 1137,
+    "khizesh_1404": 4391,
+    "executions": 29,
+    "deaths_in_custody": 19
+  },
+  "by_verification": {
+    "documented": 4741,
+    "reported": 1491
+  },
+  "field_coverage": {
+    "name_en": 4839,
+    "gender": 4634,
+    "age": 4267,
+    "birth_year": 3745,
+    "date_jalali": 5266,
+    "date_gregorian": 5135,
+    "city": 5919,
+    "province": 5365,
+    "cause": 3571,
+    "occupation": 1285,
+    "story": 4994,
+    "story_en": 4346,
+    "photo_url": 4188,
+    "memorial_links": 3512
+  },
+  "merge_summary": {
+    "base_count": 6181,
+    "added": 51,
+    "duplicates_skipped": 0,
+    "enriched": 5,
+    "new_events": 2
+  },
+  "generated": "2026-06-15T10:01:36.387Z",
+  "by_gender": {
+    "زن": 544,
+    "مرد": 4090
+  },
+  "by_province_top15": {
+    "تهران": 1431,
+    "اصفهان": 655,
+    "البرز": 505,
+    "خراسان رضوی": 463,
+    "گیلان": 339,
+    "خوزستان": 285,
+    "کرمانشاه": 272,
+    "فارس": 235,
+    "مازندران": 155,
+    "لرستان": 128,
+    "مرکزی": 128,
+    "قزوین": 85,
+    "چهارمحال و بختیاری": 81,
+    "گلستان": 72,
+    "کرمان": 65
+  },
+  "under_18": 486,
+  "avg_age": 30
+}

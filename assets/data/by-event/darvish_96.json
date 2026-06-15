@@ -1,0 +1,68 @@
+{
+  "event": "darvish_96",
+  "info": {
+    "title": "دراویش گنابادی",
+    "title_en": "Gonabadi Dervishes",
+    "year_fa": "۱۳۹۶",
+    "year": 1396,
+    "order": 4,
+    "category": "uprising"
+  },
+  "count": 2,
+  "people": [
+    {
+      "id": "jvn_e8e560900c",
+      "slug": "وحید-بنانی-e8e560",
+      "name": "وحید بنانی",
+      "name_en": null,
+      "event": "darvish_96",
+      "gender": null,
+      "age": null,
+      "birth_year": null,
+      "date_jalali": null,
+      "date_gregorian": null,
+      "city": null,
+      "province": null,
+      "cause": null,
+      "occupation": null,
+      "story": "وحید بنانی (زادهٔ ۲۰ شهریور ۱۳۶۶ – درگذشتهٔ ۱۵ شهریور ۱۳۹۰ در کوار) دانش آموختهٔ مهندسی عمران و یکی از جان باختگان سرکوب دراویش گنابادی در حوادث شهریور ۱۳۹۰ در شهرستان کوار بود. او در ورودی اصلی شهرستان کوار مورد اصابت گلوله از ناحیه شاهرگ ران پا قرار گرفت. خانوادهٔ این درویش گنابادی را تحت فشار قرار داده بودند که اعلام کنند بنانی بسیجی بوده است.",
+      "story_en": null,
+      "photo_url": null,
+      "memorial_links": [],
+      "notable": true,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "wiki_navbox",
+        "wiki_person"
+      ]
+    },
+    {
+      "id": "jvn_d663af1f32",
+      "slug": "محمد-راجی-d663af",
+      "name": "محمد راجی",
+      "name_en": null,
+      "event": "darvish_96",
+      "gender": null,
+      "age": 56,
+      "birth_year": 1340,
+      "date_jalali": "اسفند ۱۳۹۶",
+      "date_gregorian": null,
+      "city": null,
+      "province": null,
+      "cause": null,
+      "occupation": null,
+      "story": "محمد راجی (۱ دی ۱۳۴۰ – اسفند ۱۳۹۶) یکی از دراویش گنابادی بود که در اعتراضات گلستان هفتم طی حوادث و درگیری های اول اسفند ماه ۱۳۹۶ در خیابان پاسداران تهران بازداشت و در بازداشتگاه بر اثر شکنجه جان باخت. راجی از فرماندهان سابق سپاه پاسداران بود که در زمان جنگ ایران و عراق فرماندهی چند گردان سپاه را به عهده داشت در جنگ مجروح شیمیایی شده و دچار معلولیت و ناراحتی ریه بود. او در سال ۱۳۸۳ از سپاه جدا شد و در زادگاهش روستای مزرعه آباد الیگودرز به کار کشاورزی مشغول شده بود.",
+      "story_en": null,
+      "photo_url": null,
+      "memorial_links": [],
+      "notable": true,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "wiki_navbox",
+        "wiki_person"
+      ]
+    }
+  ]
+}

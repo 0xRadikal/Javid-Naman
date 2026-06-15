@@ -1,0 +1,41 @@
+{
+  "event": "mordad_97",
+  "info": {
+    "title": "اعتراضات مرداد ۹۷",
+    "title_en": "August 2018 Protests",
+    "year_fa": "۱۳۹۷",
+    "year": 1397,
+    "order": 5,
+    "category": "uprising"
+  },
+  "count": 1,
+  "people": [
+    {
+      "id": "jvn_55b74b8ad7",
+      "slug": "رضا-اوتادی-55b74b",
+      "name": "رضا اوتادی",
+      "name_en": null,
+      "event": "mordad_97",
+      "gender": null,
+      "age": 26,
+      "birth_year": null,
+      "date_jalali": "1397/05/12",
+      "date_gregorian": null,
+      "city": "کرج (گوهردشت)",
+      "province": "البرز",
+      "cause": "اصابت گلوله به پشت سر توسط نیروهای امنیتی",
+      "occupation": null,
+      "story": "رضا اوتادی، جوان ۲۶ سالهٔ اهل گوهردشت کرج، در شب ۱۲ مرداد ۱۳۹۷ در جریان تجمع اعتراضی مردم گوهردشت به ضرب گلوله نیروهای امنیتی (اصابت به پشت سر) جان باخت. خبر کشته‌شدنش بر سر در مغازهٔ پارچه‌فروشی پدرش در میدان شهدای کرج درج شد.",
+      "story_en": null,
+      "photo_url": null,
+      "memorial_links": [],
+      "notable": true,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "wiki_navbox",
+        "wiki_person"
+      ]
+    }
+  ]
+}

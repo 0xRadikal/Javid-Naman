@@ -1,0 +1,68 @@
+{
+  "event": "kazerun_97",
+  "info": {
+    "title": "اعتراضات کازرون ۹۷",
+    "title_en": "Kazerun Protests 2018",
+    "year_fa": "۱۳۹۷",
+    "year": 1397,
+    "order": 6,
+    "category": "uprising"
+  },
+  "count": 2,
+  "people": [
+    {
+      "id": "jvn_5c0bb3f3e1",
+      "slug": "علی-محمدیان-آزاد-c4c86b",
+      "name": "علی محمدیان‌آزاد",
+      "name_en": null,
+      "event": "kazerun_97",
+      "gender": null,
+      "age": null,
+      "birth_year": null,
+      "date_jalali": "1397/02/26",
+      "date_gregorian": null,
+      "city": "کازرون",
+      "province": "فارس",
+      "cause": "اصابت گلولهٔ مستقیم نیروی انتظامی",
+      "occupation": "کارگر جوشکار",
+      "story": "علی محمدیان‌آزاد، کارگر جوشکار اهل کازرون بود که در ۲۶ اردیبهشت ۱۳۹۷ هنگام تجمع مردم مقابل کلانتری ۱۳ (بنیاد) برای پیگیری وضعیت بازداشت‌شدگان، هدف شلیک مستقیم پلیس قرار گرفت و جان باخت.",
+      "story_en": null,
+      "photo_url": null,
+      "memorial_links": [],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "iranhumanrights_kazerun",
+        "radiozamaneh_kazerun"
+      ]
+    },
+    {
+      "id": "jvn_c3ee9f972a",
+      "slug": "امیدرضا-یوسفیان-39756b",
+      "name": "امیدرضا یوسفیان",
+      "name_en": null,
+      "event": "kazerun_97",
+      "gender": null,
+      "age": null,
+      "birth_year": null,
+      "date_jalali": "1397/02/26",
+      "date_gregorian": null,
+      "city": "کازرون",
+      "province": "فارس",
+      "cause": "اصابت گلولهٔ مستقیم نیروی انتظامی",
+      "occupation": "کارگر نقاش",
+      "story": "امیدرضا یوسفیان، کارگر نقاش اهل کازرون بود که در شب ۲۶ اردیبهشت ۱۳۹۷ همزمان با علی محمدیان‌آزاد و بر اثر اصابت گلولهٔ مستقیم مأموران انتظامی در جریان تجمع اعتراضی مردم کازرون جان باخت.",
+      "story_en": null,
+      "photo_url": null,
+      "memorial_links": [],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "iranhumanrights_kazerun",
+        "radiozamaneh_kazerun"
+      ]
+    }
+  ]
+}
