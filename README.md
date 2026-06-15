@@ -10,31 +10,31 @@
 
 <p align="center">
   <a href="https://0xradikal.github.io/Javid-Naman/">
-    <img src="https://img.shields.io/badge/🌐_وب‌سایت-Live-2ea44f?style=for-the-badge" alt="Live Website"/>
+    <img src="https://badgen.net/badge/🌐%20وب‌سایت/Live/2ea44f?style=flat" alt="Live Website"/>
   </a>
   &nbsp;
   <a href="https://0xradikal.github.io/Javid-Naman/javidnam.html">
-    <img src="https://img.shields.io/badge/🕯️_جاویدنام‌ها-6٬232_نام-be1234?style=for-the-badge" alt="Memorial"/>
+    <img src="https://badgen.net/badge/🕯️%20جاویدنام‌ها/6٬232%20نام/be1234?style=flat" alt="Memorial"/>
   </a>
   &nbsp;
   <a href="https://github.com/0xRadikal/Javid-Naman/blob/main/assets/data/javidnam.json">
-    <img src="https://img.shields.io/badge/📦_Open_Data-JSON_|_CSV-0078d4?style=for-the-badge" alt="Open Data"/>
+    <img src="https://badgen.net/badge/📦%20Open%20Data/JSON%20%7C%20CSV/0078d4?style=flat" alt="Open Data"/>
   </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/رویدادهای_مستند-40%2B-a855f7?style=flat-square&logo=clockify" alt="Events"/>
-  <img src="https://img.shields.io/badge/جاویدنام-۶٬۲۳۲_نام-be1234?style=flat-square&logo=heartpulse" alt="Javidnam"/>
-  <img src="https://img.shields.io/badge/بازه_زمانی-۱۳۵۷–۱۴۰۵-f59e0b?style=flat-square&logo=calendar" alt="Timeline"/>
-  <img src="https://img.shields.io/badge/دسته‌های_رویداد-12-06b6d4?style=flat-square" alt="Categories"/>
+  <img src="https://badgen.net/badge/رویدادهای%20مستند/40%2B/a855f7?icon=clockify&style=flat" alt="Events"/>
+  <img src="https://badgen.net/badge/جاویدنام/۶٬۲۳۲%20نام/be1234?icon=heartpulse&style=flat" alt="Javidnam"/>
+  <img src="https://badgen.net/badge/بازه%20زمانی/۱۳۵۷–۱۴۰۵/f59e0b?icon=calendar&style=flat" alt="Timeline"/>
+  <img src="https://badgen.net/badge/دسته‌های%20رویداد/12/06b6d4?style=flat" alt="Categories"/>
   <br/>
-  <img src="https://img.shields.io/badge/Data_License-CC_BY_4.0-blue?style=flat-square&logo=creativecommons" alt="CC BY 4.0"/>
-  <img src="https://img.shields.io/badge/Code_License-MIT-green?style=flat-square&logo=opensourceinitiative" alt="MIT"/>
-  <img src="https://img.shields.io/badge/Stack-HTML%20%7C%20JS%20%7C%20Tailwind-38bdf8?style=flat-square&logo=html5" alt="Stack"/>
-  <img src="https://img.shields.io/badge/Hosting-GitHub_Pages-222?style=flat-square&logo=github" alt="GitHub Pages"/>
-  <img src="https://img.shields.io/badge/CI%2FCD-GitHub_Actions-2088FF?style=flat-square&logo=githubactions" alt="Actions"/>
-  <img src="https://img.shields.io/badge/RTL-فارسی-dc2626?style=flat-square" alt="Persian RTL"/>
-  <img src="https://img.shields.io/badge/PWA-Ready-5a0fc8?style=flat-square&logo=pwa" alt="PWA"/>
+  <img src="https://badgen.net/badge/Data%20License/CC%20BY%204.0/blue?icon=creativecommons&style=flat" alt="CC BY 4.0"/>
+  <img src="https://badgen.net/badge/Code%20License/MIT/green?icon=opensourceinitiative&style=flat" alt="MIT"/>
+  <img src="https://badgen.net/badge/Stack/HTML%20%7C%20JS%20%7C%20Tailwind/38bdf8?icon=html5&style=flat" alt="Stack"/>
+  <img src="https://badgen.net/badge/Hosting/GitHub%20Pages/222?icon=github&style=flat" alt="GitHub Pages"/>
+  <img src="https://badgen.net/badge/CI-CD/GitHub%20Actions/2088FF?icon=githubactions&style=flat" alt="Actions"/>
+  <img src="https://badgen.net/badge/RTL/فارسی/dc2626?style=flat" alt="Persian RTL"/>
+  <img src="https://badgen.net/badge/PWA/Ready/5a0fc8?icon=pwa&style=flat" alt="PWA"/>
 </p>
 
 <br/>
