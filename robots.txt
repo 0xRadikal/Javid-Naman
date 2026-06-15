@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://0xradikal.github.io/iran-protests-memorial/sitemap.xml
+Sitemap: https://0xradikal.github.io/Javid-Naman/sitemap.xml
