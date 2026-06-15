@@ -1,88 +1,141 @@
+<!-- ════════════════════════════════════════════════════════════════════════ -->
+<!--                          JAVIDNAM OPEN ARCHIVE                            -->
+<!--          گاهشمار اعتراضات مردمی ایران · یادبود جاویدنام‌ها              -->
+<!-- ════════════════════════════════════════════════════════════════════════ -->
+
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/0xRadikal/Javid-Naman/main/assets/img/og-image-1.png" alt="Iran Protests Memorial" width="100%"/>
+<a href="https://0xradikal.github.io/Javid-Naman/">
+  <img src="https://raw.githubusercontent.com/0xRadikal/Javid-Naman/main/assets/img/og-image-1.png" alt="گاهشمار اعتراضات مردمی ایران و یادبود جاویدنام‌ها" width="100%"/>
+</a>
 
 <br/><br/>
 
-# 🕯️ گاهشمار اعتراضات مردمی ایران — یادبود جاویدنام‌ها
+<!-- ─────────────────────────  عنوان  ───────────────────────── -->
 
-### Iran Protests Timeline & Javidnam Memorial Archive
+# 🕯️ جاویدنام
+
+### گاهشمار اعتراضات مردمی ایران &nbsp;·&nbsp; یادبود ۶٬۲۳۲ جان‌باختهٔ راه آزادی
+
+**Iran Protests Timeline &nbsp;·&nbsp; A Memorial Archive of 6,232 Lives Given for Freedom**
+
+<br/>
+
+<!-- ─────────────────────────  کارت‌های اصلی  ───────────────────────── -->
 
 <p align="center">
   <a href="https://0xradikal.github.io/Javid-Naman/">
-    <img src="https://badgen.net/badge/🌐%20وب‌سایت/Live/2ea44f?style=flat" alt="Live Website"/>
+    <img src="https://img.shields.io/badge/🌐_وب‌سایت_زنده-مشاهده-2ea44f?style=for-the-badge&labelColor=0a0e1a" alt="Live Website"/>
   </a>
   &nbsp;
   <a href="https://0xradikal.github.io/Javid-Naman/javidnam.html">
-    <img src="https://badgen.net/badge/🕯️%20جاویدنام‌ها/6٬232%20نام/be1234?style=flat" alt="Memorial"/>
+    <img src="https://img.shields.io/badge/🕯️_یادبود_جاویدنام‌ها-۶٬۲۳۲_نام-be1234?style=for-the-badge&labelColor=0a0e1a" alt="Memorial"/>
   </a>
   &nbsp;
-  <a href="https://github.com/0xRadikal/Javid-Naman/blob/main/assets/data/javidnam.json">
-    <img src="https://badgen.net/badge/📦%20Open%20Data/JSON%20%7C%20CSV/0078d4?style=flat" alt="Open Data"/>
+  <a href="#-دادهٔ-باز--open-data">
+    <img src="https://img.shields.io/badge/📦_دادهٔ_باز-JSON_·_CSV_·_Schema-0078d4?style=for-the-badge&labelColor=0a0e1a" alt="Open Data"/>
   </a>
 </p>
 
+<!-- ─────────────────────────  نشان‌های متریک  ───────────────────────── -->
+
 <p align="center">
-  <img src="https://badgen.net/badge/رویدادهای%20مستند/40%2B/a855f7?icon=clockify&style=flat" alt="Events"/>
-  <img src="https://badgen.net/badge/جاویدنام/۶٬۲۳۲%20نام/be1234?icon=heartpulse&style=flat" alt="Javidnam"/>
-  <img src="https://badgen.net/badge/بازه%20زمانی/۱۳۵۷–۱۴۰۵/f59e0b?icon=calendar&style=flat" alt="Timeline"/>
-  <img src="https://badgen.net/badge/دسته‌های%20رویداد/12/06b6d4?style=flat" alt="Categories"/>
+  <img src="https://img.shields.io/badge/رویدادهای_مستند-۴۰%2B-a855f7?style=flat-square&labelColor=151528" alt="Events"/>
+  <img src="https://img.shields.io/badge/جاویدنام-۶٬۲۳۲_نام-be1234?style=flat-square&labelColor=151528" alt="Javidnam"/>
+  <img src="https://img.shields.io/badge/بازهٔ_زمانی-۱۳۵۷–۱۴۰۵-f59e0b?style=flat-square&labelColor=151528" alt="Timeline"/>
+  <img src="https://img.shields.io/badge/مستندسازی-۴٬۷۴۱_رکورد-10b981?style=flat-square&labelColor=151528" alt="Documented"/>
   <br/>
-  <img src="https://badgen.net/badge/Data%20License/CC%20BY%204.0/blue?icon=creativecommons&style=flat" alt="CC BY 4.0"/>
-  <img src="https://badgen.net/badge/Code%20License/MIT/green?icon=opensourceinitiative&style=flat" alt="MIT"/>
-  <img src="https://badgen.net/badge/Stack/HTML%20%7C%20JS%20%7C%20Tailwind/38bdf8?icon=html5&style=flat" alt="Stack"/>
-  <img src="https://badgen.net/badge/Hosting/GitHub%20Pages/222?icon=github&style=flat" alt="GitHub Pages"/>
-  <img src="https://badgen.net/badge/CI-CD/GitHub%20Actions/2088FF?icon=githubactions&style=flat" alt="Actions"/>
-  <img src="https://badgen.net/badge/RTL/فارسی/dc2626?style=flat" alt="Persian RTL"/>
-  <img src="https://badgen.net/badge/PWA/Ready/5a0fc8?icon=pwa&style=flat" alt="PWA"/>
+  <img src="https://img.shields.io/badge/دادهٔ_باز-CC_BY_4.0-3b82f6?style=flat-square&labelColor=151528&logo=creativecommons&logoColor=white" alt="CC BY 4.0"/>
+  <img src="https://img.shields.io/badge/کد-MIT-22c55e?style=flat-square&labelColor=151528&logo=opensourceinitiative&logoColor=white" alt="MIT"/>
+  <img src="https://img.shields.io/badge/Stack-HTML_·_JS_·_Tailwind-38bdf8?style=flat-square&labelColor=151528&logo=html5&logoColor=white" alt="Stack"/>
+  <img src="https://img.shields.io/badge/میزبانی-GitHub_Pages-181717?style=flat-square&labelColor=151528&logo=github&logoColor=white" alt="GitHub Pages"/>
+  <img src="https://img.shields.io/badge/زبان-فارسی_RTL-dc2626?style=flat-square&labelColor=151528" alt="Persian RTL"/>
+  <img src="https://img.shields.io/badge/PWA-Ready-5a0fc8?style=flat-square&labelColor=151528&logo=pwa&logoColor=white" alt="PWA"/>
 </p>
 
 <br/>
 
-> *«آنان که برای آزادی جان دادند، جاویدان‌اند.»*
-> 
-> *"Those who gave their lives for freedom are eternal."*
+<!-- ─────────────────────────  نقل‌قول قلبی  ───────────────────────── -->
+
+> ### «آنان که برای آزادی جان دادند، جاویدان‌اند.»
+>
+> *“Those who gave their lives for freedom are eternal.”*
 
 <br/>
 
-**[🌐 مشاهده وب‌سایت](https://0xradikal.github.io/Javid-Naman/)** · **[🕯️ یادبود جاویدنام‌ها](https://0xradikal.github.io/Javid-Naman/javidnam.html)** · **[📊 دادهٔ باز](#-دادهٔ-باز--open-data)** · **[🤝 مشارکت](#-مشارکت--contributing)**
+**[🌐 مشاهدهٔ وب‌سایت](https://0xradikal.github.io/Javid-Naman/)** &nbsp;·&nbsp;
+**[🕯️ یادبود جاویدنام‌ها](https://0xradikal.github.io/Javid-Naman/javidnam.html)** &nbsp;·&nbsp;
+**[📊 دادهٔ باز](#-دادهٔ-باز--open-data)** &nbsp;·&nbsp;
+**[🤝 مشارکت](#-مشارکت--contributing)** &nbsp;·&nbsp;
+**[🤍 همراهی با این راه](#-همراهی-با-این-راه--keep-the-flame-alive)**
 
 </div>
 
 ---
 
-## فهرست محتوا / Table of Contents
+<!-- ════════════════════════════════════════════════════════════════════════ -->
+
+<div align="center">
+
+### 🔥 این آرشیو چیست؟ &nbsp;/&nbsp; What is this?
+
+</div>
 
 <table>
 <tr>
-<td>
+<td width="50%" valign="top">
+
+#### ⏳ گاهشمار اعتراضات
+بیش از **۴۰ اعتراض، خیزش، اعتصاب و حرکت نمادین** مردمی علیه جمهوری اسلامی — از انقلاب ۱۳۵۷ تا خیزش‌های ۱۴۰۵.
+هر رویداد با **جرقه، شعارها، آمار تخمینی جان‌باختگان و بازداشت‌شدگان، و پیامدها** مستند شده است.
+
+</td>
+<td width="50%" valign="top">
+
+#### 🕯️ یادبود جاویدنام‌ها
+بانک اطلاعاتی **۶٬۲۳۲ جان‌باخته، اعدام‌شده و ناپدیدشدهٔ** راه آزادی ایران.
+نام تک‌تک آنان — تا حد امکان با **شرح، شهر، تاریخ، سن، شغل و منبع** — قابل **جستجو، فیلتر و دانلود**.
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+> این پروژه نه یک خبر است و نه یک شعار؛ یک **حافظه** است.
+> جایی که نام‌ها فراموش نمی‌شوند و حقیقت بایگانی نمی‌شود — زنده می‌ماند.
+
+</div>
+
+---
+
+## 📑 فهرست محتوا / Table of Contents
+
+<table>
+<tr>
+<td valign="top">
 
 **🇮🇷 فارسی**
 - [دربارهٔ پروژه](#-دربارهٔ-پروژه)
-- [اصل بنیادین](#-اصل-بنیادین)
-- [امکانات](#-امکانات)
-- [ساختار پروژه](#-ساختار-پروژه)
+- [اصل بنیادین](#️-اصل-بنیادین--core-principle)
+- [امکانات](#-امکانات--features)
+- [نگاهی به داده‌ها](#-نگاهی-به-داده‌ها--data-at-a-glance)
+- [ساختار پروژه](#-ساختار-پروژه--project-structure)
 - [فناوری](#️-فناوری--tech-stack)
 - [دادهٔ باز](#-دادهٔ-باز--open-data)
 - [اجرای محلی](#️-اجرای-محلی--run-locally)
-- [منابع](#-منابع--sources)
-- [مشارکت](#-مشارکت--contributing)
-- [پروانه](#-پروانه--license)
 
 </td>
-<td>
+<td valign="top">
 
-**🇬🇧 English**
+**🇬🇧 English & More**
 - [About](#-about)
-- [Core Principle](#-core-principle)
-- [Features](#-features)
-- [Project Structure](#-project-structure)
-- [Tech Stack](#️-فناوری--tech-stack)
-- [Open Data](#-دادهٔ-باز--open-data)
-- [Run Locally](#️-اجرای-محلی--run-locally)
 - [Sources](#-منابع--sources)
 - [Contributing](#-مشارکت--contributing)
+- [Roadmap](#️-نقشهٔ-راه--roadmap)
+- [Keep the Flame Alive](#-همراهی-با-این-راه--keep-the-flame-alive)
 - [License](#-پروانه--license)
+- [Ethical Notice](#️-اعلامیهٔ-اخلاقی--ethical-notice)
 
 </td>
 </tr>
@@ -92,17 +145,11 @@
 
 ## 🇮🇷 دربارهٔ پروژه
 
-این یک **آرشیو باز، مستند و تعاملی** است که با هدف حفظ حافظهٔ تاریخی و مستندسازی حقوق بشری در دو بخش گردآوری شده:
+این یک **آرشیو باز، مستند و تعاملی** است که با هدف **حفظ حافظهٔ تاریخی** و **مستندسازی حقوق بشری** در دو بخش گردآوری شده:
 
-**۱. گاهشمار اعتراضات مردمی ایران**
+**۱. گاهشمار اعتراضات مردمی ایران** — مروری بر بیش از **۴۰ اعتراض، خیزش، اعتصاب و حرکت نمادین** مردمی، از انقلاب ۱۳۵۷ تا خیزش‌های ۱۴۰۵؛ شامل اعتراضات دانشجویی، جنبش سبز، دی ۹۶، آبان ۹۸، خیزش ۱۴۰۱ (زن، زندگی، آزادی) و بسیاری دیگر — هر رویداد با جرقه، شعارها، آمار تخمینی جان‌باختگان و بازداشت‌شدگان، و پیامدها.
 
-مرور بیش از **۴۰ اعتراض، خیزش، اعتصاب و حرکت نمادین** مردمی علیه جمهوری اسلامی، از انقلاب ۱۳۵۷ تا خیزش‌های ۱۴۰۵؛ شامل اعتراضات دانشجویی، جنبش سبز، دی ۹۶، آبان ۹۸، خیزش ۱۴۰۱ (زن، زندگی، آزادی) و بسیاری دیگر — هر رویداد با جرقه، شعارها، آمار تخمینی جان‌باختگان و بازداشت‌شدگان، و پیامدها.
-
-**۲. یادبود جاویدنام‌ها**
-
-بانک اطلاعاتی **۶٬۲۳۲ جان‌باخته، اعدام‌شده و ناپدیدشدهٔ** راه آزادی ایران؛ نام تک‌تک آنان، تا حد امکان با شرح، شهر، تاریخ، سن، شغل و منبع — قابل جستجو، فیلتر و دانلود.
-
----
+**۲. یادبود جاویدنام‌ها** — بانک اطلاعاتی **۶٬۲۳۲ جان‌باخته، اعدام‌شده و ناپدیدشدهٔ** راه آزادی ایران؛ نام تک‌تک آنان، تا حد امکان با شرح، شهر، تاریخ، سن، شغل و منبع — قابل جستجو، فیلتر و دانلود.
 
 ## 🇬🇧 About
 
@@ -110,7 +157,7 @@ An **open, documented, interactive archive** in two parts:
 
 **1. Iran Protests Timeline** — 40+ popular protests, uprisings, strikes and symbolic acts against the Islamic Republic, from the 1979 revolution to the 2026 uprisings, each documented with its trigger, slogans, estimated casualties, and aftermath.
 
-**2. Javidnam Memorial** — an open database of **6,232 people** killed, executed, or disappeared on the path to Iran's freedom; each name documented, where possible, with biography, city, date, age, occupation, and verified source — searchable, filterable, and downloadable.
+**2. Javidnam Memorial** — an open database of **6,232 people** killed, executed, or disappeared on the path to Iran's freedom; each name documented, where possible, with biography, city, date, age, occupation, and a verified source — searchable, filterable, and downloadable.
 
 > **Keywords / کلیدواژه‌ها:** Iran protests · 2025–2026 Iranian protests · Woman, Life, Freedom (Jin, Jiyan, Azadi) · Mahsa Amini · Iran human rights · Iran internet shutdown · martyrs memorial · open data — خیزش ۱۴۰۴ · اعتراضات ۱۸ و ۱۹ دی · کشته‌شدگان خیزش ۱۴۰۴ · جاویدنام / Javidnam · جان‌باختگان راه آزادی · زن، زندگی، آزادی.
 
@@ -120,19 +167,23 @@ An **open, documented, interactive archive** in two parts:
 
 <div align="center">
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                                                                             │
-│   این یادبود تنها شامل جان‌باختگان از میان مردم و در کنار مردم است        │
-│   و هیچ‌گاه نیروهای حکومتی، بسیج یا سازمان‌های سرکوبگر را در بر           │
-│   نمی‌گیرد.                                                                │
-│                                                                             │
-│   This memorial includes ONLY those killed among and alongside the          │
-│   people. It NEVER includes regime forces, Basij, IRGC, or                 │
-│   repressive organizations.                                                 │
-│                                                                             │
-└─────────────────────────────────────────────────────────────────────────────┘
-```
+<table>
+<tr>
+<td align="center">
+
+### ⚖️ تنها در کنار مردم، تنها از میان مردم
+
+این یادبود **تنها** شامل جان‌باختگانِ **از میان مردم و در کنار مردم** است
+و **هیچ‌گاه** نیروهای حکومتی، بسیج، سپاه یا سازمان‌های سرکوبگر را در بر نمی‌گیرد.
+
+---
+
+This memorial includes **ONLY** those killed **among and alongside the people**.
+It **NEVER** includes regime forces, Basij, IRGC, or any repressive organization.
+
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -143,115 +194,95 @@ An **open, documented, interactive archive** in two parts:
 <table>
 <thead>
 <tr>
-<th>امکان</th>
-<th>Feature</th>
-<th>توضیح</th>
+<th align="right">امکان</th>
+<th align="left">Feature</th>
+<th align="right">توضیح</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>⏳ گاهشمار بصری</td>
-<td>Interactive Timeline</td>
-<td>مرور ۴۰+ رویداد با جستجو و فیلتر بر اساس دهه و دسته</td>
-</tr>
-<tr>
-<td>🕯️ یادبود جاویدنام‌ها</td>
-<td>Memorial Database</td>
-<td>بانک اطلاعاتی ۶٬۲۳۲ نام، قابل جستجو، فیلتر و صفحه‌بندی</td>
-</tr>
-<tr>
-<td>🔎 جستجوی زنده</td>
-<td>Live Search</td>
-<td>جستجو بر اساس نام، شهر، استان و شغل در لحظه</td>
-</tr>
-<tr>
-<td>🗂️ دسته‌بندی رویدادها</td>
-<td>Event Categories</td>
-<td>۱۲ دستهٔ رویداد (کوی دانشگاه ۷۸ تا خیزش ۱۴۰۴)</td>
-</tr>
-<tr>
-<td>✅ سطح اعتبار</td>
-<td>Verification Levels</td>
-<td>دو سطح: <strong>مستند</strong> (دو منبع مستقل) و <strong>گزارش‌شده</strong></td>
-</tr>
-<tr>
-<td>📥 دادهٔ باز</td>
-<td>Open Data</td>
-<td>دانلود در قالب JSON، JSON فشرده، CSV و JSON Schema</td>
-</tr>
-<tr>
-<td>📊 جدول خلاصه</td>
-<td>Summary Table</td>
-<td>جدول مقایسه‌ای خیزش‌های اصلی با آمار تخمینی</td>
-</tr>
-<tr>
-<td>🪟 مودال جزئیات</td>
-<td>Detail Modal</td>
-<td>نمایش کامل اطلاعات هر رویداد یا جاویدنام با کلیک</td>
-</tr>
-<tr>
-<td>🎨 طراحی RTL تاریک</td>
-<td>Dark RTL UI</td>
-<td>رابط واکنش‌گرا، راست‌چین فارسی، تم تاریک، فونت Vazirmatn</td>
-</tr>
-<tr>
-<td>🚀 SEO پیشرفته</td>
-<td>Advanced SEO</td>
-<td>Open Graph، Twitter Card، JSON-LD، sitemap، robots، PWA</td>
-</tr>
+<tr><td>⏳ گاهشمار بصری</td><td>Interactive Timeline</td><td>مرور ۴۰+ رویداد با جستجو و فیلتر بر اساس دهه و دسته</td></tr>
+<tr><td>🕯️ یادبود جاویدنام‌ها</td><td>Memorial Database</td><td>بانک ۶٬۲۳۲ نام، قابل جستجو، فیلتر و صفحه‌بندی</td></tr>
+<tr><td>🔎 جستجوی زنده</td><td>Live Search</td><td>جستجو بر اساس نام، شهر، استان و شغل در لحظه</td></tr>
+<tr><td>🗂️ دسته‌بندی رویدادها</td><td>Event Categories</td><td>۱۲ دستهٔ رویداد (کوی دانشگاه ۷۸ تا خیزش ۱۴۰۴)</td></tr>
+<tr><td>✅ سطح اعتبار</td><td>Verification Levels</td><td>دو سطح: <strong>مستند</strong> (دو منبع مستقل) و <strong>گزارش‌شده</strong></td></tr>
+<tr><td>📥 دادهٔ باز</td><td>Open Data</td><td>دانلود در قالب JSON، JSON فشرده، CSV و JSON Schema</td></tr>
+<tr><td>📊 جدول خلاصه</td><td>Summary Table</td><td>جدول مقایسه‌ای خیزش‌های اصلی با آمار تخمینی</td></tr>
+<tr><td>🪟 مودال جزئیات</td><td>Detail Modal</td><td>نمایش کامل اطلاعات هر رویداد یا جاویدنام با کلیک</td></tr>
+<tr><td>🎨 طراحی RTL تاریک</td><td>Dark RTL UI</td><td>رابط واکنش‌گرا، راست‌چین فارسی، تم تاریک، فونت Vazirmatn</td></tr>
+<tr><td>🚀 SEO پیشرفته</td><td>Advanced SEO</td><td>Open Graph، Twitter Card، JSON-LD، sitemap، robots، PWA</td></tr>
 </tbody>
 </table>
 
 ---
 
+## 📊 نگاهی به داده‌ها / Data at a Glance
+
+<div align="center">
+
+| 📌 شاخص | مقدار |
+|:---|:---:|
+| 🕯️ مجموع جاویدنام‌ها | **۶٬۲۳۲** |
+| ✅ رکوردهای مستند (۲ منبع مستقل) | **۴٬۷۴۱** |
+| 📝 رکوردهای گزارش‌شده | **۱٬۴۹۱** |
+| 🌟 چهره‌های شاخص | **۱۶۱** |
+| 🗂️ دسته‌های رویداد | **۱۲** |
+| 🏙️ پوشش شهر | **۵٬۹۱۹** رکورد |
+| 🌐 پوشش استان | **۵٬۳۶۵** رکورد |
+| 🧒 زیر ۱۸ سال | **۴۸۶** |
+| 📅 میانگین سن | **۳۰ سال** |
+
+</div>
+
+### توزیع بر اساس رویداد / Distribution by Event
+
+```text
+خیزش ۱۴۰۴ ............ ████████████████████████████████  ۴٬۳۹۱
+خیزش ۱۴۰۱ ............ ████████                          ۱٬۱۳۷
+آبان ۹۸ .............. ████                              ۵۵۸
+جنبش سبز ۸۸ .......... ▌                                  ۳۷
+دی ۹۶ ............... ▌                                  ۳۷
+اعدام‌ها ............ ▌                                  ۲۹
+مرگ در بازداشت ...... ▌                                  ۱۹
+خوزستان ۱۴۰۰ ........ ▌                                  ۱۴
+سایر رویدادها ....... ▌                                  ۱۰
+```
+
+> توزیع جغرافیایی: بیشترین آمار به‌ترتیب در **تهران (۱٬۴۳۱)**، **اصفهان (۶۵۵)**، **البرز (۵۰۵)**، **خراسان رضوی (۴۶۳)** و **گیلان (۳۳۹)** ثبت شده است.
+
+---
+
 ## 📂 ساختار پروژه / Project Structure
 
-```
+```text
 Javid-Naman/
 │
 ├── 📄 index.html                    # گاهشمار اعتراضات (Timeline)
 ├── 📄 javidnam.html                 # یادبود جاویدنام‌ها (Memorial)
 ├── 📄 404.html                      # صفحهٔ خطای سفارشی
 ├── 📄 manifest.webmanifest          # PWA Manifest
-├── 📄 sitemap.xml                   # نقشهٔ سایت (SEO)
-├── 📄 robots.txt                    # رباتز (SEO)
-├── 📄 .nojekyll                     # غیرفعال‌کردن Jekyll در GitHub Pages
+├── 📄 sitemap.xml  ·  robots.txt    # SEO
+├── 📄 .nojekyll                     # غیرفعال‌سازی Jekyll
 │
 ├── 📁 assets/
-│   ├── 📁 css/
-│   │   └── style.css               # استایل‌های سفارشی
-│   │
+│   ├── 📁 css/  style.css           # استایل‌های سفارشی
 │   ├── 📁 js/
-│   │   ├── data.js                 # دادهٔ گاهشمار (۴۰+ رویداد)
-│   │   ├── app.js                  # منطق اصلی گاهشمار
-│   │   └── javidnam.js             # منطق صفحهٔ جاویدنام‌ها
-│   │
+│   │   ├── data.js                  # دادهٔ گاهشمار (۴۰+ رویداد)
+│   │   ├── app.js                   # منطق گاهشمار
+│   │   └── javidnam.js              # منطق صفحهٔ جاویدنام‌ها
 │   ├── 📁 data/
-│   │   ├── javidnam.json           # 🗃️ بانک کامل (۶٬۲۳۲ رکورد)
-│   │   ├── javidnam.min.json       # نسخهٔ فشرده
-│   │   ├── javidnam.lite.json      # نسخهٔ سبک (نمایش وب)
-│   │   ├── javidnam.csv            # خروجی CSV با BOM (اکسل)
-│   │   ├── statistics.json         # آمار محاسبه‌شده
-│   │   ├── protests.json           # دادهٔ گاهشمار
-│   │   ├── person.schema.json      # طرح‌وارهٔ JSON Schema (Draft 2020-12)
-│   │   └── by-event/               # فایل جداگانه برای هر ۱۲ رویداد
-│   │       ├── khizesh_1401.json
-│   │       ├── aban_98.json
-│   │       └── ...
-│   │
-│   └── 📁 img/
-│       ├── og-image.png            # تصویر Open Graph (1200×630)
-│       ├── favicon.svg
-│       ├── favicon-32.png
-│       └── apple-touch-icon.png
+│   │   ├── javidnam.json            # 🗃️ بانک کامل (۶٬۲۳۲ رکورد)
+│   │   ├── javidnam.min.json        # نسخهٔ فشرده
+│   │   ├── javidnam.lite.json       # نسخهٔ سبک (نمایش وب)
+│   │   ├── javidnam.csv             # خروجی CSV با BOM (اکسل)
+│   │   ├── statistics.json          # آمار محاسبه‌شده
+│   │   ├── protests.json            # دادهٔ گاهشمار
+│   │   ├── person.schema.json       # JSON Schema (Draft 2020-12)
+│   │   └── by-event/                # فایل جداگانه برای هر رویداد
+│   └── 📁 img/                      # تصاویر OG، favicon، آیکون PWA
 │
-├── 📁 .github/
-│   └── 📁 workflows/
-│       └── deploy.yml              # GitHub Actions (استقرار خودکار)
-│
-├── 📄 CONTRIBUTING.md              # راهنمای مشارکت
-├── 📄 LICENSE                      # پروانهٔ MIT
-└── 📄 README.md                    # همین فایل
+├── 📁 .github/workflows/deploy.yml  # GitHub Actions (استقرار خودکار)
+├── 📄 CONTRIBUTING.md  ·  LICENSE   # راهنمای مشارکت و پروانه
+└── 📄 README.md                     # همین فایل
 ```
 
 ---
@@ -261,39 +292,39 @@ Javid-Naman/
 <div align="center">
 
 | لایه | فناوری | نقش |
-|------|--------|-----|
-| ساختار | **HTML5** | صفحات کاملاً استاتیک، RTL، `lang="fa"` |
-| استایل | **TailwindCSS** (CDN) | طراحی utility-first، بدون نیاز به build |
-| منطق | **Vanilla JavaScript** | پردازش داده، جستجو، فیلتر، مودال |
-| فونت | **Vazirmatn v33** | فونت فارسی/عربی بهینه، variable |
-| آیکون | **Font Awesome 6.5** | آیکون‌های SVG |
-| میزبانی | **GitHub Pages** | CDN رایگان، HTTPS، دامنهٔ سفارشی |
-| CI/CD | **GitHub Actions** | استقرار خودکار با هر push |
-| SEO | **JSON-LD + OpenGraph** | Schema.org Dataset, WebSite |
-| PWA | **Web Manifest** | نصب روی موبایل، آفلاین-ریدی |
+|:---|:---|:---|
+| 🏗️ ساختار | **HTML5** | صفحات کاملاً استاتیک، RTL، `lang="fa"` |
+| 🎨 استایل | **TailwindCSS** (CDN) | طراحی utility-first، بدون build |
+| 🧠 منطق | **Vanilla JavaScript** | پردازش داده، جستجو، فیلتر، مودال |
+| 🔤 فونت | **Vazirmatn v33** | فونت فارسی بهینه، variable |
+| 🎯 آیکون | **Font Awesome 6.5** | آیکون‌های SVG |
+| ☁️ میزبانی | **GitHub Pages** | CDN رایگان، HTTPS، دامنهٔ سفارشی |
+| 🔄 CI/CD | **GitHub Actions** | استقرار خودکار با هر push |
+| 🚀 SEO | **JSON-LD + OpenGraph** | Schema.org Dataset, WebSite, Event |
+| 📱 PWA | **Web Manifest** | نصب روی موبایل، آفلاین-ریدی |
 
 </div>
 
-> **معماری کاملاً استاتیک (Static-First):** هیچ سرور، بک‌اند، دیتابیس یا فرایند Build وجود ندارد. کافی است فایل‌ها را روی هر میزبان استاتیک (GitHub Pages، Netlify، Cloudflare Pages، ...) قرار دهید.
+> 💡 **معماری Static-First:** هیچ سرور، بک‌اند، دیتابیس یا فرایند Build وجود ندارد. کافی است فایل‌ها را روی هر میزبان استاتیک (GitHub Pages، Netlify، Cloudflare Pages، ...) قرار دهید.
 
 ---
 
-## 📊 دادهٔ باز / Open Data
+## 📦 دادهٔ باز / Open Data
 
 تمام داده‌ها به‌صورت باز، آزاد و ساختاریافته تحت پروانهٔ **CC BY 4.0** در دسترس‌اند.
 
 ### فایل‌های قابل دانلود
 
 | فایل | حجم | توضیح |
-|------|-----|-------|
-| [`javidnam.json`](assets/data/javidnam.json) | کامل | بانک کامل: `{metadata, events, people}` |
-| [`javidnam.min.json`](assets/data/javidnam.min.json) | فشرده | نسخهٔ minified برای استفادهٔ مستقیم |
-| [`javidnam.lite.json`](assets/data/javidnam.lite.json) | سبک | فیلدهای کوتاه‌شده برای رندر سریع وب |
-| [`javidnam.csv`](assets/data/javidnam.csv) | Excel | با BOM، سازگار با اکسل فارسی |
-| [`statistics.json`](assets/data/statistics.json) | آمار | آمار پیش‌محاسبه‌شده بر اساس رویداد، جنسیت، استان |
-| [`protests.json`](assets/data/protests.json) | گاهشمار | ۴۰+ رویداد اعتراضی با جزئیات کامل |
-| [`person.schema.json`](assets/data/person.schema.json) | Schema | طرح‌وارهٔ JSON Schema Draft 2020-12 |
-| [`by-event/*.json`](assets/data/by-event/) | رویداد | فایل جداگانه برای هر یک از ۱۲ رویداد |
+|:---|:---:|:---|
+| [`javidnam.json`](assets/data/javidnam.json) | ۷٫۶M | بانک کامل: `{metadata, events, people}` |
+| [`javidnam.min.json`](assets/data/javidnam.min.json) | ۶٫۳M | نسخهٔ minified برای استفادهٔ مستقیم |
+| [`javidnam.lite.json`](assets/data/javidnam.lite.json) | ۲٫۶M | فیلدهای کوتاه‌شده برای رندر سریع وب |
+| [`javidnam.csv`](assets/data/javidnam.csv) | ۱٫۲M | با BOM، سازگار با اکسل فارسی |
+| [`statistics.json`](assets/data/statistics.json) | ۱٫۵K | آمار پیش‌محاسبه‌شده |
+| [`protests.json`](assets/data/protests.json) | ۶۸K | ۴۰+ رویداد اعتراضی با جزئیات کامل |
+| [`person.schema.json`](assets/data/person.schema.json) | ۳٫۵K | JSON Schema (Draft 2020-12) |
+| [`by-event/*.json`](assets/data/by-event/) | — | فایل جداگانه برای هر رویداد |
 
 ### طرح‌وارهٔ رکورد جاویدنام / Record Schema
 
@@ -303,80 +334,61 @@ Javid-Naman/
   "id":              "jvn_4303520495",
   "slug":            "mahsa-amini",
 
-  // هویت
-  "name":            "مهسا امینی",
+  "name":            "مهسا امینی",        // هویت
   "name_en":         "Mahsa Amini",
-  "gender":          "زن",            // مرد | زن | null
+  "gender":          "زن",                 // مرد | زن | null
   "age":             22,
   "birth_year":      1379,
 
-  // رویداد
-  "event":           "khizesh_1401",
+  "event":           "khizesh_1401",       // رویداد
 
-  // تاریخ جان‌باختن
-  "date_jalali":     "۱۴۰۱/۰۶/۲۵",
+  "date_jalali":     "۱۴۰۱/۰۶/۲۵",         // تاریخ جان‌باختن
   "date_gregorian":  "2022-09-16",
 
-  // مکان
-  "city":            "تهران",
+  "city":            "تهران",              // مکان
   "province":        "تهران",
 
-  // جزئیات
-  "cause":           "شرح جان‌باختن",
+  "cause":           "شرح جان‌باختن",       // جزئیات
   "occupation":      "شغل",
   "story":           "زندگی‌نامهٔ کوتاه",
   "story_en":        "Short biography",
 
-  // رسانه و منابع
-  "photo_url":       null,
+  "photo_url":       null,                  // رسانه و منابع
   "memorial_links":  ["https://example.com"],
 
-  // متادیتا
-  "notable":         true,
-  "verification":    "documented",     // documented | reported
+  "notable":         true,                  // متادیتا
+  "verification":    "documented",          // documented | reported
   "sources":         ["Amnesty International", "HRANA"]
 }
 ```
 
-### استفاده از API / Using the Data API
+### استفاده از داده / Using the Data
 
 ```javascript
 // دریافت بانک کامل
-const response = await fetch(
-  'https://0xradikal.github.io/Javid-Naman/assets/data/javidnam.json'
-);
-const { metadata, events, people } = await response.json();
+const res = await fetch('https://0xradikal.github.io/Javid-Naman/assets/data/javidnam.json');
+const { metadata, events, people } = await res.json();
 
 console.log(`${metadata.total_count} نام در بانک اطلاعاتی`);
 
-// فیلتر بر اساس رویداد
-const aban98 = people.filter(p => p.event === 'aban_98');
+const aban98     = people.filter(p => p.event === 'aban_98');          // فیلتر رویداد
+const documented = people.filter(p => p.verification === 'documented'); // فقط مستند
 
-// فیلتر رکوردهای مستند
-const documented = people.filter(p => p.verification === 'documented');
-
-// جستجو
-const search = (query) => people.filter(p =>
+const search = q => people.filter(p =>
   [p.name, p.name_en, p.city, p.province, p.occupation]
-    .some(f => f?.toLowerCase().includes(query.toLowerCase()))
+    .some(f => f?.toLowerCase().includes(q.toLowerCase()))
 );
 ```
 
 ### دسته‌بندی رویدادها / Event Categories
 
-```
-kuy_daneshgah_78     →  کوی دانشگاه ۱۳۷۸
-janbash_84           →  جنبش سبز ۱۳۸۸
-ashoura_88           →  عاشورای ۱۳۸۸
-arabestan_90         →  خوزستان ۱۳۹۰
-di_96                →  دی ۱۳۹۶
-aban_98              →  آبان ۱۳۹۸
-zahedan_1401         →  زاهدان ۱۴۰۱
-khizesh_1401         →  خیزش ۱۴۰۱ (زن، زندگی، آزادی)
-edam_1401            →  اعدام‌های ۱۴۰۱–۱۴۰۲
-lorestan_1402        →  خوزستان و لرستان ۱۴۰۲
-khizesh_1403         →  خیزش ۱۴۰۳
-khizesh_1404         →  خیزش ۱۴۰۴
+```text
+kuye_daneshgah_78  → کوی دانشگاه ۱۳۷۸        di_96          → دی ۱۳۹۶
+green_88           → جنبش سبز ۱۳۸۸           aban_98        → آبان ۱۳۹۸
+darvish_96         → درویشان گنابادی ۹۶      khuzestan_1400 → خوزستان ۱۴۰۰
+kazerun_97         → کازرون ۱۳۹۷            khizesh_1401   → خیزش ۱۴۰۱ (زن، زندگی، آزادی)
+mordad_97          → مرداد ۱۳۹۷             khizesh_1404   → خیزش ۱۴۰۴
+executions         → اعدام‌ها               deaths_in_custody → مرگ در بازداشت
 ```
 
 ---
@@ -390,78 +402,39 @@ khizesh_1404         →  خیزش ۱۴۰۴
 git clone https://github.com/0xRadikal/Javid-Naman.git
 cd Javid-Naman
 
-# اجرا با Python
-python3 -m http.server 8080
-# سپس: http://localhost:8080
-
-# یا با Node.js
-npx serve .
-# سپس: http://localhost:3000
-
-# یا با PHP
-php -S localhost:8080
+# اجرا با یکی از این روش‌ها:
+python3 -m http.server 8080     # → http://localhost:8080
+npx serve .                     # → http://localhost:3000
+php -S localhost:8080           # → http://localhost:8080
 ```
 
-> **نکته:** به دلیل محدودیت‌های CORS در مرورگرها، فایل‌های JSON از طریق `file://` لود نمی‌شوند. حتماً از یک سرور HTTP محلی استفاده کنید.
+> ⚠️ به‌دلیل محدودیت CORS، فایل‌های JSON از طریق `file://` لود نمی‌شوند؛ حتماً از یک سرور HTTP محلی استفاده کنید.
 
----
+### 🚀 استقرار / Deployment
 
-## 🚀 استقرار / Deployment
-
-<table>
-<tr>
-<th>پلتفرم</th>
-<th>روش</th>
-</tr>
-<tr>
-<td><strong>GitHub Pages</strong></td>
-<td>
-
-```yaml
-# .github/workflows/deploy.yml
-# استقرار خودکار با هر push به main
-on: [push]
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/deploy-pages@v4
-```
-
-</td>
-</tr>
-<tr>
-<td><strong>Netlify</strong></td>
-<td>Drag & Drop پوشه، یا اتصال GitHub</td>
-</tr>
-<tr>
-<td><strong>Cloudflare Pages</strong></td>
-<td>اتصال GitHub، build command خالی، output directory: <code>/</code></td>
-</tr>
-</table>
+| پلتفرم | روش |
+|:---|:---|
+| **GitHub Pages** | استقرار خودکار با هر push به `main` (از طریق `.github/workflows/deploy.yml`) |
+| **Netlify** | Drag & Drop پوشه یا اتصال GitHub |
+| **Cloudflare Pages** | اتصال GitHub · build command خالی · output directory: `/` |
 
 ---
 
 ## 📚 منابع / Sources
 
-داده‌ها با اولویت‌دهی به منابع اولیهٔ حقوق بشری گردآوری شده‌اند:
+داده‌ها با اولویت‌دهی به **منابع اولیهٔ حقوق بشری** گردآوری شده‌اند:
 
 | سازمان | نوع |
-|--------|-----|
+|:---|:---|
 | 🌍 عفو بین‌الملل (Amnesty International) | حقوق بشری بین‌المللی |
 | 📋 هرانا / HRANA | فعالان حقوق بشر در ایران |
 | 🏛️ سازمان حقوق بشر ایران (IHRNGO) | مستندسازی سیستماتیک |
 | 📖 مرکز اسناد حقوق بشر ایران (IranHRDC) | آرشیو مستند |
-| 📰 BBC فارسی | رسانهٔ مستقل |
-| 📺 دویچه‌وله فارسی | رسانهٔ مستقل |
-| 📡 صدای آمریکا (VOA) فارسی | رسانهٔ مستقل |
-| 🎙️ رادیو فردا | رسانهٔ مستقل |
-| 📻 رادیو زمانه | رسانهٔ مستقل |
+| 📰 BBC فارسی · 📺 دویچه‌وله · 📡 صدای آمریکا · 🎙️ رادیو فردا · 📻 رادیو زمانه | رسانه‌های مستقل |
 | 🇺🇳 گزارشگر ویژهٔ سازمان ملل (OHCHR) | گزارش‌های رسمی |
 | 📘 ویکی‌پدیای فارسی | مرجع تکمیلی |
 
-> ⚠️ **دربارهٔ آمار:** از آنجا که دولت در اغلب موارد آمار رسمی منتشر نکرده، تمام ارقام تخمینی هستند و با قید «بنا بر گزارش‌ها» ارائه می‌شوند.
+> ⚠️ **دربارهٔ آمار:** از آنجا که دولت در اغلب موارد آمار رسمی منتشر نکرده، تمام ارقام تخمینی‌اند و با قید «بنا بر گزارش‌ها» ارائه می‌شوند.
 
 ---
 
@@ -469,39 +442,35 @@ jobs:
 
 این یک **آرشیو زنده** است که با کمک شما کامل‌تر می‌شود.
 
-### چه می‌پذیریم ✅
+<table>
+<tr>
+<td width="50%" valign="top">
 
-- افزودن نام جان‌باختگان جدید از میان مردم (با حداقل یک منبع معتبر)
+#### ✅ چه می‌پذیریم
+- افزودن نام جان‌باختگان جدید (با حداقل یک منبع معتبر)
 - تکمیل اطلاعات ناقص (شهر، تاریخ، شرح، عکس، منبع)
 - اصلاح خطاهای املایی، تاریخ یا اطلاعات نادرست
-- ارتقای رکوردهای «گزارش‌شده» به «مستند» با افزودن منبع مستقل
+- ارتقای رکوردهای «گزارش‌شده» به «مستند»
 - بهبود رابط کاربری، دسترس‌پذیری (a11y) و SEO
 
-### چه نمی‌پذیریم ❌
+</td>
+<td width="50%" valign="top">
 
-- افزودن نیروهای حکومتی، بسیج، سپاه یا سازمان‌های سرکوبگر
+#### ❌ چه نمی‌پذیریم
+- نیروهای حکومتی، بسیج، سپاه یا سازمان‌های سرکوبگر
 - رکورد بدون هیچ منبع مستقلی
 - محتوای توهین‌آمیز یا غیرمحترمانه نسبت به جان‌باختگان
 
-### استانداردهای داده
+</td>
+</tr>
+</table>
 
-هر رکورد باید با [`person.schema.json`](assets/data/person.schema.json) سازگار باشد:
-
-```
-✓ id       → jvn_[0-9a-f]{10}  (sha1(نام نرمال + '|' + رویداد))
-✓ sources  → حداقل یک منبع
-✓ verification → "documented" (≥۲ منبع مستقل) یا "reported"
-✓ story / cause → زبان محترمانه و بی‌طرفانه
-```
-
-### روند مشارکت / Workflow
+#### روند مشارکت / Workflow
 
 ```bash
-# 1. مخزن را Fork کنید
-# 2. یک Branch جدید بسازید
+# 1. مخزن را Fork کنید   2. یک Branch بسازید
 git checkout -b add/new-records
-
-# 3. رکورد را به javidnam.json بیفزایید
+# 3. رکورد را به javidnam.json بیفزایید (سازگار با person.schema.json)
 # 4. Pull Request با شرح روشن باز کنید
 ```
 
@@ -516,32 +485,63 @@ git checkout -b add/new-records
 - [ ] 📊 داشبورد آمار تعاملی (D3.js / Chart.js)
 - [ ] 🔗 API عمومی با pagination و فیلتر کامل
 - [ ] 🔄 CI برای اعتبارسنجی خودکار Schema هنگام PR
-- [ ] 📱 بهینه‌سازی بیشتر PWA (Service Worker کامل)
 - [ ] 🔍 جستجوی full-text پیشرفته با Fuse.js
 - [ ] 📸 گالری تصویر برای چهره‌های شناخته‌شده
-- [ ] 🤖 ربات تلگرام برای دسترسی به داده
+
+---
+
+## 🤍 همراهی با این راه / Keep the Flame Alive
+
+<div align="center">
+
+> این آرشیو از سرِ هیچ منفعتی ساخته نشده.
+> تنها انگیزه‌اش، این بوده که نام‌ها فراموش نشوند و حقیقت زنده بماند.
+>
+> *This archive was not built for any gain — only so that names are not forgotten, and the truth lives on.*
+
+</div>
+
+نگه‌داری از این آرشیو، تحقیق و راستی‌آزمایی منابع، و افزودن نام‌های تازه، کاری **پیوسته و داوطلبانه** است. اگر این تلاش برایتان معنایی دارد، می‌توانید به یکی از راه‌های زیر در ادامهٔ این راه همراه شوید — هر کدام به اندازهٔ خودش، چراغی است که این یادبود را روشن نگه می‌دارد:
+
+- 🌟 **ستاره دادن** به این مخزن، تا دیده شود و به دست افراد بیشتری برسد
+- 🔗 **هم‌رسانی** وب‌سایت و داده‌ها، تا این نام‌ها فراموش نشوند
+- ✍️ **مشارکت در داده** و تکمیل اطلاعات ناقص ([راهنما](#-مشارکت--contributing))
+- 🌐 **همراهی داوطلبانه** برای تأمین هزینهٔ دامنه، نگه‌داری و ادامهٔ تحقیق
+
+<details>
+<summary><b>🌐 برای همراهیِ داوطلبانه (کریپتو) — اینجا را باز کنید</b></summary>
+
+<br/>
+
+> هر مبلغی، تنها صرف **زنده‌نگه‌داشتن این آرشیو** می‌شود: دامنه، میزبانی، و وقتِ تحقیق و راستی‌آزمایی. هیچ اجباری در کار نیست؛ صرفِ خواندن و به‌خاطر سپردن این نام‌ها، خود بزرگ‌ترین همراهی است.
+
+| شبکه / Network | نشانی / Address |
+|:---|:---|
+| **EVM** <br/><sub>Ethereum · BSC · Polygon · Arbitrum · …</sub> | `0x2F6ec47e416B42C623cF81a64266EE4910a698Cf` |
+| **TRON (TRC-20)** <br/><sub>USDT · TRX</sub> | `TYBumju6Mjd8JCn4RTq95Kk2HPsdcinuz5` |
+| **TON** <br/><sub>The Open Network</sub> | `UQBbZrE5aDsdGVi6enpf_vPuG022W4KjkJNzTDkjVEn4gmu6` |
+
+<sub>⚠️ پیش از ارسال، شبکه و نشانی را با دقت بررسی کنید. ارسال در شبکهٔ اشتباه ممکن است باعث از دست رفتن دارایی شود.</sub>
+
+</details>
+
+<div align="center">
+<br/>
+<sub>💛 سپاس از هر کسی که این نام‌ها را می‌خواند، به‌خاطر می‌سپارد و هم‌رسانی می‌کند.<br/>همین، خودش جاودانه کردنِ آنان است.</sub>
+</div>
 
 ---
 
 ## 📄 پروانه / License
 
-<table>
-<tr>
-<th>بخش</th>
-<th>پروانه</th>
-<th>توضیح</th>
-</tr>
-<tr>
-<td>💻 کد (HTML / JS / CSS)</td>
-<td><a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" /></a></td>
-<td>استفادهٔ آزاد با ذکر منبع</td>
-</tr>
-<tr>
-<td>📊 داده و محتوا</td>
-<td><a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC_BY_4.0-blue?style=flat-square" /></a></td>
-<td>استفادهٔ آزاد با ذکر منبع (<code>Javidnam Open Archive</code>)</td>
-</tr>
-</table>
+<div align="center">
+
+| بخش | پروانه | توضیح |
+|:---|:---:|:---|
+| 💻 کد (HTML / JS / CSS) | [![MIT](https://img.shields.io/badge/License-MIT-22c55e?style=flat-square)](LICENSE) | استفادهٔ آزاد با ذکر منبع |
+| 📊 داده و محتوا | [![CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-3b82f6?style=flat-square)](https://creativecommons.org/licenses/by/4.0/) | استفادهٔ آزاد با ذکر منبع (`Javidnam Open Archive`) |
+
+</div>
 
 ---
 
@@ -557,21 +557,23 @@ git checkout -b add/new-records
 
 <br/>
 
-**نام‌شان جاوید · یادشان گرامی · راه‌شان پررهرو**
+## نام‌شان جاوید · یادشان گرامی · راه‌شان پررهرو
 
 *Their names endure · Their memory is cherished · Their path lives on*
 
 <br/>
 
-[![گاهشمار](https://img.shields.io/badge/🌐_مشاهدهٔ_وب‌سایت-0xradikal.github.io-1a1a2e?style=for-the-badge)](https://0xradikal.github.io/Javid-Naman/)
+[![وب‌سایت](https://img.shields.io/badge/🌐_مشاهدهٔ_وب‌سایت-0xradikal.github.io-1a1a2e?style=for-the-badge)](https://0xradikal.github.io/Javid-Naman/)
 [![یادبود](https://img.shields.io/badge/🕯️_یادبود_جاویدنام‌ها-۶٬۲۳۲_نام-be1234?style=for-the-badge)](https://0xradikal.github.io/Javid-Naman/javidnam.html)
 
 <br/><br/>
-<div align="center">
 
-<img src="https://raw.githubusercontent.com/0xRadikal/Javid-Naman/main/assets/img/og-image.png" alt="Iran Protests Memorial" width="100%"/>
+<a href="https://0xradikal.github.io/Javid-Naman/">
+  <img src="https://raw.githubusercontent.com/0xRadikal/Javid-Naman/main/assets/img/og-image.png" alt="گاهشمار اعتراضات مردمی ایران و یادبود جاویدنام‌ها" width="100%"/>
+</a>
 
 <br/><br/>
+
 <sub>ساخته‌شده با 🤍 برای حفظ حافظهٔ تاریخی ایران · Built with 🤍 to preserve Iran's historical memory</sub>
 
 <sub>
