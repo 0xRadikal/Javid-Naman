@@ -21,3 +21,8 @@ assets/data/*.bak_*
 # Crash dumps (from OpenCV segfaults during photo hashing)
 core
 core.*
+
+# Enrichment intermediate raw data (large; regenerable via scripts/enrich/*.py)
+scripts/enrich/wiki_raw.json
+scripts/enrich/image_decisions.json
+scripts/enrich/image_resolved.json

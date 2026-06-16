@@ -40,7 +40,7 @@
       "id": "jvn_55b74b8ad7",
       "slug": "رضا-اوتادی-55b74b",
       "name": "رضا اوتادی",
-      "name_en": null,
+      "name_en": "Reza Otadi",
       "event": "mordad_97",
       "gender": null,
       "age": 26,
@@ -54,13 +54,17 @@
       "story": "رضا اوتادی، جوان ۲۶ سالهٔ اهل گوهردشت کرج، در شب ۱۲ مرداد ۱۳۹۷ در جریان تجمع اعتراضی مردم گوهردشت به ضرب گلوله نیروهای امنیتی (اصابت به پشت سر) جان باخت. خبر کشته‌شدنش بر سر در مغازهٔ پارچه‌فروشی پدرش در میدان شهدای کرج درج شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B1%D8%B6%D8%A7_%D8%A7%D9%88%D8%AA%D8%A7%D8%AF%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     }
   ]

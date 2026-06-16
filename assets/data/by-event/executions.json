@@ -18,9 +18,9 @@
       "event": "executions",
       "gender": null,
       "age": null,
-      "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "birth_year": 1362,
+      "date_jalali": "۱۳۹۱/۱۰/۱۲",
+      "date_gregorian": "2013-01-01",
       "city": null,
       "province": null,
       "cause": null,
@@ -28,26 +28,30 @@
       "story": "حبیب الله گلپری پور (۱۳۶۳ در سنندج – ۱۳۹۲ در ارومیه) زندانی سیاسی کرد بود که در سال ۱۳۹۲ اعدام شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%AD%D8%A8%DB%8C%D8%A8%E2%80%8C%D8%A7%D9%84%D9%84%D9%87_%DA%AF%D9%84%D9%BE%D8%B1%DB%8C%E2%80%8C%D9%BE%D9%88%D8%B1"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_e631959651",
       "slug": "رامین-حسین-پناهی-e63195",
       "name": "رامین حسین پناهی",
-      "name_en": null,
+      "name_en": "Ramin Hosseinpanahi",
       "event": "executions",
       "gender": null,
       "age": null,
       "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "date_jalali": "۱۳۹۷/۰۶/۱۷",
+      "date_gregorian": "2018-09-08",
       "city": null,
       "province": null,
       "cause": null,
@@ -55,13 +59,18 @@
       "story": "رامین حسین پناهی، پیشمرگه حزب کومله کردستان ایران و فعال سیاسی کرد اهل ایران بود که به دلیل عضویت در حزب کومله دستگیر و در تاریخ ۱۷ شهریور ۱۳۹۷ اعدام شد. به نوشتهٔ باشگاه خبرنگاران جوان، او در تیر ماه ۱۳۹۶ وارد کشور و دستگیر شد. برادر او، امجد حسین پناهی در گفتگو با بی بی سی فارسی گفت که رامین جهت دیدار خانواده به ایران آمده بود. او به اتهام بغی محاکمه شد و در دادگاه به اعدام محکوم شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B1%D8%A7%D9%85%DB%8C%D9%86_%D8%AD%D8%B3%DB%8C%D9%86%E2%80%8C%D9%BE%D9%86%D8%A7%D9%87%DB%8C",
+        "https://en.wikipedia.org/wiki/Ramin_Hossein-Panahi"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -95,13 +104,13 @@
       "id": "jvn_c64a7aafba",
       "slug": "سعید-یعقوبی-c64a7a",
       "name": "سعید یعقوبی",
-      "name_en": null,
+      "name_en": "Saeid Yaghoubi",
       "event": "executions",
       "gender": null,
       "age": null,
-      "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "birth_year": 1364,
+      "date_jalali": "۱۴۰۲/۰۳/۰۸",
+      "date_gregorian": "2023-05-29",
       "city": null,
       "province": null,
       "cause": null,
@@ -109,26 +118,30 @@
       "story": "سعید یعقوبی کُردسُفلی از مردم معترض در جریان خیزش سراسری ایران بود. وی در پروندهٔ خانه اصفهان، در کنار صالح میرهاشمی و مجید کاظمی، و با اتهام محاربه و قتل در ۲۹ اردیبهشت ۱۴۰۲ اعدام شد. اجرای حکم اعدام با وجود مخالفت های چهره های شناخته شده و نهادهای حقوق بشری انجام گرفت.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B3%D8%B9%DB%8C%D8%AF_%DB%8C%D8%B9%D9%82%D9%88%D8%A8%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_d1c239620b",
       "slug": "علی-حیدریان-d1c239",
       "name": "علی حیدریان",
-      "name_en": null,
+      "name_en": "Ali Heydariyan",
       "event": "executions",
       "gender": null,
       "age": null,
       "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "date_jalali": "۱۳۸۸/۱۰/۱۱",
+      "date_gregorian": "2010-01-01",
       "city": null,
       "province": null,
       "cause": null,
@@ -136,26 +149,30 @@
       "story": "علی حیدریان زندانی سیاسی کرد بود که در ۱۹ اردیبهشت ماه ۱۳۸۹ اعدام شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B9%D9%84%DB%8C_%D8%AD%DB%8C%D8%AF%D8%B1%DB%8C%D8%A7%D9%86"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_13064e0dfa",
       "slug": "علی-صارمی-13064e",
       "name": "علی صارمی",
-      "name_en": null,
+      "name_en": "Ali Saremi",
       "event": "executions",
       "gender": null,
       "age": null,
       "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "date_jalali": "۱۳۸۹/۱۰/۰۷",
+      "date_gregorian": "2010-12-28",
       "city": null,
       "province": null,
       "cause": null,
@@ -163,26 +180,31 @@
       "story": "علی صارمی (زاده ۱۳۲۷ در بروجرد – درگذشته ۷ دی ۱۳۸۹ در تهران) زندانی سیاسی بود که به جرم همکاری با سازمان مجاهدین و محاربه به اعدام محکوم شده و در تاریخ ۷ دی ۱۳۸۹ در زندان اوین به دار آویخته شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B9%D9%84%DB%8C_%D8%B5%D8%A7%D8%B1%D9%85%DB%8C",
+        "https://en.wikipedia.org/wiki/Execution_of_Ali_Saremi"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_07c3cf3d19",
       "slug": "فرزاد-کمانگر-07c3cf",
       "name": "فرزاد کمانگر",
-      "name_en": null,
+      "name_en": "Farzad Kamangar",
       "event": "executions",
       "gender": null,
       "age": null,
-      "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "birth_year": 1353,
+      "date_jalali": "۱۳۸۹/۰۲/۱۹",
+      "date_gregorian": "2010-05-09",
       "city": null,
       "province": null,
       "cause": null,
@@ -190,26 +212,31 @@
       "story": "فرزاد کمانگر (٢ خرداد ١٣٥٤ – ۱۹ اردیبهشت ۱۳۸۹) معلم کرد ایرانی بود که به اتهام عضویت و همکاری با پژاک به اعدام محکوم شد. او هیچگاه این اتهام را نپذیرفت ولی در سحرگاه روز یکشنبه ۱۹ اردیبهشت ۱۳۸۹، به همراه علی حیدریان، فرهاد وکیلی، شیرین علم هولی و مهدی اسلامیان در زندان اوین به دار آویخته شد. فرزاد کمانگر به پاس فعالیت هایش، به صورت افتخاری گزارشگر ویژه مجموعه فعالان حقوق بشر در ایران نیز بود. یونسکو در گزارش خود در مورد فشارها علیه فضاهای آموزشی، به موضوع اعدام فرزاد کمانگر اشاره کرد. اتحادیه اروپا حکم اعدام او را محکوم و سازمان دیده بان حقوق بشر و آموزش بین الملل از او به عنوان یک معلم یاد کرده است. بنا به اعلام دادسرای انقلاب تهران،",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%81%D8%B1%D8%B2%D8%A7%D8%AF_%DA%A9%D9%85%D8%A7%D9%86%DA%AF%D8%B1",
+        "https://en.wikipedia.org/wiki/Farzad_Kamangar"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_3d3e766d8b",
       "slug": "فرهاد-وکیلی-3d3e76",
       "name": "فرهاد وکیلی",
-      "name_en": null,
+      "name_en": "Farhad Vakili",
       "event": "executions",
       "gender": null,
       "age": null,
       "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "date_jalali": "۱۳۸۸/۰۲/۲۹",
+      "date_gregorian": "2009-05-19",
       "city": null,
       "province": null,
       "cause": null,
@@ -217,13 +244,18 @@
       "story": "فرهاد وکیلی (درگذشته ۱۹ اردیبهشت ۱۳۸۹) یکی از پنج زندانی کرد بود که سحرگاه ۱۹ اردیبهشت ۱۳۸۹ در زندان اوین اعدام شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%81%D8%B1%D9%87%D8%A7%D8%AF_%D9%88%DA%A9%DB%8C%D9%84%DB%8C",
+        "https://en.wikipedia.org/wiki/Farhad_Vakili"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -256,40 +288,45 @@
       "id": "jvn_39c3a89c6f",
       "slug": "محمدرضا-علی-زمانی-39c3a8",
       "name": "محمدرضا علی زمانی",
-      "name_en": null,
+      "name_en": "Mohammad-Reza Ali-Zamani",
       "event": "executions",
       "gender": null,
       "age": null,
       "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "date_jalali": "۱۳۸۸/۱۱/۰۸",
+      "date_gregorian": "2010-01-28",
       "city": null,
       "province": null,
       "cause": null,
       "occupation": null,
       "story": "محمدرضا علی زمانی (زاده ۱۳۵۱) شخصی بود که در مهر ۱۳۸۸ به اعدام محکوم و در ۸ بهمن همان سال اعدام شد.",
       "story_en": null,
-      "photo_url": null,
-      "memorial_links": [],
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Mohammad-Reza_Ali-Zamani_%28cropped%29.jpg",
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%AD%D9%85%D8%AF%D8%B1%D8%B6%D8%A7_%D8%B9%D9%84%DB%8C%E2%80%8C%D8%B2%D9%85%D8%A7%D9%86%DB%8C",
+        "https://en.wikipedia.org/wiki/Mohammad-Reza_Ali-Zamani"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_a800807d74",
       "slug": "محمدعلی-حاج-آقایی-a80080",
       "name": "محمدعلی حاج آقایی",
-      "name_en": null,
+      "name_en": "Mohammad Ali Haj Aghaei",
       "event": "executions",
       "gender": null,
       "age": null,
-      "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "birth_year": 1326,
+      "date_jalali": "۱۳۸۹/۱۱/۰۴",
+      "date_gregorian": "2011-01-24",
       "city": null,
       "province": null,
       "cause": null,
@@ -297,13 +334,18 @@
       "story": "محمدعلی حاج آقایی (زاده ۱۳۲۷، درگذشته ۴ بهمن ۱۳۸۹)، زندانی سیاسی ایرانی بود که در جریان اعتراضات مردم ایران به نتایج انتخابات ریاست جمهوری (۱۳۸۸)، به اتهام همکاری با سازمان مجاهدین خلق و محاربه به اعدام محکوم شده و در تاریخ ۴ بهمن ۱۳۸۹ در زندان اوین به همراه جعفر کاظمی به دار آویخته شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%AD%D9%85%D8%AF%D8%B9%D9%84%DB%8C_%D8%AD%D8%A7%D8%AC%E2%80%8C%D8%A2%D9%82%D8%A7%DB%8C%DB%8C",
+        "https://en.wikipedia.org/wiki/Mohammad_Ali_Haj_Aghaei"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -324,13 +366,16 @@
       "story": "محمدمهدی کرمی (نماینده مجلس) محمدمهدی کرمی (زندانی سیاسی)",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%AD%D9%85%D8%AF%D9%85%D9%87%D8%AF%DB%8C_%DA%A9%D8%B1%D9%85%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa"
       ]
     },
     {
@@ -350,28 +395,33 @@
       "occupation": null,
       "story": "مصطفی صالحی (درگذشت ۱۵ مرداد ۱۳۹۹ در زندان دستگرد، اصفهان) از معترضان اعتراضات دی ۱۳۹۶ ایران بود که در سال ۱۳۹۶ در شهر کهریزسنگ از توابع شهرستان نجف آباد، استان اصفهان دستگیر شد. او به اتهام قتل عمد اعدام شد.",
       "story_en": null,
-      "photo_url": null,
-      "memorial_links": [],
+      "photo_url": "https://upload.wikimedia.org/wikipedia/fa/d/df/%D9%85%D8%B5%D8%B7%D9%81%DB%8C_%D8%B5%D8%A7%D9%84%D8%AD%DB%8C%D8%9B_%D8%A7%D8%B2_%D8%A7%D8%B9%D8%AF%D8%A7%D9%85_%D8%B4%D8%AF%DA%AF%D8%A7%D9%86_%D8%AE%DB%8C%D8%B2%D8%B4_%D8%AF%DB%8C_%DB%B1%DB%B3%DB%B9%DB%B6_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86.jpg",
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%B5%D8%B7%D9%81%DB%8C_%D8%B5%D8%A7%D9%84%D8%AD%DB%8C",
+        "https://en.wikipedia.org/wiki/2017%E2%80%932018_Iranian_protests"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_person",
-        "javidnaam_submission"
+        "javidnaam_submission",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_e2fa4abaf5",
       "slug": "مهدی-اسلامیان-e2fa4a",
       "name": "مهدی اسلامیان",
-      "name_en": null,
+      "name_en": "Mahdi Islamian",
       "event": "executions",
       "gender": null,
       "age": null,
       "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "date_jalali": "۱۳۸۹/۰۲/۱۹",
+      "date_gregorian": "2010-05-09",
       "city": null,
       "province": null,
       "cause": null,
@@ -379,13 +429,17 @@
       "story": "مهدی اسلامیان زندانی سیاسی ایرانی بود که در ۱۹ اردیبهشت ۱۳۸۹ اعدام شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D9%87%D8%AF%DB%8C_%D8%A7%D8%B3%D9%84%D8%A7%D9%85%DB%8C%D8%A7%D9%86"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -406,20 +460,24 @@
       "story": "یعقوب مهرنهاد (زادهٔ ۱۳۵۸ زاهدان، اعدام ۱۴ مرداد ۱۳۸۷ زندان زاهدان) روزنامه نگار (خبرنگار و سرپرست روزنامه مردمسالاری در سیستان و بلوچستان)، فعال مدنی و دبیر انجمن جوانان صدای عدالت در زاهدان و از اعضای حزب اعتماد ملی و حزب مرز پرگهر بود. مهرنهاد در اردیبهشت ۱۳۸۶ توسط وزارت اطلاعات دستگیر و پس از مدتی بازداشت و محاکمه ای مخدوش ۱۴ مرداد ۱۳۸۷ به طور غیرمنتظره ای در محوطه زندان زاهدان بدار آویخته شد. (خانواده نامبرده) برخی فعالان دانشجویی و سیاسی در استان، وی را وجه المصالحه میان وزارت اطلاعات و عبدالمالک ریگی رهبر جندالله دانستند. اعدام وی هیچ واکنش نظامی از سوی جندالله در پی نداشت.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%DB%8C%D8%B9%D9%82%D9%88%D8%A8_%D9%85%D9%87%D8%B1%D9%86%D9%87%D8%A7%D8%AF"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_b48452236d",
       "slug": "آرش-رحمانی-پور-b48452",
       "name": "آرش رحمانی پور",
-      "name_en": null,
+      "name_en": "Arash Rahmanipour",
       "event": "executions",
       "gender": null,
       "age": 19,
@@ -432,21 +490,26 @@
       "occupation": null,
       "story": "آرش رحمانی پور (زاده ۱۳۶۹ – درگذشت در ۸ بهمن ۱۳۸۸) نوجوانی بود که توسط حکومت جمهوری اسلامی ایران متهم به عضویت در انجمن پادشاهی ایران گردید و در تاریخ ۸ بهمن ۱۳۸۸ با حکم دادگاه انقلاب اعدام شد. بنا بر اظهار وکیلش وی در هنگام ارتکاب جرم منسوب زیر سن قانونی بوده و تنها ۱۶ تا ۱۷ سال داشته است.",
       "story_en": null,
-      "photo_url": null,
-      "memorial_links": [],
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Arash_Rahmanipour_%28cropped%29.jpg",
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%A2%D8%B1%D8%B4_%D8%B1%D8%AD%D9%85%D8%A7%D9%86%DB%8C%E2%80%8C%D9%BE%D9%88%D8%B1",
+        "https://en.wikipedia.org/wiki/Arash_Rahmanipour"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_566fca58b2",
       "slug": "شیرین-علم-هولی-566fca",
       "name": "شیرین علم هولی",
-      "name_en": null,
+      "name_en": "Shirin Alamholi Ateshgah",
       "event": "executions",
       "gender": null,
       "age": 29,
@@ -460,20 +523,24 @@
       "story": "شیرین علم هولی آتشگاه (۱۳ خرداد ۱۳۶۰ – ۱۹ اردیبهشت ۱۳۸۹) یک زندانی سیاسی بود. وی پس از گذراندن یک سال و نه ماه حبس در زندان اوین تهران در ۲۸ آذر ۱۳۸۸ به اتهام محاربه و ارتباط با گروه پژاک توسط ابوالقاسم صلواتی به اعدام محکوم و در تاریخ ۱۹ اردیبهشت ۱۳۸۹ بدون اطلاع خانواده و وکلایش در زندان اوین اعدام شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B4%DB%8C%D8%B1%DB%8C%D9%86_%D8%B9%D9%84%D9%85%E2%80%8C%D9%87%D9%88%D9%84%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_173095b711",
       "slug": "جعفر-کاظمی-173095",
       "name": "جعفر کاظمی",
-      "name_en": null,
+      "name_en": "Jafar Kazemi",
       "event": "executions",
       "gender": null,
       "age": 46,
@@ -487,20 +554,25 @@
       "story": "جعفر کاظمی (۱۳۴۳ – ۴ بهمن ۱۳۸۹) فعال سیاسی و زندانی سیاسی ایرانی بود که در جریان اعتراضات به نتایج انتخابات ریاست جمهوری ۱۳۸۸، به اتهام همکاری با سازمان مجاهدین خلق و محاربه به اعدام محکوم و در زندان اوین به دار آویخته شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%AC%D8%B9%D9%81%D8%B1_%DA%A9%D8%A7%D8%B8%D9%85%DB%8C",
+        "https://en.wikipedia.org/wiki/Jafar_Kazemi"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_2d3fb891a6",
       "slug": "محسن-امیراصلانی-2d3fb8",
       "name": "محسن امیراصلانی",
-      "name_en": null,
+      "name_en": "Mohsen Amiraslani",
       "event": "executions",
       "gender": null,
       "age": 37,
@@ -514,13 +586,18 @@
       "story": "محسن امیراصلانی زنجانی (۱۳۵۶ – ۲ مهر ۱۳۹۳) زندانی عقیدتی بود که به دلیل تفسیر متفاوت از قرآن، بدعت در اسلام، ارتداد و توهین به یونس به اعدام محکوم و در ۲ مهر در زندان رجایی شهر کرج اعدام شد. این حکم که دو بار لغو شده بود سرانجام با تأیید رئیس قوه قضائیه و دیوان عالی کشور اجرا شد. پیکر او در آرامگاه «بهشت سکینه» کرج به خانواده اش تحویل داده شد. امیراصلانی در هنگام اعدام، ۳۷ ساله، متأهل و دارای یک فرزند ۲ ساله بود.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%AD%D8%B3%D9%86_%D8%A7%D9%85%DB%8C%D8%B1%D8%A7%D8%B5%D9%84%D8%A7%D9%86%DB%8C",
+        "https://en.wikipedia.org/wiki/Mohsen_Amiraslani"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -541,21 +618,25 @@
       "story": "محمد ثلاث باباجانی مشهور به محمد ثلاث (۱۳۴۷ – ۲۸ خرداد ۱۳۹۷) یکی از دراویش گنابادی بود که به قتل سه مأمور پلیس در جریان اعتراضات گلستان هفتم متهم شد. او ابتدا در بازجویی و دادگاه اتهام خود را پذیرفت اما بعد آن را پس گرفت و اعلام کرد رانندهٔ اتوبوس نبوده است. دادگاه وی را به اتهام قتل سه نفر مجرم تشخیص داد و در سحرگاه ۲۸ خرداد ۱۳۹۷ اعدام شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%AD%D9%85%D8%AF_%D8%AB%D9%84%D8%A7%D8%AB"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_person",
-        "javidnaam_submission"
+        "javidnaam_submission",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_aecc60ea34",
       "slug": "زانیار-مرادی-aecc60",
       "name": "زانیار مرادی",
-      "name_en": null,
+      "name_en": "Zaniar Moradi",
       "event": "executions",
       "gender": null,
       "age": 31,
@@ -569,20 +650,25 @@
       "story": "زانیار مرادی (زاده ۱۳۶۶ – درگذشته ۱۷ شهریور ۱۳۹۷) زندانی سیاسی کرد اهل مریوان بود که در سال ۱۳۸۸ به همراه پسر عمویش لقمان مرادی بازداشت و در تاریخ ۱۷ شهریور ۱۳۹۷ هر دو زندانی به اتهام ترور فرزند امام جمعه مریوان اعدام شدند. این دو پس از صدور حکم اعدام در نامه ای نوشتند که زیر شکنجه مجبور به اعتراف شده و هیچ نقشی در این ترور نداشته اند. ۱۹ شهریور ۱۳۹۹ سازمان عفو بین الملل پنهانکاری حکومت جمهوری اسلامی در مورد محل دفن زندانیان سیاسی اعدام شده از جمله رامین حسین پناهی، زانیار مرادی، و لقمان مرادی را محکوم کرد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B2%D8%A7%D9%86%DB%8C%D8%A7%D8%B1_%D9%85%D8%B1%D8%A7%D8%AF%DB%8C",
+        "https://en.wikipedia.org/wiki/Zaniar_Moradi"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_055633ff3a",
       "slug": "لقمان-مرادی-055633",
       "name": "لقمان مرادی",
-      "name_en": null,
+      "name_en": "Loghman Moradi",
       "event": "executions",
       "gender": null,
       "age": 35,
@@ -596,13 +682,18 @@
       "story": "لقمان مرادی (زاده ۱۳۶۲ – درگذشته ۱۷ شهریور ۱۳۹۷) یک زندانی سیاسی کرد اهل مریوان بود که در سال ۱۳۸۸ به همراه پسر عمویش زانیار مرادی بازداشت و در تاریخ ۱۷ شهریور ۱۳۹۷ هر دو زندانی به اتهام ترور فرزند امام جمعه مریوان اعدام شدند. این دو پس از صدور حکم اعدام در نامه ای نوشتند که زیر شکنجه مجبور به اعتراف شده و هیچ نقشی در این ترور نداشته اند.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%84%D9%82%D9%85%D8%A7%D9%86_%D9%85%D8%B1%D8%A7%D8%AF%DB%8C",
+        "https://en.wikipedia.org/wiki/Loghman_Moradi"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -623,14 +714,19 @@
       "story": "نوید افکاری سنگری (۳۱ تیر ۱۳۷۲ – ۲۲ شهریور ۱۳۹۹) کشتی گیر ایرانی و از معترضان اعتراضات مرداد ۱۳۹۷ ایران بود. او به ادعای نظام جمهوری اسلامی ایران به دلیل شرکت در این اعتراضات در شیراز، دستگیر و به اتهام محاربه و همچنین قتل یک مأمور امنیتی در جریان این اعتراضات و فهرستی از اتهامات دیگر به دو بار اعدام، شش سال و شش ماه حبس و ۷۴ ضربه شلاق محکوم شد. او در ۲۲ شهریور ۱۳۹۹ به طور ناگهانی و بدون اینکه آخرین دیدار را با خانواده خود داشته باشد، بر اساس گفتهٔ قوه قضائیه، در زندان عادل آباد شیراز اعدام شد. بنا به فایل صوتی منتشرشده از آخرین مکالمه او و برادرش در حوالی ساعت ۱۱ شب،",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%86%D9%88%DB%8C%D8%AF_%D8%A7%D9%81%DA%A9%D8%A7%D8%B1%DB%8C",
+        "https://en.wikipedia.org/wiki/Execution_of_Navid_Afkari"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_person",
-        "javidnaam_submission"
+        "javidnaam_submission",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -651,14 +747,19 @@
       "story": "محسن شکاری (۵ اسفند ۱۳۷۸ – ۱۷ آذر ۱۴۰۱) یکی از اولین بازداشت شدگان خیزش ۱۴۰۱ ایران بود که جمهوری اسلامی در ۱۷ آذر ۱۴۰۱، پس از ۷۵ روز بازداشت، او را اعدام کرد. اعدام او موجب برانگیخته شدن خشم عمومی در بین مردم ایران و جهان شد. سازمان عفو بین الملل اعدام شکاری را «وحشتناک و ناعادلانه» توصیف کرد. این نخستین حکم اعدام معترضان خیزش ۱۴۰۱ ایران بود که جمهوری اسلامی اجرا کرد. محسن شکاری در ۳ مهر ۱۴۰۱ در جریان اعتراضات خیابانی در تهران دستگیر شد و دادگاه انقلاب تهران، به دلیل بستن خیابان ستارخان و مجروح کردن یک مأمور بسیج او را به محاربه متهم کرد. نخستین جلسه دادگاه او در ۱۰ آبان برگزار شد و پس از صدور حکم اعدام،",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%AD%D8%B3%D9%86_%D8%B4%DA%A9%D8%A7%D8%B1%DB%8C",
+        "https://en.wikipedia.org/wiki/Execution_of_Mohsen_Shekari"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_person",
-        "javidnaam_submission"
+        "javidnaam_submission",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -679,14 +780,19 @@
       "story": "مجیدرضا رهنورد (۲۶ خرداد ۱۳۷۸ – ۲۱ آذر ۱۴۰۱) کشتی گیر ایرانی و یکی از بازداشت شدگان خیزش ۱۴۰۱ ایران بود که در ۲۱ آذر ۱۴۰۱، به فاصلهٔ ۲۳ روز از زمان بازداشت، با حکم دادگاه انقلابِ مشهد اعدام شد. او در جریان دادگاه بدون طی شدن تشریفات قانونی، به کشتن دو بسیجی و زخمی کردن چهار بسیجی دیگر در جریان خیزش ۱۴۰۱ ایران در مشهد، متهم شده بود. این اعدام منجر به برانگیخته شدن موجی از خشم در ایران و جهان گردید. رهنورد بر روی یکی از دستانش خالکوبی نماد ملی شیر و خورشید را داشت؛ دستی که قبل از اعدام و در زمان شکنجه ابتدا سوزانده و سپس شکسته شده بود.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%AC%DB%8C%D8%AF%D8%B1%D8%B6%D8%A7_%D8%B1%D9%87%D9%86%D9%88%D8%B1%D8%AF",
+        "https://en.wikipedia.org/wiki/Execution_of_Majidreza_Rahnavard"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_person",
-        "javidnaam_submission"
+        "javidnaam_submission",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -707,21 +813,25 @@
       "story": "صالح میرهاشمی بلطاقی (۱۳۶۵ – ۲۹ اردیبهشت ۱۴۰۲) یکی از معترضان در جریان خیزش سراسری ۱۴۰۱ بود که به اتهام تیراندازی منجر به جان باختن دو بسیجی و یک سرهنگ یگان ویژه جمهوری اسلامی در ۲۵ آبان بازداشت و در دادگاه انقلاب اصفهان به اتهام محاربه اعدام شد. اتهامات منتسب به معترضان دستگیر شده در ارتباط با پروندهٔ خانه اصفهان دارای تناقضات بسیاری بود و اعترافات وی تحت فشار شکنجه و به صورت اجباری بوده است.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B5%D8%A7%D9%84%D8%AD_%D9%85%DB%8C%D8%B1%D9%87%D8%A7%D8%B4%D9%85%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_person",
-        "javidnaam_submission"
+        "javidnaam_submission",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_0bd134b6a8",
       "slug": "محمد-قبادلو-0bd134",
       "name": "محمد قبادلو",
-      "name_en": null,
+      "name_en": "Mohammad Ghobadloo",
       "event": "executions",
       "gender": null,
       "age": 24,
@@ -735,13 +845,18 @@
       "story": "محمد قبادلو (۱۱ دی ۱۳۷۸ – ۳ بهمن ۱۴۰۲) یکی از افراد بازداشت شده در خیزش ۱۴۰۱ بود که در ۳۱ شهریور ۱۴۰۱ در شهر پرند بازداشت شد و یک سال بعد با اتهام قتل یک مامور نیروی انتظامی و زخمی کردن ۵ مامور دیگر و محاربه و افساد فی الارض، اعدام شد. اجرای حکم اعدام قبادلو در حالی صورت گرفت که پیش تر خبری مبنی بر نقض حکم در شعبهٔ اول دیوان عالی کشور منتشر شده بود. قبادلو نهمین فردی است که در جریان اعتراضات سال ۱۴۰۱ بازداشت و سپس اعدام شد. اعدام او منجر به موجی از خشم عمومی در شبکه های اجتماعی شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%AD%D9%85%D8%AF_%D9%82%D8%A8%D8%A7%D8%AF%D9%84%D9%88",
+        "https://en.wikipedia.org/wiki/Execution_of_Mohammad_Ghobadlou"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -762,14 +877,18 @@
       "story": "غلامرضا رسایی شناخته شده با نام رضا رسایی (۵ اسفند ۱۳۶۷ – ۱۶ مرداد ۱۴۰۳) زندانی سیاسی ۳۵ سالۀ کُرد اهل ایران و پیرو آیین یارسان بود. وی در شهرستان صحنه کرمانشاه و در جریان خیزش ۱۴۰۱ ایران بازداشت شده بود. او بامداد روز ۱۶ مرداد ۱۴۰۳ اعدام شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B1%D8%B6%D8%A7_%D8%B1%D8%B3%D8%A7%DB%8C%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_person",
-        "javidnaam_submission"
+        "javidnaam_submission",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {

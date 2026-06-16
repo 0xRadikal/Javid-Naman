@@ -28,14 +28,18 @@
       "story": "آرشام ابراهیمی (زادهٔ ۱۳۷۷ – درگذشتهٔ ۲۵ آبان ۱۳۹۸ در اصفهان) یکی از جان باختگان اعتراضات آبان ۱۳۹۸ ایران بود.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%A2%D8%B1%D8%B4%D8%A7%D9%85_%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%DB%8C%D9%85%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_98",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -56,13 +60,17 @@
       "story": "زادهٔ ۱۳۷۲",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%A2%D8%B2%D8%A7%D8%AF%D9%87_%D8%B6%D8%B1%D8%A8%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -83,13 +91,17 @@
       "story": "۳۰ ساله، پدرِ ۲ دختر خردسال، به نام های سودا و سوگند",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%DB%8C%D9%85_%DA%A9%D8%AA%D8%A7%D8%A8%D8%AF%D8%A7%D8%B1"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -110,13 +122,17 @@
       "story": "پیکر او ۲۴ آذر ۱۳۹۸ حوالی سد گاران مریوان پیدا شد. او در جریان اعتراض های آبان بازداشت شده بود.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%A7%D8%B1%D8%B4%D8%A7%D8%AF_%D8%B1%D8%AD%D9%85%D8%A7%D9%86%DB%8C%D8%A7%D9%86"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -137,40 +153,49 @@
       "story": "۳۲ ساله",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%A7%D9%85%DB%8C%D8%B1%D8%AD%D8%B3%DB%8C%D9%86_%DA%A9%D8%A8%DB%8C%D8%B1%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_2c11956451",
       "slug": "برهان-منصورنیا-2c1195",
       "name": "برهان منصورنیا",
-      "name_en": null,
+      "name_en": "Borhan Mansournia",
       "event": "aban_98",
       "gender": null,
       "age": null,
-      "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "birth_year": 1370,
+      "date_jalali": "۱۳۹۸/۰۸/۲۷",
+      "date_gregorian": "2019-11-18",
       "city": "کرمانشاه",
       "province": "کرمانشاه",
       "cause": null,
       "occupation": null,
       "story": "اهل مریوان",
       "story_en": null,
-      "photo_url": null,
-      "memorial_links": [],
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Borhan_Mansournia.jpg/960px-Borhan_Mansournia.jpg",
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%A8%D8%B1%D9%87%D8%A7%D9%86_%D9%85%D9%86%D8%B5%D9%88%D8%B1%D9%86%DB%8C%D8%A7",
+        "https://en.wikipedia.org/wiki/Borhan_Mansournia"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -191,13 +216,17 @@
       "story": "۲۷ساله، لیسانس معماری",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B9%D9%84%DB%8C%D8%B1%D8%B6%D8%A7_%D8%A7%D9%86%D8%AC%D9%88%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -218,14 +247,18 @@
       "story": "فَرزاد انصاری فر (زادهٔ ۸ اسفند ۱۳۷۰ – درگذشتهٔ ۲۵ آبان ۱۳۹۸ در بهبهان خوزستان) یکی از جان باختگان اعتراضات آبان ۱۳۹۸ ایران بود.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%81%D8%B1%D8%B2%D8%A7%D8%AF_%D8%A7%D9%86%D8%B5%D8%A7%D8%B1%DB%8C%E2%80%8C%D9%81%D8%B1"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_98",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -246,13 +279,17 @@
       "story": "اهل لردگان ، ۳۰ ساله، در در روستای «له دراز» لردگان به خاک سپرده شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%81%D8%B1%D8%B4%D8%A7%D8%AF_%D8%AD%D8%A7%D8%AC%DB%8C%E2%80%8C%D9%BE%D9%88%D8%B1_%D9%85%DB%8C%D9%84%D8%A7%D8%B3%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -273,24 +310,28 @@
       "story": "زادهٔ ۵ مرداد ۱۳۶۱ در شیراز",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%81%D8%B1%D9%87%D8%A7%D8%AF_%D9%85%D8%AC%D8%AF%D9%85"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_482a45db66",
       "slug": "محسن-محمدپور-482a45",
       "name": "محسن محمدپور",
-      "name_en": null,
+      "name_en": "Mohsen Mohammadpour",
       "event": "aban_98",
       "gender": null,
       "age": 17,
-      "birth_year": null,
+      "birth_year": 1381,
       "date_jalali": null,
       "date_gregorian": null,
       "city": "خرمشهر",
@@ -300,13 +341,18 @@
       "story": "۱۷ ساله",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%AD%D8%B3%D9%86_%D9%85%D8%AD%D9%85%D8%AF%D9%BE%D9%88%D8%B1",
+        "https://en.wikipedia.org/wiki/Mohsen_Mohammadpour"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -327,26 +373,30 @@
       "story": "– ۳۴ ساله، دارای دکترای تاریخ از دانشگاه شهید بهشتی",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%AD%D8%B3%D9%86_%DA%A9%D8%B1%D9%85%DB%8C%E2%80%8C%D9%86%DB%8C%D8%A7"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_0678585fce",
       "slug": "محمد-داستان-خواه-067858",
       "name": "محمد داستان خواه",
-      "name_en": null,
+      "name_en": "Mohammad Dastankhah",
       "event": "aban_98",
       "gender": null,
       "age": 15,
-      "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "birth_year": 1383,
+      "date_jalali": "۱۳۹۸/۰۸/۲۵",
+      "date_gregorian": "2019-11-16",
       "city": "شهرک صدرای شیراز",
       "province": "فارس",
       "cause": null,
@@ -354,13 +404,17 @@
       "story": "۱۵ ساله، متولد ۲۰ مرداد۱۳۸۳",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%AD%D9%85%D8%AF_%D8%AF%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%E2%80%8C%D8%AE%D9%88%D8%A7%D9%87"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -381,14 +435,18 @@
       "story": "محمدجواد عابدی (زادهٔ شهریور ۱۳۸۲ در اصفهان – درگذشتهٔ ۲۶ آبان ۱۳۹۸ در اصفهان) یکی از جان باختگان اعتراضات آبان ۱۳۹۸ ایران بود.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%AD%D9%85%D8%AF%D8%AC%D9%88%D8%A7%D8%AF_%D8%B9%D8%A7%D8%A8%D8%AF%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_98",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -409,13 +467,17 @@
       "story": "مهدی نیکویی (زادهٔ ۱۳۷۵ در بیمور کامفیروز – درگذشتهٔ ۲۵ آبان ۱۳۹۸ در شیراز) یکی از جان باختگان اعتراضات آبان ۱۳۹۸ ایران بود.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D9%87%D8%AF%DB%8C_%D9%86%DB%8C%DA%A9%D9%88%DB%8C%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -436,13 +498,17 @@
       "story": "زادهٔ ۲۸ آبان ۱۳۷۱",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%DB%8C%D8%AB%D9%85_%D8%A7%D8%AD%D9%85%D8%AF%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -463,13 +529,17 @@
       "story": "۵۰ ساله، اهل سقز",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%DB%8C%D9%86%D8%A7_%D8%B4%DB%8C%D8%AE%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -490,13 +560,17 @@
       "story": "اهل سنندج، متولد ۱۳۶۲ فارغ التحصیل رشتهٔ کشاورزی از دانشگاه بروجرد، اصابت گلوله به چشم",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%86%D8%A7%D8%B5%D8%B1_%D8%B1%D8%B6%D8%A7%DB%8C%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -517,14 +591,18 @@
       "story": "نَوید بِهبودی (زادهٔ ۲۷ شهریور ۱۳۷۵ – درگذشتهٔ ۲۶ آبان ۱۳۹۸ در شهر قدس (قلعه حسن خان) تهران) یکی از جان باختگان اعتراضات آبان ۱۳۹۸ ایران بود.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%86%D9%88%DB%8C%D8%AF_%D8%A8%D9%87%D8%A8%D9%88%D8%AF%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_98",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -536,8 +614,8 @@
       "gender": "زن",
       "age": 14,
       "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "date_jalali": "۱۳۹۸/۰۹/۰۴",
+      "date_gregorian": "2019-11-25",
       "city": "تهران",
       "province": "تهران",
       "cause": null,
@@ -545,14 +623,19 @@
       "story": "۱۴ ساله",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%86%DB%8C%DA%A9%D8%AA%D8%A7_%D8%A7%D8%B3%D9%81%D9%86%D8%AF%D8%A7%D9%86%DB%8C",
+        "https://en.wikipedia.org/wiki/Nikta_Esfandani"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_98",
-        "javidnaam_submission"
+        "javidnaam_submission",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -573,13 +656,17 @@
       "story": "۲۳ ساله – اهل کرمانشاه",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%BE%D9%88%D8%B1%DB%8C%D8%A7_%D9%86%D8%A7%D8%B5%D8%B1%DB%8C%E2%80%8C%D8%AE%D9%88%D8%A7%D9%87"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_98"
+        "wiki_98",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -14291,7 +14378,7 @@
       "id": "jvn_7f0dca7e28",
       "slug": "پویا-بختیاری-7f0dca",
       "name": "پویا بختیاری",
-      "name_en": null,
+      "name_en": "Pouya Bakhtiari",
       "event": "aban_98",
       "gender": null,
       "age": 27,
@@ -14305,14 +14392,19 @@
       "story": "پویا بَختیاری (۱۹ شهریور ۱۳۷۱ – ۲۵ آبان ۱۳۹۸) یکی از جان باختگان اعتراضات آبان ۱۳۹۸ ایران بود. او ساکن مهرشهر کرج بود و به همراه مادر و خواهرش در این اعتراضات حضور داشت. بختیاری به وسیلهٔ اصابت گلوله به جمجمه از سوی نیروهای امنیتی وابسته به جمهوری اسلامی ایران جان باخت. والدینش منوچهر بختیاری و ناهید شیرپیشه پس از جان باختن او بازداشت شدند.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%BE%D9%88%DB%8C%D8%A7_%D8%A8%D8%AE%D8%AA%DB%8C%D8%A7%D8%B1%DB%8C",
+        "https://en.wikipedia.org/wiki/Pouya_Bakhtiari"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_98",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     }
   ]

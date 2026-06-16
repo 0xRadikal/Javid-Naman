@@ -19,8 +19,8 @@
       "gender": null,
       "age": null,
       "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "date_jalali": "۱۳۸۶/۱۰/۲۵",
+      "date_gregorian": "2008-01-15",
       "city": null,
       "province": null,
       "cause": null,
@@ -28,53 +28,62 @@
       "story": "ابراهیم لطف اللهی (درگذشتهٔ ۲۵ دی ۱۳۸۶) دانشجوی دانشگاه پیام نور سنندج بود. او دانشجوی سال چهارم رشته حقوق دانشگاه پیام نور سنندج بود، که پس از دستگیری در جلوی دانشگاه به بازداشتگاه فرستاده شده بود. وی در همان بازداشتگاه جان باخته و بگفته مسئولان وزارت اطلاعات جمهوری اسلامی در سنندج، علت مرگ او «خودکشی» اعلام شده است. مرگ او که توسط رسانه های خارج از ایران پوشش خبری یافته به مرگ زهرا کاظمی و زهرا بنی یعقوب تشبیه گردیده است.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%DB%8C%D9%85_%D9%84%D8%B7%D9%81%E2%80%8C%D8%A7%D9%84%D9%84%D9%87%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_9ba2bbf380",
       "slug": "امیدرضا-میرصیافی-9ba2bb",
       "name": "امیدرضا میرصیافی",
-      "name_en": null,
+      "name_en": "Omid Reza Mir Sayafi",
       "event": "deaths_in_custody",
       "gender": null,
       "age": null,
       "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "date_jalali": "۱۳۸۷/۱۲/۲۸",
+      "date_gregorian": "2009-03-18",
       "city": null,
       "province": null,
       "cause": null,
       "occupation": null,
       "story": "امیدرضا میرصیافی فعال فرهنگی و وبلاگ نویس ایرانی بود که توسط دادگاه انقلاب ایران به اتهام توهین به روح الله خمینی و علی خامنه ای به دو سال حبس محکوم گردید. و در زندان اوین و در سن ۲۸ سالگی درگذشت.",
       "story_en": null,
-      "photo_url": null,
-      "memorial_links": [],
+      "photo_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Omid_Reza_Mir_Sayafi.jpg",
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%A7%D9%85%DB%8C%D8%AF%D8%B1%D8%B6%D8%A7_%D9%85%DB%8C%D8%B1%D8%B5%DB%8C%D8%A7%D9%81%DB%8C",
+        "https://en.wikipedia.org/wiki/Omid_Reza_Mir_Sayafi"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_a0b9faee1a",
       "slug": "امیرحسین-حشمت-ساران-a0b9fa",
       "name": "امیرحسین حشمت ساران",
-      "name_en": null,
+      "name_en": "Amir Hossein Heshmat Saran",
       "event": "deaths_in_custody",
       "gender": null,
       "age": null,
-      "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "birth_year": 1338,
+      "date_jalali": "۱۳۸۷/۱۰/۱۲",
+      "date_gregorian": "2009-01-01",
       "city": null,
       "province": null,
       "cause": null,
@@ -82,26 +91,31 @@
       "story": "امیرحسین حشمت ساران دبیر کل «جبهه اتحاد ملی ایران» است. وی در سال ۱۳۸۲ به اتهام تشکیل این حزب دستگیر و به هشت سال حبس محکوم شد، وی در دوران حبس مجدداً محاکمه و به هشت سال حبس دیگر محکوم گردید. وی در حمله ای که توسط کرمانی و «نبی الله فرج زاده» همراه با ۳۰ نفر از افراد گارد ویژه زندان به سلول او و سایر هم بندیهایش شد، آماج ضربات باطوم قرار گرفته و دراثر بی توجهی مسئولان زندان و تزریق داروهای مشکوک و مخلوط شده و پس از سه بار اغما به «بیمارستان رجایی کرج»، بخش مراقبهای ویژه، منتقل شد. در حال بیهوشی نیز به دستان او دستبند زده و به تخت بیمارستان بسته شده بود و پزشک معالج وی از دادن هرگونه اطلاعاتی از وضعیت جسمی آقای ساران خودداری می کند.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%A7%D9%85%DB%8C%D8%B1%D8%AD%D8%B3%DB%8C%D9%86_%D8%AD%D8%B4%D9%85%D8%AA_%D8%B3%D8%A7%D8%B1%D8%A7%D9%86",
+        "https://en.wikipedia.org/wiki/Amir_Hossein_Heshmat_Saran"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_6d74b84235",
       "slug": "زهرا-بنی-یعقوب-6d74b8",
       "name": "زهرا بنی یعقوب",
-      "name_en": null,
+      "name_en": "Zahra Bani Yaghoub",
       "event": "deaths_in_custody",
       "gender": null,
       "age": null,
-      "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "birth_year": 1359,
+      "date_jalali": "۱۳۸۶/۰۷/۲۱",
+      "date_gregorian": "2007-10-13",
       "city": null,
       "province": null,
       "cause": null,
@@ -109,26 +123,31 @@
       "story": "زهرا بنی یعقوب (۱۳۵۹ در تهران – ۱۳۸۶ در همدان) پزشک ایرانی بود که در بازداشتگاه ستاد امر به معروف و نهی از منکر شهر همدان جان باخت. مقامات جمهوری اسلامی علت درگذشت او را «خودکشی در بازداشتگاه» اعلام کردند.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B2%D9%87%D8%B1%D8%A7_%D8%A8%D9%86%DB%8C%E2%80%8C%DB%8C%D8%B9%D9%82%D9%88%D8%A8",
+        "https://en.wikipedia.org/wiki/Zahra_Bani_Yaghoub"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_8f66c3c4c1",
       "slug": "زهرا-کاظمی-8f66c3",
       "name": "زهرا کاظمی",
-      "name_en": null,
+      "name_en": "Zahra Kazemi",
       "event": "deaths_in_custody",
       "gender": null,
       "age": null,
-      "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "birth_year": 1326,
+      "date_jalali": "۱۳۸۲/۰۴/۲۰",
+      "date_gregorian": "2003-07-11",
       "city": null,
       "province": null,
       "cause": null,
@@ -136,26 +155,31 @@
       "story": "زهرا (زیبا) کاظمی (۱۹۴۸ (میلادی) – ۱۱ ژوئیه ۲۰۰۳) خبرنگار کانادایی - ایرانی تبار بود که در مسافرتی به قصد تهیه گزارش در ایران، هنگام ناآرامی ها و اعتراضات دانشجویی، به جرم عکس برداری از اماکن ممنوعه، بازداشت شد. او در فاصله ۲ تا ۶ تیر در بازداشگاه به سر برد و بامدادان به بیمارستان بقیةالله تهران منتقل شد. او در بیمارستان به خاطر مرگ مغزی بستری شد و سرانجام پس از چندین روز کما، در ۱۶ تیر درگذشت. بازداشت او به اصرار سعید مرتضوی دادستان وقت تهران انجام شد، این بازداشت برخلاف نظر وزارت اطلاعات که وی را جاسوس نمی دانست انجام شده بود. پرونده وی پس از گذشت سال ها در دستگاه قضایی جمهوری اسلامی به سرانجامی نرسید و تنها متهم پرونده نیز، تبرئه شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B2%D9%87%D8%B1%D8%A7_%DA%A9%D8%A7%D8%B8%D9%85%DB%8C",
+        "https://en.wikipedia.org/wiki/Zahra_Kazemi"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_ae3831120b",
       "slug": "شادمان-احمدی-ae3831",
       "name": "شادمان احمدی",
-      "name_en": null,
+      "name_en": "Shadman Ahmadi",
       "event": "deaths_in_custody",
       "gender": null,
       "age": null,
       "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "date_jalali": "۱۴۰۰/۱۰/۱۱",
+      "date_gregorian": "2022-01-01",
       "city": null,
       "province": null,
       "cause": null,
@@ -163,26 +187,30 @@
       "story": "شادمان احمدی (درگذشتهٔ ۱۷ آذر ۱۴۰۱) پس از ربوده شدن توسط نیروهای امنیتی جمهوری اسلامی در بازداشتگاه کلانتری شهر دهگلان و زیر شکنجه کشته می شود. به گفته فعالان کرد او یکی از معترضان خیزش ۱۴۰۱ ایران بوده است. نزدیکان خانواده او نحوه بازداشت او را اینگونه روایت کردند: «نیروهای اداره اطلاعات با دو اتومبیل سمند سفید و یک دستگاه پژو ۴۰۵ به منزل آنها هجوم برده و وی را با خود می برند.». پس از خبر مرگ او تعدادی از مردم در مقابل منزل پدر و مادر او تجمع کرده اند تا مانع از خاکسپاری شبانه وی شوند.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B4%D8%A7%D8%AF%D9%85%D8%A7%D9%86_%D8%A7%D8%AD%D9%85%D8%AF%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_3467654ea8",
       "slug": "شوانه-سیدقادری-346765",
       "name": "شوانه سیدقادری",
-      "name_en": null,
+      "name_en": "Shivan Qaderi",
       "event": "deaths_in_custody",
       "gender": null,
       "age": null,
-      "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "birth_year": 1378,
+      "date_jalali": "۱۳۸۴/۰۴/۱۸",
+      "date_gregorian": "2005-07-09",
       "city": null,
       "province": null,
       "cause": null,
@@ -190,13 +218,18 @@
       "story": "سید کمال اسفرم معروف به شوانه سیدقادری (زادهٔ ۱۳۶۰) کارگر و فعال سیاسی کرد بود که در ۱۸ تیر ماه ۱۳۸۴ در مهاباد در پی تعقیب و گریز نیروهای انتظامی ایران، بر اثر اصابت گلوله جان باخت. و جنازه او را به ماشین با طناب بسته و در سطح شهر بر روی آسفالت کشیدند. جان باختن او و انتشار تصاویری از جسد او، باعث شد تا اعتراضاتی در راستای محکومیت شکنجه او شکل بگیرد. این اعتراضات به یکی از بزرگترین اعتراضات قومی و قبیله ای ایران منجر شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%DA%A9%D9%85%D8%A7%D9%84_%D8%A7%D8%B3%D9%81%D8%B1%D9%85",
+        "https://en.wikipedia.org/wiki/Shivan_Qaderi"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -207,9 +240,9 @@
       "event": "deaths_in_custody",
       "gender": null,
       "age": null,
-      "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "birth_year": 1336,
+      "date_jalali": "۱۳۹۰/۰۱/۰۸",
+      "date_gregorian": "2011-03-28",
       "city": null,
       "province": null,
       "cause": null,
@@ -217,13 +250,17 @@
       "story": "محسن دکمه چی (زاده ۱۳۳۷ / ۱۹۵۸ (میلادی) - درگذشته ۸ فروردین ۱۳۹۰) یکی از بازاریان شناخته شده بازار تهران است که به دلیل کمک به خانواده زندانیان سیاسی توسط وزارت اطلاعات در شهریور ۱۳۸۸ دستگیر و به بند ۲۰۹ زندان اوین و سپس زندان رجایی شهر کرج انتقال یافت. بعضی از منابع خبری غیررسمی خبر از مرگ او در ۸ فروردین ۱۳۹۰ داده اند. دکمه چی به بیماری سرطان پانکراس مبتلا بود. وی پیش از این نیز به دلیل کمک به خانواده زندانیان سیاسی تحت فشار قرار گرفته بود. وی به اتهام حمایت مالی از خانواده های زندانیان سیاسی به تحمل ۱۰ سال حبس در زندان گوهردشت محکوم شده بود.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D8%AD%D8%B3%D9%86_%D8%AF%DA%A9%D9%85%D9%87%E2%80%8C%DA%86%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -244,26 +281,29 @@
       "story": "وحید حیدری دستفروشی ۲۳ ساله اهل اراک بود که در در سال ۱۳۹۶ دستگیر و در بازداشتگاه درگذشت. علت بازداشت و درگذشت او محل مناقشه بود و باعث شد تا موضوع مرگ او در مجلس شورای اسلامی نیز مورد بررسی قرار بگیرد. خانواده او، بازداشتش را در میانه اعتراضات دی ۱۳۹۶ ایران دانستند و مرگش را بر اثر ضربه ماموران به هنگام بازداشت می دانستند. در مقابل مقامات رسمی جمهوری اسلامی، بازداشتش را به خاطر قاچاق مواد مخدر و مرگش را به خاطر خودکشی در بازداشتگاه گزارش کردند.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%88%D8%AD%DB%8C%D8%AF_%D8%AD%DB%8C%D8%AF%D8%B1%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa"
       ]
     },
     {
       "id": "jvn_2e834f9b9b",
       "slug": "وحید-صیادی-نصیری-2e834f",
       "name": "وحید صیادی نصیری",
-      "name_en": null,
+      "name_en": "Vahid Sayadi Nasiri",
       "event": "deaths_in_custody",
       "gender": null,
       "age": null,
-      "birth_year": null,
-      "date_jalali": null,
-      "date_gregorian": null,
+      "birth_year": 1359,
+      "date_jalali": "۱۳۹۷/۰۹/۲۱",
+      "date_gregorian": "2018-12-12",
       "city": null,
       "province": null,
       "cause": null,
@@ -271,20 +311,25 @@
       "story": "وحید صیادی نصیری (۵ شهریور ۱۳۵۹ تهران – ۲۱ آذر ۱۳۹۷ قم) یک فعال حقوق بشر، فعال عقیدتی-سیاسی، هوادار نظام پادشاهی و زندانی سیاسی اهل ایران بود. نصیری بر اثر صدمات جسمی حاصل از دو ماه اعتصاب غذای طولانی مدت در زندان لنگرود قم و پس از تحمل هفت روز بستری در بیمارستان شهید بهشتی قم درگذشت. علت اعتصاب غذای او اعتراض به محل نگهداری اش در بند زندانیان جرایم کیفری خطرناک ذکر شده است که به باور بسیاری مغایر با «اصل تفکیک جرایم» بود.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%88%D8%AD%DB%8C%D8%AF_%D8%B5%DB%8C%D8%A7%D8%AF%DB%8C_%D9%86%D8%B5%DB%8C%D8%B1%DB%8C",
+        "https://en.wikipedia.org/wiki/Vahid_Sayadi_Nasiri"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_9a54659aad",
       "slug": "ولی-الله-فیض-مهدوی-9a5465",
       "name": "ولی الله فیض مهدوی",
-      "name_en": null,
+      "name_en": "Valiullah Faiz Mahdavi",
       "event": "deaths_in_custody",
       "gender": null,
       "age": 27,
@@ -298,20 +343,24 @@
       "story": "ولی الله فیض مهدوی (۵ بهمن ۱۳۵۸- ۱۵ شهریور ۱۳۸۵) از اعضای سازمان مجاهدین خلق ایران و یکی از زندانیان سیاسی در نظام جمهوری اسلامی بود که به جرم اقدام به بمب گذاری دستگیر و به اعدام محکوم شده بود. وی در اعتراض به عدم رسیدگی به خواست های قانونی اش در یک اعتصاب غذای تر و خشک قرار داشت و در روز یازدهم از اعتصاب غذا (۱۴ شهریور) بنا بر ادّعای مقامات امنیّتی ایران در زندان رجایی شهر کرج دست به خودکشی زد و در تاریخ ۱۵ شهریور ۱۳۸۵ در بیمارستان شریعتی تهران درگذشت. برخی از منابع حقوق بشری از جمله سازمان دیدبان حقوق بشر رژیم ایران را مسئول مرگ مشکوک وی قلمداد می کنند. وی متولد ۵ بهمن سال ۱۳۵۸ در شهر همدان بود.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%88%D9%84%DB%8C%E2%80%8C%D8%A7%D9%84%D9%84%D9%87_%D9%81%DB%8C%D8%B6_%D9%85%D9%87%D8%AF%D9%88%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_4abde1e04e",
       "slug": "هدی-صابر-4abde1",
       "name": "هدی صابر",
-      "name_en": null,
+      "name_en": "Hoda Saber",
       "event": "deaths_in_custody",
       "gender": null,
       "age": 53,
@@ -325,20 +374,25 @@
       "story": "هُدی رضازاده صابر (۲۴ اسفند ۱۳۳۷ – ۲۱ خرداد ۱۳۹۰) پژوهشگر، روزنامه نگار، فعّال ملی مذهبی، زندانی سیاسی و از گردانندگان مجله توقیف شده «ایران فردا» بود. وی در ۱۲ خرداد ۱۳۹۰ در حالی که در اوین زندانی بود در اعتراض به مرگ مشکوک هاله سحابی در مراسم تشییع جنازه پدرش عزت الله سحابی، اعتصاب غذای خود را آغاز کرد و در ۲۱ خرداد، پس از انتقال از زندان به بیمارستان مدرس بر اثر نارسایی قلبی درگذشت. منابع نزدیک به مخالفان حکومت ایران، علت مرگ هدی صابر را ضرب و شتم از سوی مأموران امنیتی زندان اوین، عنوان کردند.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%87%D8%AF%DB%8C_%D8%B5%D8%A7%D8%A8%D8%B1",
+        "https://en.wikipedia.org/wiki/Hoda_Saber"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_2325ab4093",
       "slug": "ستار-بهشتی-2325ab",
       "name": "ستار بهشتی",
-      "name_en": null,
+      "name_en": "Sattar Beheshti",
       "event": "deaths_in_custody",
       "gender": null,
       "age": 36,
@@ -352,20 +406,25 @@
       "story": "ستّار بهشتی (۱ شهریور ۱۳۵۵ – ۱۳ آبان ۱۳۹۱) کارگر و وبلاگ نویس ایرانی بود که در ۹ آبان ۱۳۹۱ توسط پلیس فتا دستگیر شد. او به اتّهام «اقدام علیه امنیت ملی از طریق فعالیت در شبکهٔ اجتماعی و فیس بوک» بازداشت و به مکانی نامشخص منتقل شده بود. در مدّت بازجویی به شدت از سوی پلیس فتا شکنجه شد و به دلیل خون ریزی ریه، کبد، کلیه و مخچه جان باخت و در آرامستان رباط کریم (محل زندگی اش) به خاک سپرده شد. بر اساس گزارش ثبت شده در روابط عمومی بهشت زهرای تهران، بهشتی در ۱۳ آبان جان باخته است. عموی ستار بهشتی در گفتگو با سایت سحام نیوز گفته زمانی که از مسئولان، علّت مرگ را جویا شدند به آن ها گفته شد: «خفه شوید و به شما ربطی ندارد.» پس از انتشار خبر قتل بهشتی،",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B3%D8%AA%D8%A7%D8%B1_%D8%A8%D9%87%D8%B4%D8%AA%DB%8C",
+        "https://en.wikipedia.org/wiki/Sattar_Beheshti"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_644d81a784",
       "slug": "کاووس-سیدامامی-644d81",
       "name": "کاووس سیدامامی",
-      "name_en": null,
+      "name_en": "Kavous Seyed-Emami",
       "event": "deaths_in_custody",
       "gender": null,
       "age": 64,
@@ -379,13 +438,18 @@
       "story": "کاووس سیدامامی (۳ دی ۱۳۳۲ – ۱۹ بهمن ۱۳۹۶) فعال ایرانی-کانادایی محیط زیست بود. او عضو هیئت علمی دانشکده معارف اسلامی و علوم سیاسی دانشگاه امام صادق، استاد ارتباطات و مدیرعامل مؤسسه حیات وحش میراث پارسیان بود. سیدامامی در ۴ بهمن ۱۳۹۶، به همراه تعدادی از دیگر همکاران این مؤسسه دستگیر و به جاسوسی متهم شد و در ۱۹ بهمن در زندان اوین درگذشت. قوه قضائیه دلیل مرگ او را «خودکشی» اعلام کرده ولی این ادعا مورد تردید افکار عمومی قرار گرفت.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%DA%A9%D8%A7%D9%88%D9%88%D8%B3_%D8%B3%DB%8C%D8%AF%D8%A7%D9%85%D8%A7%D9%85%DB%8C",
+        "https://en.wikipedia.org/wiki/Kavous_Seyed-Emami"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -406,21 +470,25 @@
       "story": "بهنام محجوبی (۳۰ آذر ۱۳۶۶ – ۲۸ بهمن ۱۳۹۹) درویش زندانی اعتراضات گلستان هفتم بود. او به دلیل بیماری امکان تحمل حبس را نداشت اما بازداشت و زندانی شد و ۲۵ بهمن ۱۳۹۹ برای چندمین بار در حالت اغما به علت مسمومیت دارویی در زندان به بیمارستان منتقل و خبر درگذشتش ۳ اسفند ۱۳۹۹ تأیید شد. محجوبی در شعبه ۲۶ دادگاه انقلاب تهران به دو سال حبس محکوم شده بود.محجوبی آبان ماه ۱۳۹۹ در فایل صوتی از زندان گفته بود «قانع شده ام آن ها [مأموران امنیتی] قصد کشتن من را دارند.»",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%A8%D9%87%D9%86%D8%A7%D9%85_%D9%85%D8%AD%D8%AC%D9%88%D8%A8%DB%8C"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
         "wiki_person",
-        "javidnaam_submission"
+        "javidnaam_submission",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_7934f9ad99",
       "slug": "مهسا-امینی-7934f9",
       "name": "مهسا امینی",
-      "name_en": null,
+      "name_en": "Mahsa Amini",
       "event": "deaths_in_custody",
       "gender": null,
       "age": 22,
@@ -434,20 +502,25 @@
       "story": "مهسا (ژینا) امینی (۱۷ مهر ۱۳۷۹ – ۲۵ شهریور ۱۴۰۱)، شهروند ۲۱ سالهٔ ایرانی بود که در ۲۲ شهریور ۱۴۰۱، پس از دستگیری از سوی پلیس امنیت اخلاقی نظام جمهوری اسلامی ایران موسوم به گشت ارشاد در تهران، در اثر ضربات مأموران گشت ارشاد دچار شکستگی جمجمه و مرگ مغزی شد. مهسا امینی سه روز بعد، در ۲۵ شهریور ۱۴۰۱، بر اثر شدت جراحات ناشی از ضربات وارده در بیمارستان کسری تهران درگذشت. درگذشت او، موجب بروز واکنش ها و اعتراضات گسترده ای در نقاط مختلف ایران و جهان شد. واکنش ها به جان باختن وی در شهرهای ایران و فضای مجازی سبب شد که هشتگ فارسی #مهسا_امینی با گذر از مرز ۳۰۰ میلیون توییت و ری توییت ترند جهانی شود و رکورد جهانی تاریخ توییتر را بشکند. قتل او،",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%85%D9%87%D8%B3%D8%A7_%D8%A7%D9%85%DB%8C%D9%86%DB%8C",
+        "https://en.wikipedia.org/wiki/Death_of_Mahsa_Amini"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_f68326128c",
       "slug": "جواد-روحی-f68326",
       "name": "جواد روحی",
-      "name_en": null,
+      "name_en": "Javad Rouhi",
       "event": "deaths_in_custody",
       "gender": null,
       "age": 35,
@@ -461,13 +534,18 @@
       "story": "وی از بازداشت شدگان شهریور ۱۴۰۱ در نوشهر بود که در زندان نوشهر به اعدام محکوم شده بود، که در زندان درگذشت.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%AC%D9%88%D8%A7%D8%AF_%D8%B1%D9%88%D8%AD%DB%8C",
+        "https://en.wikipedia.org/wiki/Death_sentences_during_the_Mahsa_Amini_protests"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_1401"
+        "wiki_1401",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -488,26 +566,30 @@
       "story": "صادق فولادی وندا (زادهٔ ۲۲ بهمن ۱۳۷۲ – بهمن ۱۴۰۱) شهروند، کارگر، فعال حقوق کودکان و مبارز سوسیالیست ایرانی بود. او در جریان خیزش ۱۴۰۱ ایران توسط نیروهای امنیتی جمهوری اسلامی دستگیر و در بازداشت اطلاعات سپاه جان باخت.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B5%D8%A7%D8%AF%D9%82_%D9%81%D9%88%D9%84%D8%A7%D8%AF%DB%8C%E2%80%8C%D9%88%D9%86%D8%AF%D8%A7"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_ea919aa3fe",
       "slug": "ساسان-نیک-نفس-ea919a",
       "name": "ساسان نیک نفس",
-      "name_en": null,
+      "name_en": "Sasan Niknafs",
       "event": "deaths_in_custody",
       "gender": null,
       "age": 36,
       "birth_year": 1364,
       "date_jalali": "درگذشتهٔ ۱۷ خردادماه ۱۴۰۰",
-      "date_gregorian": null,
+      "date_gregorian": "2021-06-08",
       "city": null,
       "province": null,
       "cause": null,
@@ -515,13 +597,17 @@
       "story": "ساسان نیک نفس (زادهٔ ۲۱ شهریور ۱۳۶۴ – درگذشتهٔ ۱۷ خردادماه ۱۴۰۰) زندانی سیاسی هوادار نظام پادشاهی بود. نیک نفس در شعبه ۱۵ دادگاه انقلاب تهران به ۸ سال حبس محکوم شده بود. او به دلیل بیماری امکان تحمل حبس را نداشت اما بازداشت و زندانی شد. نیک نفس در زندان فشافویه تهران پس از دو روز بی خبری از وضعیت و محل نگهداری اش و ممانعت از انتقال وی به بیمارستان درگذشت.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B3%D8%A7%D8%B3%D8%A7%D9%86_%D9%86%DB%8C%DA%A9%E2%80%8C%D9%86%D9%81%D8%B3"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     }
   ]

@@ -717,7 +717,7 @@
       "id": "jvn_2766f66ef4",
       "slug": "سینا-قنبری-2766f6",
       "name": "سینا قنبری",
-      "name_en": null,
+      "name_en": "Sina Ghanbari",
       "event": "dey_96",
       "gender": null,
       "age": 21,
@@ -731,13 +731,18 @@
       "story": "سینا قنبری (۱۷ دی ۱۳۷۵ – ۱۷ دی ۱۳۹۶) یک جوان معترض ایرانی بود که ابتدا در جریان اعتراضات دی ۱۳۹۶ ایران توسط نیروی انتظامی بازداشت و پس از انتقال به زندان اوین در بامداد روز یکشنبه ۱۷ دی ماه ۱۳۹۶ در قرنطینهٔ بند چهار این زندان درگذشت. محمود صادقی نماینده مردم تهران و عضو کمیسیون آموزش مجلس شورای اسلامی ضمن ابراز تاسف، مرگ سینا قنبری را تأیید و از صحت آن خبر داد. در پی مرگ قنبری، صادقی خواستار ورود مجلس برای بررسی این موضوع شد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B3%DB%8C%D9%86%D8%A7_%D9%82%D9%86%D8%A8%D8%B1%DB%8C",
+        "https://en.wikipedia.org/wiki/Death_of_Sina_Ghanbari"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -770,7 +775,7 @@
       "id": "jvn_3db7f3db3a",
       "slug": "سارو-قهرمانی-3db7f3",
       "name": "سارو قهرمانی",
-      "name_en": null,
+      "name_en": "Sarou Ghahremani",
       "event": "dey_96",
       "gender": null,
       "age": 24,
@@ -784,13 +789,18 @@
       "story": "سارو قهرمانی (زادهٔ ۹ خرداد ۱۳۷۲ – درگذشتهٔ ۲۲ دی ۱۳۹۶) شهروند کرد ایرانی بود که پس از شرکت در اعتراضات دی ۱۳۹۶ ایران در روز ۱۳ دی ۱۳۹۶ در شهر سنندج مفقود شد. ۱۱ روز بعد، خبر مرگ او به خانواده اش اعلام شد. خانواده قهرمانی مدعی شدند که در مدت غیبت او در ۱۱ روز گذشته، بازداشتش توسط نیروهای امنیتی بوده است. اما مقامات رسمی جمهوری اسلامی مدعی شدند او در روز ۲۲ دیماه در یک درگیری مسلحانه جان باخت است.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B3%D8%A7%D8%B1%D9%88_%D9%82%D9%87%D8%B1%D9%85%D8%A7%D9%86%DB%8C",
+        "https://en.wikipedia.org/wiki/Sarou_Ghahremani"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {

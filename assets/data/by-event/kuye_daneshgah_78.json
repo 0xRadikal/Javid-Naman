@@ -55,24 +55,28 @@
       "story": "تامی حامی فر (زاده: پلدختر – درگذشت: تیر ۱۳۷۸، تهران) دختر دانش آموزی است که به گفته منابع دانشجویی در جریان درگیری های خیابانی در اعتراض به حمله پلیس و شبه نظامیان هوادار حکومت به کوی دانشگاه تهران جان باخت. شورای متحصنین - نمایندگان دانشجویان تهرانی که از روز دوشنبه ۲۱ تیر تشکیل و مأمور پیگیری خواست دانشجویان و مذاکره با حکومت شدند - در روز شنبه ۲۶ تیر ۱۳۷۸ خبر جان باختن این دختر دانش آموز را تأیید کرده و اعلام کرد که پیگیر سرنوشت سایر مفقودان است. در بیانیهٔ شماره ۳ شورای متحصنین همچنین اعلام شد که جسد وی به پل دختر منتقل و دفن شده است.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%AA%D8%A7%D9%85%DB%8C_%D8%AD%D8%A7%D9%85%DB%8C%E2%80%8C%D9%81%D8%B1"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_374ab87e83",
       "slug": "سعید-زینالی-374ab8",
       "name": "سعید زینالی",
-      "name_en": null,
+      "name_en": "Saeed Zeinali",
       "event": "kuye_daneshgah_78",
       "gender": null,
       "age": null,
-      "birth_year": null,
+      "birth_year": 1355,
       "date_jalali": "1378/04/18",
       "date_gregorian": null,
       "city": "تهران",
@@ -82,26 +86,31 @@
       "story": "سعید زینالی، دانشجویی که در ۲۳ تیر ۱۳۷۸ پس از وقایع کوی دانشگاه بازداشت شد و از آن زمان تا امروز مفقودالاثر است؛ سرنوشت او هرگز روشن نشد.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B3%D8%B9%DB%8C%D8%AF_%D8%B2%DB%8C%D9%86%D8%A7%D9%84%DB%8C",
+        "https://en.wikipedia.org/wiki/Saeed_Zeinali"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
       "id": "jvn_6a66428d9a",
       "slug": "عزت-الله-ابراهیم-نژاد-6a6642",
       "name": "عزت الله ابراهیم نژاد",
-      "name_en": null,
+      "name_en": "Ezzat Ebrahim-Nejad",
       "event": "kuye_daneshgah_78",
       "gender": null,
       "age": null,
       "birth_year": null,
       "date_jalali": "1378/04/18",
-      "date_gregorian": null,
+      "date_gregorian": "1999-07-29",
       "city": "تهران",
       "province": "تهران",
       "cause": "اصابت گلوله در حملهٔ نیروهای سرکوب به کوی دانشگاه",
@@ -109,13 +118,18 @@
       "story": "عزت‌الله ابراهیم‌نژاد، تنها کشتهٔ رسماً تأییدشدهٔ حملهٔ ۱۸ تیر ۱۳۷۸ به کوی دانشگاه تهران است. او فارغ‌التحصیل رشتهٔ حقوق از دانشگاه چمران اهواز بود که در جریان حملهٔ نیروهای انصار حزب‌الله و لباس‌شخصی‌ها به خوابگاه دانشجویان جان باخت.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D8%B9%D8%B2%D8%AA%E2%80%8C%D8%A7%D9%84%D9%84%D9%87_%D8%A7%D8%A8%D8%B1%D8%A7%D9%87%DB%8C%D9%85%E2%80%8C%D9%86%DA%98%D8%A7%D8%AF",
+        "https://en.wikipedia.org/wiki/Ezzat_Ebrahim-Nejad"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     },
     {
@@ -136,13 +150,17 @@
       "story": "فرشته علیزاده فعّال دانشجویی دانشگاه الزهرا و مسئول برد انجمن این دانشگاه بود که در میان درگیری های بین دانشجویان و پلیس در کوی دانشگاه تهران در وقایع ۱۸ تیر ۱۳۷۸ ناپدید شد. منابع دانشجویی معتقدند که وی جان باخت است. او متولد بیست ونهم شهریورماه ۱۳۵۵ بوده است. علی اکبر موسوی خوئینی نمایندهٔ مجلس ششم ۴ سال پس از واقعه ۱۸ تیر در همایشی که در دانشگاه امیرکبیر تهران برگزار شده بود، گفت علیزاده توسط مأموران امنیتی ربوده شد و هیچ نهادی مسئولیت آن را به عهده نمی گیرد. مادر او بر اثر فشارهای روحی سکته قلبی کرد و درگذشت. خانوادهٔ وی در تلاش برای پیگیری سرنوشت او از طریق سازمان ملل برآمدند.",
       "story_en": null,
       "photo_url": null,
-      "memorial_links": [],
+      "memorial_links": [
+        "https://fa.wikipedia.org/wiki/%D9%81%D8%B1%D8%B4%D8%AA%D9%87_%D8%B9%D9%84%DB%8C%D8%B2%D8%A7%D8%AF%D9%87"
+      ],
       "notable": true,
       "verification": "documented",
       "flagged_review": null,
       "sources": [
         "wiki_navbox",
-        "wiki_person"
+        "wiki_person",
+        "wikipedia_fa",
+        "wikidata"
       ]
     }
   ]
