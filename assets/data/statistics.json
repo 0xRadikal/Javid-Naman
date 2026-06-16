@@ -1,23 +1,27 @@
 {
-  "total": 6231,
+  "total": 5202,
   "notable": 161,
   "by_event": {
     "kuye_daneshgah_78": 5,
-    "green_88": 36,
-    "dey_96": 36,
+    "green_88": 35,
+    "dey_96": 35,
     "darvish_96": 2,
     "mordad_97": 2,
     "kazerun_97": 2,
-    "aban_98": 553,
-    "khuzestan_1400": 15,
-    "khizesh_1401": 1270,
-    "khizesh_1404": 4262,
+    "aban_98": 549,
+    "khuzestan_1400": 14,
+    "khizesh_1401": 935,
+    "khizesh_1404": 3550,
     "executions": 29,
-    "deaths_in_custody": 19
+    "deaths_in_custody": 19,
+    "chain_murders_77": 1,
+    "dey_1402": 17,
+    "dey_1403": 4,
+    "needs_review": 3
   },
   "by_verification": {
-    "documented": 4741,
-    "reported": 1490
+    "documented": 4467,
+    "reported": 735
   },
   "field_coverage": {
     "name_en": 4839,
@@ -42,10 +46,10 @@
     "enriched": 5,
     "new_events": 2
   },
-  "generated": "2026-06-15T20:17:10.000Z",
+  "generated": "2026-06-16T00:48:11.000Z",
   "by_gender": {
-    "زن": 544,
-    "مرد": 4090
+    "زن": 451,
+    "مرد": 3300
   },
   "by_province_top15": {
     "تهران": 1431,

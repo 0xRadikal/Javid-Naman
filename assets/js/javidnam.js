@@ -29,7 +29,9 @@ const EVENT_COLORS = {
   kuye_daneshgah_78: '#fbbf24', green_88: '#34d399', dey_96: '#fb923c',
   darvish_96: '#2dd4bf', mordad_97: '#facc15', kazerun_97: '#a3e635',
   aban_98: '#f87171', khuzestan_1400: '#22d3ee', khizesh_1401: '#e879f9',
-  khizesh_1404: '#fb7185', executions: '#c084fc', deaths_in_custody: '#94a3b8'
+  khizesh_1404: '#fb7185', executions: '#c084fc', deaths_in_custody: '#94a3b8',
+  chain_murders_77: '#9ca3af', dey_1402: '#60a5fa', dey_1403: '#818cf8',
+  needs_review: '#64748b'
 };
 function evColor(e){ return EVENT_COLORS[e] || '#9ca3af'; }
 function hexA(hex, a){

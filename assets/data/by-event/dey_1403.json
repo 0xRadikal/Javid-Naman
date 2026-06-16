@@ -1,0 +1,125 @@
+{
+  "event": "dey_1403",
+  "info": {
+    "title": "اعتراضات دی ۱۴۰۳",
+    "title_en": "December 2024 Protests",
+    "year_fa": "۱۴۰۳",
+    "year": 1403,
+    "order": 17,
+    "category": "uprising"
+  },
+  "count": 4,
+  "people": [
+    {
+      "id": "jvn_b8f9bf8bb8",
+      "slug": "behnam-mokhtari-jonghani-b8f9bf",
+      "name": "بهنام مختاری جونقانی",
+      "name_en": "Behnam Mokhtari Jonghani",
+      "event": "dey_1403",
+      "gender": "مرد",
+      "age": null,
+      "birth_year": null,
+      "date_jalali": "۱۴۰۳/۱۰/۱۵",
+      "date_gregorian": "2025-01-04",
+      "city": "جونقان",
+      "province": "چهارمحال و بختیاری",
+      "cause": null,
+      "occupation": null,
+      "story": "بهنام مختاری جونقانی، برادر جمشید مختاری، امروز ۱۵ دی‌ماه ۱۴۰۳، حوالی ساعت ۵ بامداد، در پی یورش مأموران حکومتی به منزل شخصی‌اش بازداشت و به مکان نامعلومی منتقل شد.",
+      "story_en": "Behnam Mokhtari Jonghani, the brother of Jamshid Mokhtari, was arrested today, 15 Dey 1403, around 5 a.m., following a raid by government agents on his home and was transferred to an unknown location.",
+      "photo_url": "https://pbs.twimg.com/media/G95ESP9XAAEzJtQ.jpg",
+      "memorial_links": [
+        "https://x.com/1198691072769249281/status/2008117569178530137"
+      ],
+      "notable": false,
+      "verification": "reported",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_34194830c1",
+      "slug": "امیرحسین-جوادزاده-341948",
+      "name": "امیرحسین جوادزاده",
+      "name_en": null,
+      "event": "dey_1403",
+      "gender": null,
+      "age": 25,
+      "birth_year": 1379,
+      "date_jalali": "۱۴۰۳/۱۰/۱۹",
+      "date_gregorian": "2025-01-08",
+      "city": "تهران",
+      "province": "تهران",
+      "cause": null,
+      "occupation": null,
+      "story": null,
+      "story_en": null,
+      "photo_url": null,
+      "memorial_links": [],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "wiki_1404"
+      ]
+    },
+    {
+      "id": "jvn_d01250dcd2",
+      "slug": "hossein-ekrami-sourki-d01250",
+      "name": "حسین اکرامی سورکی",
+      "name_en": "Hossein Ekrami Sourki",
+      "event": "dey_1403",
+      "gender": "مرد",
+      "age": 38,
+      "birth_year": 1366,
+      "date_jalali": "۱۴۰۳/۱۰/۳۰",
+      "date_gregorian": "2025-01-19",
+      "city": "ساری",
+      "province": "مازندران",
+      "cause": "بر اثر اصابت گلوله",
+      "occupation": "کارگر ساختمانی",
+      "story": "جاویدنام حسین اکرامی سورکی، جوان میهن پرست ۳۸ ساله، کارگر ساختمانی و پدر دو فرزند، هجدهم دی ماه در ساری با شلیک تروریست های سپاه مجروح شد و پس از ۱۳ روز بستری در بیمارستان، جان باخت.",
+      "story_en": "Hossein Ekrami Sourki was wounded by a live bullet in Sari on the 18th and died in the hospital.",
+      "photo_url": "https://base44.app/api/apps/696adb110733af80dcc579fb/files/mp/public/696adb110733af80dcc579fb/c1b4d52c0_102576.jpg",
+      "memorial_links": [
+        "https://x.com/1920031932273901568/status/2025458572109259126"
+      ],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "wiki_1404",
+        "javidnaam_iranintl",
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_0b29dbaaa3",
+      "slug": "amirmohammad-khodabandeh-0b29db",
+      "name": "امیرمحمد خدابنده",
+      "name_en": "Amirmohammad khodabandeh",
+      "event": "dey_1403",
+      "gender": "مرد",
+      "age": null,
+      "birth_year": null,
+      "date_jalali": "۱۴۰۴/۱۰/۱۷",
+      "date_gregorian": "2026-01-07",
+      "city": "کاشان",
+      "province": "اصفهان",
+      "cause": "اصابت گلوله",
+      "occupation": "دانشجو کارشناسی مهندسی نفت",
+      "story": "در گزارشی اختصاصی که به دست خبرنامه امیرکبیر رسیده است؛ امیرمحمد خدابنده، دانشجوی خوابگاهی ورودی ۱۴۰۳ رشته مهندسی نفت دانشگاه صنعتی امیرکبیر (پلی‌تکنیک تهران) و اهل شهر کاشان، پنجشنبه ۱۸ دی‌ماه پس از فراخوان شاهزاده رضا پهلوی و با حضور در اعتراضات خیابان جمهوری تهران هدف تیراندازی ماموران حکومتی قرار گرفت و جان باخت.\n\nبه گفته منابع مطلع، وی در شب ۱۸ دی‌ماه بر اثر اصابت دو گلوله جنگی مجروح شد و ساعاتی بعد جان‌باخت. امیرمحمد مانند دیگر مردم حاضر در فراخوان هجدهم دی‌ماه، دارای گرایش پادشاهی‌خواهانه و از حامیان شاهزاده رضا پهلوی بوده است.\n\nبرخی منابع نزدیک به این دانشجو اعلام کرده‌اند که تا زمان تنظیم این گزارش، پیکر امیرمحمد خدابنده به خانواده‌اش تحویل داده نشده است. منابع مطلع می‌گویند تأخیر در تحویل پیکر با تلاش برای معرفی او به‌عنوان «بسیجی کشته‌شده» مرتبط دانسته می‌شود.",
+      "story_en": null,
+      "photo_url": "https://base44.app/api/apps/696adb110733af80dcc579fb/files/public/696adb110733af80dcc579fb/9d7c68d04_1000100495.jpg",
+      "memorial_links": [],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_iranintl",
+        "javidnaam_submission"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,495 @@
+{
+  "generated": "2026-06-15T21:32:41.461690+00:00",
+  "removed": 61,
+  "remaining_total": 6170,
+  "merges": [
+    {
+      "name": "پردیس محمدی",
+      "kept_id": "jvn_cfaba935d3",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_bca7c55f0f",
+      "removed_event": "khizesh_1404",
+      "city": "اصفهان"
+    },
+    {
+      "name": "مبین یعقوب زاده",
+      "kept_id": "jvn_1848bdadeb",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_7487d50bb2",
+      "removed_event": "khizesh_1401",
+      "city": "خشکبیجار"
+    },
+    {
+      "name": "علی اصغر حسینی",
+      "kept_id": "jvn_905f5044a0",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_932fb9a7d6",
+      "removed_event": "khizesh_1404",
+      "city": "کرمان"
+    },
+    {
+      "name": "بنیامین گلریز مژدهی",
+      "kept_id": "jvn_0802a43fa1",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_5e2452d18c",
+      "removed_event": "khizesh_1404",
+      "city": "رشت"
+    },
+    {
+      "name": "معین بصیری",
+      "kept_id": "jvn_7cd6bbf9de",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_cfad1c619d",
+      "removed_event": "khizesh_1404",
+      "city": "شهرک اندیشه"
+    },
+    {
+      "name": "مهران رفیعی",
+      "kept_id": "jvn_059ae66c0b",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_e36f032512",
+      "removed_event": "khizesh_1404",
+      "city": "لاهیجان"
+    },
+    {
+      "name": "فرهاد محدودی",
+      "kept_id": "jvn_db6bae6815",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_bd445d810d",
+      "removed_event": "khizesh_1404",
+      "city": "فردیس"
+    },
+    {
+      "name": "رضا خاکسار",
+      "kept_id": "jvn_d74c00c7c1",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_2ca6ce3772",
+      "removed_event": "khizesh_1401",
+      "city": "بلداجی"
+    },
+    {
+      "name": "سعید عبدالملکی",
+      "kept_id": "jvn_38d53fb97d",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_c9b0aa8da1",
+      "removed_event": "khizesh_1401",
+      "city": "اندیشه"
+    },
+    {
+      "name": "ابولفضل پایدار",
+      "kept_id": "jvn_c8fdaec3f3",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_514daba180",
+      "removed_event": "khizesh_1401",
+      "city": "سبزوار"
+    },
+    {
+      "name": "دانیال دیانی",
+      "kept_id": "jvn_c08a5aad33",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_2c0319ad24",
+      "removed_event": "khizesh_1401",
+      "city": "کرمان"
+    },
+    {
+      "name": "میلاد محبی",
+      "kept_id": "jvn_d1de5aa8da",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_c45e4f7e3f",
+      "removed_event": "khizesh_1401",
+      "city": "کرمانشاه"
+    },
+    {
+      "name": "جعفر جاویدی",
+      "kept_id": "jvn_9eb34ab225",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_8f011be698",
+      "removed_event": "khizesh_1401",
+      "city": "مشهد"
+    },
+    {
+      "name": "منوچهر نیک پور",
+      "kept_id": "jvn_475136beae",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_0d9150c908",
+      "removed_event": "khizesh_1401",
+      "city": "لاهیجان"
+    },
+    {
+      "name": "محسن حسینیان مقدم",
+      "kept_id": "jvn_cc9352c47f",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_a2e334bc87",
+      "removed_event": "khizesh_1401",
+      "city": "خرم آباد"
+    },
+    {
+      "name": "مهران سلیمی",
+      "kept_id": "jvn_f2921e4811",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_d8a73e8e7a",
+      "removed_event": "khizesh_1401",
+      "city": "هشتگرد"
+    },
+    {
+      "name": "محمد عباسیان",
+      "kept_id": "jvn_b2a83ada60",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_97c02180e6",
+      "removed_event": "khizesh_1401",
+      "city": "تهران- سلسبیل"
+    },
+    {
+      "name": "علیرضا رحیمی",
+      "kept_id": "jvn_cf3e85bf71",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_fa3ab024a3",
+      "removed_event": "khizesh_1401",
+      "city": "تهران"
+    },
+    {
+      "name": "رضا شاسی پور",
+      "kept_id": "jvn_b15d041b81",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_c7dc9b8cd8",
+      "removed_event": "khizesh_1401",
+      "city": "ایذه"
+    },
+    {
+      "name": "محمد سلطانی فر",
+      "kept_id": "jvn_ad46762dcd",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_a50fa3909a",
+      "removed_event": "khizesh_1401",
+      "city": "محلات"
+    },
+    {
+      "name": "حسام الدین اعلمی",
+      "kept_id": "jvn_85ee105489",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_557b441bbb",
+      "removed_event": "khizesh_1401",
+      "city": "کرج"
+    },
+    {
+      "name": "فاطمه حکم آبادی",
+      "kept_id": "jvn_a8caf34c78",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_cf546842ea",
+      "removed_event": "khizesh_1401",
+      "city": "اسفراین"
+    },
+    {
+      "name": "منوچهر باغانی",
+      "kept_id": "jvn_f32ab76f9f",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_7845e5207b",
+      "removed_event": "khizesh_1401",
+      "city": "تهران"
+    },
+    {
+      "name": "مسعود سهامی",
+      "kept_id": "jvn_5d126b1ecc",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_4ae86185a5",
+      "removed_event": "khizesh_1401",
+      "city": "اسلام آباد غرب"
+    },
+    {
+      "name": "کیارش صفری",
+      "kept_id": "jvn_46fe04b830",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_1d3e3809e5",
+      "removed_event": "khizesh_1401",
+      "city": "اصفهان"
+    },
+    {
+      "name": "مهدی حقدوست",
+      "kept_id": "jvn_3a529b9cb3",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_fdd770a633",
+      "removed_event": "khizesh_1401",
+      "city": "شهرضا"
+    },
+    {
+      "name": "معصومه ابراهیمی",
+      "kept_id": "jvn_929957db11",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_2261677fe0",
+      "removed_event": "khizesh_1401",
+      "city": "تهران"
+    },
+    {
+      "name": "ابراهیم مردانپور",
+      "kept_id": "jvn_98f16ecb22",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_7cb5e74326",
+      "removed_event": "khizesh_1401",
+      "city": "کلاچای"
+    },
+    {
+      "name": "ابراهیم هاشم بیگی",
+      "kept_id": "jvn_5f1ab08c7a",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_a8fe8fee03",
+      "removed_event": "khizesh_1401",
+      "city": "نی‌ریز"
+    },
+    {
+      "name": "میثم فرحمند یعقوبی پور",
+      "kept_id": "jvn_7abc30392a",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_92d474d148",
+      "removed_event": "khizesh_1401",
+      "city": "لاهیجان"
+    },
+    {
+      "name": "امیرحسین کیادربندسری",
+      "kept_id": "jvn_b994d4c38c",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_6cbcfe175e",
+      "removed_event": "khizesh_1401",
+      "city": "تهران"
+    },
+    {
+      "name": "مهدی ایرانپور",
+      "kept_id": "jvn_4c684ad69d",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_5d29c5f2f2",
+      "removed_event": "khizesh_1401",
+      "city": "کرمان"
+    },
+    {
+      "name": "رضا رستمی",
+      "kept_id": "jvn_9b2cca49db",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_76008a429b",
+      "removed_event": "khizesh_1401",
+      "city": "تهران"
+    },
+    {
+      "name": "سام رضایی",
+      "kept_id": "jvn_8ff3fb211a",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_0b9ad24ebb",
+      "removed_event": "khizesh_1401",
+      "city": "شیراز"
+    },
+    {
+      "name": "امید کولیوند",
+      "kept_id": "jvn_5f9cd7972b",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_97ec6cbceb",
+      "removed_event": "khizesh_1401",
+      "city": "ملایر"
+    },
+    {
+      "name": "محمد امین رنجبر کبوترخانی",
+      "kept_id": "jvn_cec5f9d9ae",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_2b9e0d0766",
+      "removed_event": "khizesh_1401",
+      "city": "رفسنجان"
+    },
+    {
+      "name": "حامد شوشتری",
+      "kept_id": "jvn_7d04277333",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_cc63024966",
+      "removed_event": "khizesh_1401",
+      "city": "مشهد"
+    },
+    {
+      "name": "رحیم زالی پور",
+      "kept_id": "jvn_7b2c76ec19",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_7cc14e538c",
+      "removed_event": "khizesh_1401",
+      "city": "میمند"
+    },
+    {
+      "name": "آذرنوش خراسانی",
+      "kept_id": "jvn_ce51a84421",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_7f2bcbe4df",
+      "removed_event": "khizesh_1401",
+      "city": "مشهد"
+    },
+    {
+      "name": "حمیدرضا باقری",
+      "kept_id": "jvn_74e1af5b9a",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_b7c06f1e75",
+      "removed_event": "khizesh_1401",
+      "city": "نسیم شهر تهران"
+    },
+    {
+      "name": "هومن بشکوفه",
+      "kept_id": "jvn_6acd103901",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_5f8e96b49f",
+      "removed_event": "khizesh_1401",
+      "city": "تهران"
+    },
+    {
+      "name": "سپهر افرازه",
+      "kept_id": "jvn_fe59acb1f1",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_5883be6fd7",
+      "removed_event": "khizesh_1401",
+      "city": "اصفهان"
+    },
+    {
+      "name": "کیومرث تیموریان",
+      "kept_id": "jvn_ba89cad691",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_9b586af047",
+      "removed_event": "khizesh_1404",
+      "city": "کرج"
+    },
+    {
+      "name": "پدرام سعیدی",
+      "kept_id": "jvn_4dd7907d2e",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_f19d908a14",
+      "removed_event": "khizesh_1401",
+      "city": "اصفهان"
+    },
+    {
+      "name": "امیر عباس بهمنی",
+      "kept_id": "jvn_7f18d69edc",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_b50f8ae7e9",
+      "removed_event": "khizesh_1401",
+      "city": "شهر ری"
+    },
+    {
+      "name": "محمد مهدی جارچی",
+      "kept_id": "jvn_d8aed23c6c",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_b54a3c0bcb",
+      "removed_event": "khizesh_1401",
+      "city": "فردیس"
+    },
+    {
+      "name": "علی نجف زاده",
+      "kept_id": "jvn_bb41ba2f2b",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_ac1c4e7187",
+      "removed_event": "khizesh_1404",
+      "city": "مشهد"
+    },
+    {
+      "name": "امین جامع",
+      "kept_id": "jvn_12a78f18fb",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_251aac810d",
+      "removed_event": "khizesh_1401",
+      "city": "جهرم"
+    },
+    {
+      "name": "احمدرضا زمانی",
+      "kept_id": "jvn_c666fd73cf",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_5fc213c3ff",
+      "removed_event": "khizesh_1401",
+      "city": "تهران"
+    },
+    {
+      "name": "عسل منصوری",
+      "kept_id": "jvn_1b4b7ef4c3",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_71718bd901",
+      "removed_event": "khizesh_1401",
+      "city": "تهران"
+    },
+    {
+      "name": "آرمین معتمد امینی",
+      "kept_id": "jvn_2e7dcf11c3",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_ec664cd1c6",
+      "removed_event": "khizesh_1401",
+      "city": "تهران"
+    },
+    {
+      "name": "پرهام داوودی",
+      "kept_id": "jvn_e4ba2793af",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_8bdd585ea6",
+      "removed_event": "khizesh_1401",
+      "city": "بهارستان"
+    },
+    {
+      "name": "مهدی بقائی",
+      "kept_id": "jvn_189a8a3443",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_cf719d430f",
+      "removed_event": "khizesh_1401",
+      "city": "اصفهان"
+    },
+    {
+      "name": "محمدطاها سپهوند",
+      "kept_id": "jvn_dcf98968e5",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_b9e5ccc493",
+      "removed_event": "khizesh_1401",
+      "city": "خرم‌آباد"
+    },
+    {
+      "name": "محمدحسن اشرفی",
+      "kept_id": "jvn_ede66a48da",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_fcdd99bdbf",
+      "removed_event": "khizesh_1401",
+      "city": "اصفهان"
+    },
+    {
+      "name": "مهدی سنمار",
+      "kept_id": "jvn_5c222ddd87",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_a2ff0f9353",
+      "removed_event": "khizesh_1401",
+      "city": "اصفهان"
+    },
+    {
+      "name": "سامان علایی",
+      "kept_id": "jvn_5ec244f4ed",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_901001ed8d",
+      "removed_event": "khizesh_1401",
+      "city": "چمستان"
+    },
+    {
+      "name": "محمد جواد ترابیان",
+      "kept_id": "jvn_7a633d158d",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_b714a735f9",
+      "removed_event": "khizesh_1401",
+      "city": "مشهد"
+    },
+    {
+      "name": "عرفان مومنی",
+      "kept_id": "jvn_0bdf98a759",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_059409fa10",
+      "removed_event": "khizesh_1401",
+      "city": "اصفهان"
+    },
+    {
+      "name": "احسان جعفری",
+      "kept_id": "jvn_3b24be0770",
+      "kept_event": "khizesh_1401",
+      "removed_id": "jvn_6644f63ec3",
+      "removed_event": "khizesh_1404",
+      "city": "کرمان"
+    },
+    {
+      "name": "معین خضری",
+      "kept_id": "jvn_eaff098b7c",
+      "kept_event": "khizesh_1404",
+      "removed_id": "jvn_46683d8c72",
+      "removed_event": "dey_1402",
+      "city": "مشیریه"
+    }
+  ]
+}

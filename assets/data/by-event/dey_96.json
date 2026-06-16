@@ -8,7 +8,7 @@
     "order": 3,
     "category": "uprising"
   },
-  "count": 36,
+  "count": 35,
   "people": [
     {
       "id": "jvn_b2399b11ec",
@@ -631,33 +631,8 @@
       "verification": "documented",
       "flagged_review": null,
       "sources": [
-        "iranhrdc_dey96"
-      ]
-    },
-    {
-      "id": "jvn_101cd84fb8",
-      "slug": "محمد-ابراهیمی-d6f511",
-      "name": "محمد ابراهیمی",
-      "name_en": null,
-      "event": "dey_96",
-      "gender": null,
-      "age": null,
-      "birth_year": null,
-      "date_jalali": "1396/10/12",
-      "date_gregorian": null,
-      "city": "قهدریجان",
-      "province": "اصفهان",
-      "cause": "اصابت گلولهٔ جنگی",
-      "occupation": null,
-      "story": null,
-      "story_en": null,
-      "photo_url": null,
-      "memorial_links": [],
-      "notable": false,
-      "verification": "documented",
-      "flagged_review": null,
-      "sources": [
-        "iranhrdc_dey96"
+        "iranhrdc_dey96",
+        "wiki_98"
       ]
     },
     {

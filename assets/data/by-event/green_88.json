@@ -8,7 +8,7 @@
     "order": 2,
     "category": "uprising"
   },
-  "count": 36,
+  "count": 35,
   "people": [
     {
       "id": "jvn_22419b82f2",
@@ -538,33 +538,6 @@
       "cause": null,
       "occupation": null,
       "story": "کیانوش آسا (زادهٔ ۲۹ اسفند ۱۳۶۲ در کرمانشاه – درگذشتهٔ ۲۵ خرداد ۱۳۸۸ در تهران) دانشجوی ترم چهارم کارشناسی ارشد رشتهٔ مهندسی شیمی در دانشگاه علم و صنعت ایران، فعال محیط زیست و تنبورنواز بود. او در طول اعتراضات ۱۳۸۸ توسط نیروهای سرکوب گر جمهوری اسلامی جان باخت.",
-      "story_en": null,
-      "photo_url": null,
-      "memorial_links": [],
-      "notable": true,
-      "verification": "documented",
-      "flagged_review": null,
-      "sources": [
-        "wiki_navbox",
-        "wiki_person"
-      ]
-    },
-    {
-      "id": "jvn_c6a5e9700a",
-      "slug": "محمد-مختاری-c6a5e9",
-      "name": "محمد مختاری",
-      "name_en": null,
-      "event": "green_88",
-      "gender": null,
-      "age": 56,
-      "birth_year": 1321,
-      "date_jalali": "۱۳۷۷/۰۹/۱۲",
-      "date_gregorian": "1998-12-03",
-      "city": null,
-      "province": null,
-      "cause": null,
-      "occupation": null,
-      "story": "محمّد مختاری (۱ اردیبهشت ۱۳۲۱ – ۱۲ آذر ۱۳۷۷) شاعر، نویسنده، مترجم و منتقد چپ گرای ایرانی و از فعالان کانون نویسندگان ایران بود.",
       "story_en": null,
       "photo_url": null,
       "memorial_links": [],

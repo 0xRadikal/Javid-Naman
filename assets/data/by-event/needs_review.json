@@ -1,0 +1,98 @@
+{
+  "event": "needs_review",
+  "info": {
+    "title": "در دستِ بازبینی",
+    "title_en": "Pending Review",
+    "year_fa": "—",
+    "year": 0,
+    "order": 99,
+    "category": "review"
+  },
+  "count": 3,
+  "people": [
+    {
+      "id": "jvn_049f508f60",
+      "slug": "noosh-afarin-049f50",
+      "name": "نوش آفرین",
+      "name_en": "Noosh Afarin",
+      "event": "needs_review",
+      "gender": "زن",
+      "age": 20,
+      "birth_year": 1300,
+      "date_jalali": "۱۳۲۰/۰۰/۰۰",
+      "date_gregorian": null,
+      "city": "قروه",
+      "province": "کردستان",
+      "cause": null,
+      "occupation": null,
+      "story": "نوش آفرین از شهرستان قروه ۲۰ ساله در حمله وحوش انگلیسی سال ۱۳۲۰ شهید شده.",
+      "story_en": "Noosh Afarin from the city of Qorveh, aged 20, was martyred in the English attack in the year 1320.",
+      "photo_url": null,
+      "memorial_links": [
+        "https://x.com/1984946470647418880/status/2025843271323238553"
+      ],
+      "notable": false,
+      "verification": "reported",
+      "flagged_review": "junk_or_invalid",
+      "sources": [
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_44a6f2f73d",
+      "slug": "haj-reza-kele-kiri-44a6f2",
+      "name": "حاج رضا کله کیری",
+      "name_en": "Haj Reza Kele Kiri",
+      "event": "needs_review",
+      "gender": "مرد",
+      "age": null,
+      "birth_year": null,
+      "date_jalali": "۱۳۳۹/??/??",
+      "date_gregorian": null,
+      "city": "تهران",
+      "province": "تهران",
+      "cause": null,
+      "occupation": null,
+      "story": "حاج رضا کله کیری در تهران جان باخته و محل دفن او فاضلاب ذکر شده است. در متن همچنین آمده که توسط تام مورلی سقط شده است.",
+      "story_en": "Haj Reza Kele Kiri died in Tehran, and his burial place is mentioned as Fadālab. The text also says that he was aborted by Tom Morley.",
+      "photo_url": "https://pbs.twimg.com/media/HBuE3wFXkAEHdC0.jpg",
+      "memorial_links": [
+        "https://x.com/1944115599757783041/status/2025358553490354650"
+      ],
+      "notable": false,
+      "verification": "reported",
+      "flagged_review": "junk_or_invalid",
+      "sources": [
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_b482f600f6",
+      "slug": "mohammad-reza-kiani-b482f6",
+      "name": "محمد رضا کیانی",
+      "name_en": "Mohammad Reza Kiani",
+      "event": "needs_review",
+      "gender": "مرد",
+      "age": 39,
+      "birth_year": 1352,
+      "date_jalali": "۱۳۷۱/۰۲/۰۵",
+      "date_gregorian": "1992-04-25",
+      "city": "بمب گزاری هواپیمای فوکر",
+      "province": null,
+      "cause": null,
+      "occupation": "سرخلبان و استاد دانشگاه",
+      "story": "محمد رضا کیانی سی و نه ساله، سرخلبان و استاد دانشگاه، در تاریخ ششم اردیبهشت سال هفتاد و یک در بمب گزاری هواپیمای فوکر با سی و نه سرنشین جان‌باخت. هدف جمهوری اسلامی کشتار مسافرین این هواپیما که مهندسین پتروشیمی ماهشهر بودند، بود.",
+      "story_en": "Mohammad Reza Kiani, a 39-year-old pilot and university professor, was killed on April 25, 1992, in the bombing of a Fokker aircraft with 39 passengers. The Islamic Republic's aim was to massacre the passengers of this plane, who were petrochemical engineers from Mahshahr.",
+      "photo_url": null,
+      "memorial_links": [
+        "https://x.com/2026165498258628608/status/2032974625383358779"
+      ],
+      "notable": false,
+      "verification": "reported",
+      "flagged_review": "junk_or_invalid",
+      "sources": [
+        "javidnaam_submission"
+      ]
+    }
+  ]
+}

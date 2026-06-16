@@ -1,0 +1,636 @@
+{
+  "generated": "2026-06-15T21:30:22.449689+00:00",
+  "added_events": [
+    "chain_murders_77",
+    "dey_1402",
+    "dey_1403",
+    "needs_review"
+  ],
+  "total_moves": 58,
+  "moves_by_target": {
+    "chain_murders_77": 1,
+    "khizesh_1404": 1,
+    "dey_1402": 19,
+    "needs_review": 3,
+    "khizesh_1401": 27,
+    "dey_1403": 7
+  },
+  "moves_by_confidence": {
+    "medium": 50,
+    "high": 8
+  },
+  "before": {
+    "kuye_daneshgah_78": 5,
+    "green_88": 36,
+    "khizesh_1404": 4262,
+    "dey_96": 36,
+    "mordad_97": 2,
+    "darvish_96": 2,
+    "kazerun_97": 2,
+    "aban_98": 553,
+    "khizesh_1401": 1270,
+    "khuzestan_1400": 15,
+    "executions": 29,
+    "deaths_in_custody": 19
+  },
+  "after": {
+    "kuye_daneshgah_78": 5,
+    "green_88": 35,
+    "chain_murders_77": 1,
+    "khizesh_1404": 4211,
+    "dey_96": 36,
+    "mordad_97": 2,
+    "darvish_96": 2,
+    "kazerun_97": 2,
+    "aban_98": 553,
+    "khizesh_1401": 1293,
+    "khuzestan_1400": 14,
+    "dey_1402": 19,
+    "needs_review": 3,
+    "dey_1403": 7,
+    "executions": 29,
+    "deaths_in_custody": 19
+  },
+  "moves": [
+    {
+      "id": "jvn_c6a5e9700a",
+      "name": "محمد مختاری",
+      "from": "green_88",
+      "to": "chain_murders_77",
+      "reason": "date_jalali_year=1377",
+      "confidence": "medium",
+      "date_jalali": "۱۳۷۷/۰۹/۱۲",
+      "story_excerpt": "محمّد مختاری (۱ اردیبهشت ۱۳۲۱ – ۱۲ آذر ۱۳۷۷) شاعر، نویسنده، مترجم و منتقد چپ گرای ایرانی و از فعالان کانون نویسندگان ایران بود."
+    },
+    {
+      "id": "jvn_39c1fe795a",
+      "name": "امیرحسین سبزه وند",
+      "from": "khizesh_1401",
+      "to": "khizesh_1404",
+      "reason": "story_death_year=1404(strong)",
+      "confidence": "high",
+      "date_jalali": "۱۴۰۱/۱۰/۱۸",
+      "story_excerpt": "امیرحسین سبزه‌وند، ۱۹ ساله، ساکن بروجرد، ۱۸ دی‌ ۱۴۰۴ در جریان اعتراضات مردمی در خیابان جعفری با شلیک مستقیم نیروهای سرکوبگر حکومتی جان‌باخت."
+    },
+    {
+      "id": "jvn_46683d8c72",
+      "name": "معین خضری",
+      "from": "khizesh_1401",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۰۱/۰۴",
+      "story_excerpt": "جاویدنام معین خضری روز 18 دی در کلانتری مشیریه تیر خورد و بعد به کما رفت. در بیمارستان بهادری چهارم فروردین جاویدنام شد."
+    },
+    {
+      "id": "jvn_9690a3cc03",
+      "name": "ابولفضل امیرعطایی",
+      "from": "khizesh_1401",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۰۳/۰۱",
+      "story_excerpt": "فرزند من جاوید نام ابولفضل امیرعطایی شانزده ساله از اسیب دیدگان شلیک به سر در سی شهریور در شهرری چهارصد و یک و جان‌باخت خرداد چهارصد و دو. ف"
+    },
+    {
+      "id": "jvn_c29f3586fe",
+      "name": "عصمت الهادی",
+      "from": "khizesh_1401",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۰۸/۲۴",
+      "story_excerpt": "کilled during protests against government policies"
+    },
+    {
+      "id": "jvn_049f508f60",
+      "name": "نوش آفرین",
+      "from": "khizesh_1404",
+      "to": "needs_review",
+      "reason": "junk_or_invalid",
+      "confidence": "high",
+      "date_jalali": "۱۳۲۰/۰۰/۰۰",
+      "story_excerpt": "نوش آفرین از شهرستان قروه ۲۰ ساله در حمله وحوش انگلیسی سال ۱۳۲۰ شهید شده."
+    },
+    {
+      "id": "jvn_44a6f2f73d",
+      "name": "حاج رضا کله کیری",
+      "from": "khizesh_1404",
+      "to": "needs_review",
+      "reason": "junk_or_invalid",
+      "confidence": "high",
+      "date_jalali": "۱۳۳۹/??/??",
+      "story_excerpt": "حاج رضا کله کیری در تهران جان باخته و محل دفن او فاضلاب ذکر شده است. در متن همچنین آمده که توسط تام مورلی سقط شده است."
+    },
+    {
+      "id": "jvn_b482f600f6",
+      "name": "محمد رضا کیانی",
+      "from": "khizesh_1404",
+      "to": "needs_review",
+      "reason": "junk_or_invalid",
+      "confidence": "high",
+      "date_jalali": "۱۳۷۱/۰۲/۰۵",
+      "story_excerpt": "محمد رضا کیانی سی و نه ساله، سرخلبان و استاد دانشگاه، در تاریخ ششم اردیبهشت سال هفتاد و یک در بمب گزاری هواپیمای فوکر با سی و نه سرنشین جان‌"
+    },
+    {
+      "id": "jvn_0c5608cde2",
+      "name": "امیرمهدی فرخی پور",
+      "from": "khuzestan_1400",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year=1400",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۰/۰۹/۰۱",
+      "story_excerpt": "سه سال پیش، در روزهای ابتدایی اعتراضات، شخصی برای فرستنده پیام نوشت که «امیرمهدی جان‌باخت». بعدتر همان فرد توضیح داد که خانواده را تهدید کرد"
+    },
+    {
+      "id": "jvn_3163d2568b",
+      "name": "سینا جمالی",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "سینا جمالی در منطقه خاکسفید تهرانپارس با شلیک مستقیم جان‌باخت. خانوادشم تهدید کردن بگید تو تصادف مرده"
+    },
+    {
+      "id": "jvn_19ddeb5854",
+      "name": "زهره الیاسی",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "زهره الیاسی، ۲ ساله، در قرچک به خاک سپرده شد. بر روی مزارش سنگی نگذاشتند و هیچ عکسی از او موجود نیست."
+    },
+    {
+      "id": "jvn_e1b18fbd1c",
+      "name": "حسین یعقوبی",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "حسین یعقوبی، شاگرد بقالی محله، جان‌باخت. تیر به پای او اصابت کرد و به بیمارستان رسول اکرم منتقل شد. تیر خلاص به چشم او شلیک شد."
+    },
+    {
+      "id": "jvn_d1f04f27b8",
+      "name": "مهدی صدیقی والا",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "مهدی صدیقی والا، جان‌باخت در اسلام شهر واوان، نه پدر داشت نه مادر، دوران کودکی در پرورشگاه بوده تا یک خانواده‌ای به فرزندخواندگی قبولش می‌کن"
+    },
+    {
+      "id": "jvn_dd1900ca70",
+      "name": "معصومه اکبری",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "جاویدنام معصومه اکبری از شاهشهر (اسلامشهر) تهران، ۴۳ ساله، مادر. دنبالش کرده بودند، خورد زمین و پایش شکست. بعد در محل شکستگی لخته خون تشکیل "
+    },
+    {
+      "id": "jvn_3fa5a5a099",
+      "name": "امیر دلبری",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "امیر دلبری حدوداً ۴۵-۴۶ ساله در نازی آباد با تیر جنگی زمین‌گیر شد و با ضربات باتوم به سرش متلاشی شد به حدی که قابل شناسایی نبود."
+    },
+    {
+      "id": "jvn_3a123b8821",
+      "name": "سعید قاضیانی",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "مادر سعید قاضیانی آلزایمر دارد و نمی‌داند که او جان‌باخت است و هر روز سراغش را می‌گیرد."
+    },
+    {
+      "id": "jvn_11a6fd3602",
+      "name": "محمدجواد درسنه",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "فرزند ایران و جانفدای میهن محمدجواد درسنه."
+    },
+    {
+      "id": "jvn_3ad25e2be2",
+      "name": "امیر رضا میرزایی",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "امیر رضا میرزایی، ۲۸ ساله، در واوان جان‌باخت."
+    },
+    {
+      "id": "jvn_7304fb61ea",
+      "name": "مائده مرادی کیان",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "جاوید نام مائده مرادی کیان جاوید نام مهدی خلیلی جاوید نام سامان یوسفی جاوید نام صابر وفادار جاوید نام مهراد صادقی"
+    },
+    {
+      "id": "jvn_058e2f98ed",
+      "name": "علیرضا منصور ابادی",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "جاویدنام علیرضا منصور ابادی از مرودشت."
+    },
+    {
+      "id": "jvn_88edaf896d",
+      "name": "هدی عباسیان",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "جاوید نام هدی عباسیان از خراسان شمالی، شیروان."
+    },
+    {
+      "id": "jvn_b27605e4dd",
+      "name": "عسل طیبی",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "جاوید نام عسل طیبی ۲۰ ساله از اراک."
+    },
+    {
+      "id": "jvn_1e1cb55046",
+      "name": "ایوب",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "ایوب، ۳۰ ساله، زمانی که جان فدا شد، لباسش بالا رفته بود و متوجه شدند که با بند کفش کمر شلوارش را بسته بود."
+    },
+    {
+      "id": "jvn_edfc1d11bb",
+      "name": "نیما فندک",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "نیما فندک در حالی که در یک گروه بزرگ در تاریکی شعار می‌دادند، فندک خود را برای روشن کردن سیگار درآورد. در همان لحظه از بالا به او با تیر جنگ"
+    },
+    {
+      "id": "jvn_00fa3e1b3b",
+      "name": "ابولفضل وحیدی",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "ابولفضل وحیدی از پشت سر و از گردن با گلوله استارک شاتگان مورد هدف قرار گرفته بود و گلوله کل کام دهان و گلو و بینی را از بین برده بود و قسمتی"
+    },
+    {
+      "id": "jvn_9b03aede45",
+      "name": "مسعود مدبر",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "۴۰ ساله، دارای دو دختر،\nدارای دکتری در معماری و صاحب شرکت طراحی و ساخت.\nدر تاریخ ۱۹ دی‌ماه،\nدر محلهٔ خانه اصفهان،\nبا یک گلوله از پشت به کمر "
+    },
+    {
+      "id": "jvn_f901029ee4",
+      "name": "سعید زهادی",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "جاوید نام سعید زهادی در خیابان ستارخان تهران."
+    },
+    {
+      "id": "jvn_d0e837045b",
+      "name": "خشایار مستوفی",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "جاوید نامان زیر رو هم به لیستتون اضافه کنید: خشایار مستوفی"
+    },
+    {
+      "id": "jvn_b2eabf2ce5",
+      "name": "ماشالله مرزوقی",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "جاوید نامان زیر رو هم به لیستتون اضافه کنید: ۱- شیرفرهاد برره ۲- کیانوش استقرارزاده ۳- نظام دوبرریه ۴-نظیر شنبه ۵-ماشالله مرزوقی ۶-خشایار مس"
+    },
+    {
+      "id": "jvn_9508efb3b6",
+      "name": "کیانوش استقرارزاده",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "جاوید نامان زیر رو هم به لیستتون اضافه کنید: ۱- شیرفرهاد برره ۲- کیانوش استقرارزاده ۳- نظام دوبرریه ۴-نظیر شنبه ۵-ماشالله مرزوقی ۶-خشایار مس"
+    },
+    {
+      "id": "jvn_01dec359f3",
+      "name": "رها رجبی",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "رها رجبی به عنوان یکی از اسطوره‌های ملت معرفی شده است."
+    },
+    {
+      "id": "jvn_604cbd1e60",
+      "name": "امیر حسین ناصری",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "جاوید نام اهل قم که حتی برای دفن کردن توی قم اجازه ندادن از فامیلی خودش روی سنگ مزارش استفاده کنن و به اسم امیر حسین ناصری دفنش کردن."
+    },
+    {
+      "id": "jvn_4a32825e0b",
+      "name": "هادی قنبرپور",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "date_jalali_year_only=1401",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۱",
+      "story_excerpt": "هادی قنبرپور از جاویدنامان اهل شهر جونقان، استان چهارمحال و بختیاری است."
+    },
+    {
+      "id": "jvn_fde2ec8190",
+      "name": "Ebrahim Allahbakhshi",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۲",
+      "story_excerpt": "On 12 Dey in Yasuj, protesters were shot at in Haft Tir Square."
+    },
+    {
+      "id": "jvn_84d902fd6c",
+      "name": "سعید رحمانی",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "story_excerpt": "جاویدنام سعید رحمانی در ۱۸ دی ماه در جوادیه منطقه ۱۶ تهران."
+    },
+    {
+      "id": "jvn_982920878d",
+      "name": "سید حسین (آرین) حسینی لاله دشتی",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "story_excerpt": "آرین حسینی، ۲۲ ساله، در ۱۸ دی در کوچصفهان گیلان هدف گلوله جنگی قرار گرفت."
+    },
+    {
+      "id": "jvn_b78887c658",
+      "name": "ایمان سالارمحمد پور",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "story_excerpt": "جاویدنام ایمان سالارمحمد پور، ۲۹ ساله، در ۱۸ دی در اثر برخورد گلوله به پهلو در محله داماهی بندرعباس جانش رو از دست داد."
+    },
+    {
+      "id": "jvn_130aeaa82d",
+      "name": "مجید جمشیدی گهروئی",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "story_excerpt": "مجید جمشیدی گهروئی در فولادشهر اصفهان از پشت تیر خورد و در ۱۸ دی، در حالی که ۳۸ ساله بود، دو دختر ۶ و ۸ ساله داشت و به‌عنوان پدری بسیار مهرب"
+    },
+    {
+      "id": "jvn_2a9f8c2e68",
+      "name": "مسلم ضیغمی نژاد",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "story_excerpt": "جاویدنام #مسلم_ضیغمی‌نژاد در ۱۸ دی‌ماه در میدان آزادی کرمان جانش را فدای میهن کرد.\n\nبر اساس روایت‌های منتشرشده، مأموران جمهوری اسلامی ابتدا "
+    },
+    {
+      "id": "jvn_af53d060b7",
+      "name": "متین حبیبی",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "story_excerpt": "متین حبیبی، ۲۲ ساله و اهل تهران، در ۱۸ دی جان باخت."
+    },
+    {
+      "id": "jvn_822fe74e1d",
+      "name": "امیررضا معصومی",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "story_excerpt": "امیررضا معصومی، ۲۷ ساله، در ۱۸ دی ۱۴۰۴ در بندرعباس با اصابت گلوله به قلبش جان‌باخت. او مهندس بود و در شهر بندرعباس کار می‌کرد."
+    },
+    {
+      "id": "jvn_acc1b050eb",
+      "name": "مهدی حیدر عربی",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "story_excerpt": "مهدی حیدر عربی روز ۱۸ دی‌ماه در تهران با شلیک گلوله جنگی از ناحیه پشت هدف قرار گرفت و جان‌باخت."
+    },
+    {
+      "id": "jvn_c11d536182",
+      "name": "آرین حسینی",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "story_excerpt": "آرین حسینی، ۲۲ ساله، در ۱۸ دی در کوچصفهان گیلان هدف گلوله جنگی قرار گرفت."
+    },
+    {
+      "id": "jvn_b00c60eeef",
+      "name": "منصوره جمشیدی علی آبادی",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "story_excerpt": "منصوره جمشیدی علی‌آبادی، در ۱۸ دی ماه در مشهد."
+    },
+    {
+      "id": "jvn_09a77b151f",
+      "name": "محمد مملو",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۹",
+      "story_excerpt": "محمد مملو در ۱۹ دی‌ماه در تهران توسط نیروهای سرکوبگر جمهوری اسلامی جان‌باخت."
+    },
+    {
+      "id": "jvn_9391b92301",
+      "name": "رضا حسن زاده",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۹",
+      "story_excerpt": "رضا حسن‌زاده، ۲۹ ساله، شب قبل از مراسم عقدش در نازی‌آباد تهران با تیر جنگی جان‌باخت."
+    },
+    {
+      "id": "jvn_f29e55f7d7",
+      "name": "حسین بخشی",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۹",
+      "story_excerpt": "حسین بخشی، ۲۶ ساله، در ۱۹ دی در قرچک با اصابت گلوله به سرش جان باخت. او دامادی بود که به مراسم نامزدی‌اش نرسید."
+    },
+    {
+      "id": "jvn_cb4b6a6e5d",
+      "name": "میثم محمدیان جونقانی",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۱۹",
+      "story_excerpt": "میثم محمدیان جونقانی، ۲۰ ساله، اهل شهر جونقان از استان چهارمحال و بختیاری، بیش از یک ماه است که ناپدید شده و هیچ‌گونه اطلاعی از وضعیت، محل ن"
+    },
+    {
+      "id": "jvn_0a8afb12b7",
+      "name": "علی پور اکرمی",
+      "from": "khizesh_1404",
+      "to": "dey_1402",
+      "reason": "date_jalali_year=1402",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۲/۱۰/۲۱",
+      "story_excerpt": "جاویدنام علی پور اکرمی، ۲۱ دی در پیروزی تهران."
+    },
+    {
+      "id": "jvn_b8f9bf8bb8",
+      "name": "بهنام مختاری جونقانی",
+      "from": "khizesh_1404",
+      "to": "dey_1403",
+      "reason": "story_death_year=1403(strong)",
+      "confidence": "high",
+      "date_jalali": "۱۴۰۳/۱۰/۱۵",
+      "story_excerpt": "بهنام مختاری جونقانی، برادر جمشید مختاری، امروز ۱۵ دی‌ماه ۱۴۰۳، حوالی ساعت ۵ بامداد، در پی یورش مأموران حکومتی به منزل شخصی‌اش بازداشت و به "
+    },
+    {
+      "id": "jvn_4a2010b473",
+      "name": "امیر حسین ملکشاهی",
+      "from": "khizesh_1404",
+      "to": "dey_1403",
+      "reason": "date_jalali_year=1403",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۳/۱۰/۱۸",
+      "story_excerpt": "امیر حسین ملکشاهی (ناصری)، ۲۷ ساله، نوازنده و خواننده، در شهر تهران جاویدنام شد و در شهر قم در خاک آرمیده است."
+    },
+    {
+      "id": "jvn_c86eb32046",
+      "name": "علی لیاقی",
+      "from": "khizesh_1404",
+      "to": "dey_1403",
+      "reason": "date_jalali_year=1403",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۳/۱۰/۱۸",
+      "story_excerpt": "جاویدنام علی لیاقی، ۴۴ ساله، اهل دولت‌آباد و پدر دو فرزند است. در ۱۸ دی ماه جان باخته است."
+    },
+    {
+      "id": "jvn_34194830c1",
+      "name": "امیرحسین جوادزاده",
+      "from": "khizesh_1404",
+      "to": "dey_1403",
+      "reason": "date_jalali_year=1403",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۳/۱۰/۱۹",
+      "story_excerpt": ""
+    },
+    {
+      "id": "jvn_89b2670627",
+      "name": "محمد روح پرور",
+      "from": "khizesh_1404",
+      "to": "dey_1403",
+      "reason": "date_jalali_year=1403",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۳/۱۰/۲۰",
+      "story_excerpt": "محمد روح پرور، اهل اصفهان، در اصفهان جان‌باخت است. او پدر دو فرزند بود. به دلایل امنیتی، خانواده‌اش نامشان را هیچ کجا منتشر نکردند."
+    },
+    {
+      "id": "jvn_d01250dcd2",
+      "name": "حسین اکرامی سورکی",
+      "from": "khizesh_1404",
+      "to": "dey_1403",
+      "reason": "date_jalali_year=1403",
+      "confidence": "medium",
+      "date_jalali": "۱۴۰۳/۱۰/۳۰",
+      "story_excerpt": "جاویدنام حسین اکرامی سورکی، جوان میهن پرست ۳۸ ساله، کارگر ساختمانی و پدر دو فرزند، هجدهم دی ماه در ساری با شلیک تروریست های سپاه مجروح شد و "
+    },
+    {
+      "id": "jvn_fa5becbd3a",
+      "name": "مصطفی سرافراز اردکانی",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "story_death_year=1401(strong)",
+      "confidence": "high",
+      "date_jalali": "۱۴۰۴/۱۰/۱۱",
+      "story_excerpt": "دانشجوی مهندسی مکانیک (ورودی 1401) دانشگاه یزد، هفته گذشته به ضرب گلوله مستقیم سرکوبگران جان باخت."
+    },
+    {
+      "id": "jvn_69bfc8badf",
+      "name": "میلاد نجف پور",
+      "from": "khizesh_1404",
+      "to": "khizesh_1401",
+      "reason": "story_death_year=1401(strong)",
+      "confidence": "high",
+      "date_jalali": "۱۴۰۴/۱۰/۱۷",
+      "story_excerpt": "#میلاد_نجف‌پور \n میلاد نجف‌پور،شهید از هشتگرد قدیم \nمحله شهرک وحدت ترک‌آباد که در ۱۸ و ۱۹ دی‌ماه ۱۴۰۱،\nبه دست قاتلان #خامنه‌ای ضحاک با شلیک "
+    },
+    {
+      "id": "jvn_0b29dbaaa3",
+      "name": "امیرمحمد خدابنده",
+      "from": "khizesh_1404",
+      "to": "dey_1403",
+      "reason": "story_death_year=1403(strong)",
+      "confidence": "high",
+      "date_jalali": "۱۴۰۴/۱۰/۱۷",
+      "story_excerpt": "در گزارشی اختصاصی که به دست خبرنامه امیرکبیر رسیده است؛ امیرمحمد خدابنده، دانشجوی خوابگاهی ورودی ۱۴۰۳ رشته مهندسی نفت دانشگاه صنعتی امیرکبیر"
+    }
+  ]
+}

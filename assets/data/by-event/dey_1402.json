@@ -1,0 +1,509 @@
+{
+  "event": "dey_1402",
+  "info": {
+    "title": "اعتراضات دی ۱۴۰۲",
+    "title_en": "December 2023 Protests",
+    "year_fa": "۱۴۰۲",
+    "year": 1402,
+    "order": 16,
+    "category": "uprising"
+  },
+  "count": 17,
+  "people": [
+    {
+      "id": "jvn_9690a3cc03",
+      "slug": "abolfazl-amirataei-9690a3",
+      "name": "ابولفضل امیرعطایی",
+      "name_en": "Abolfazl Amirataei",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": 16,
+      "birth_year": 1385,
+      "date_jalali": "۱۴۰۲/۰۳/۰۱",
+      "date_gregorian": "2023-05-22",
+      "city": "شهرری",
+      "province": "تهران",
+      "cause": "اصابت گلوله",
+      "occupation": null,
+      "story": "فرزند من جاوید نام ابولفضل امیرعطایی شانزده ساله از اسیب دیدگان شلیک به سر در سی شهریور در شهرری چهارصد و یک و جان‌باخت خرداد چهارصد و دو. فرزند من بعد از هشت ماه و نیم فلج بودن و صحبت نکردن بسیار مظلومانه و با درد از کنار من رفت.",
+      "story_en": "My child, named Abolfazl Amirataei, aged sixteen, was a victim of a gunshot to the head on the 30th of Shahrivar in Shahr-e Rey 1401 and was killed in Khordad 1402. My child, after being paralyzed and unable to speak for eight and a half months, left me very innocently and painfully.",
+      "photo_url": null,
+      "memorial_links": [
+        "https://x.com/1009104801815236608/status/2036163078669078848"
+      ],
+      "notable": false,
+      "verification": "reported",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_c29f3586fe",
+      "slug": "osamt-hadi-c29f35",
+      "name": "عصمت الهادی",
+      "name_en": "Osamt Hadi",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": 25,
+      "birth_year": null,
+      "date_jalali": "۱۴۰۲/۰۸/۲۴",
+      "date_gregorian": "2023-11-15",
+      "city": "مشهد",
+      "province": "خراسان رضوی",
+      "cause": "اصابت گلوله",
+      "occupation": "Student",
+      "story": "کilled during protests against government policies",
+      "story_en": null,
+      "photo_url": null,
+      "memorial_links": [
+        "https://twitter.com/i/web/status/2016367335746240715"
+      ],
+      "notable": false,
+      "verification": "reported",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_fde2ec8190",
+      "slug": "yasuj-fde2ec",
+      "name": "Ebrahim Allahbakhshi",
+      "name_en": "Yasuj",
+      "event": "dey_1402",
+      "gender": null,
+      "age": null,
+      "birth_year": null,
+      "date_jalali": "۱۴۰۲/۱۰/۱۲",
+      "date_gregorian": "2024-01-02",
+      "city": "یاسوج",
+      "province": "کهگیلویه و بویراحمد",
+      "cause": "اصابت گلوله",
+      "occupation": null,
+      "story": "On 12 Dey in Yasuj, protesters were shot at in Haft Tir Square.",
+      "story_en": "On 12 Dey in Yasuj, protesters were shot at in Haft Tir Square.",
+      "photo_url": null,
+      "memorial_links": [
+        "https://x.com/1198691072769249281/status/2007119105665761731"
+      ],
+      "notable": false,
+      "verification": "reported",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_84d902fd6c",
+      "slug": "saeed-rahmani-84d902",
+      "name": "سعید رحمانی",
+      "name_en": "Saeed Rahmani",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": null,
+      "birth_year": null,
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "date_gregorian": "2024-01-08",
+      "city": "تهران",
+      "province": "تهران",
+      "cause": null,
+      "occupation": null,
+      "story": "جاویدنام سعید رحمانی در ۱۸ دی ماه در جوادیه منطقه ۱۶ تهران.",
+      "story_en": "Martyr Saeed Rahmani on 18 Dey in Javadiyeh, District 16 of Tehran.",
+      "photo_url": "https://pbs.twimg.com/media/HBtqzU9XgAAQ5Sh.jpg",
+      "memorial_links": [
+        "https://x.com/1613519103020376065/status/2025329893148352963",
+        "https://x.com/1661995422586490881/status/2025830107626037742"
+      ],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_iranintl",
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_982920878d",
+      "slug": "seyyee-hossein-arian-hosseini-lalehdasht-982920",
+      "name": "سید حسین (آرین) حسینی لاله دشتی",
+      "name_en": "Seyyee Hossein (Arian) Hosseini Lalehdashti",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": 22,
+      "birth_year": 1382,
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "date_gregorian": "2024-01-08",
+      "city": "کوچصفهان",
+      "province": "گیلان",
+      "cause": "اصابت گلوله",
+      "occupation": null,
+      "story": "آرین حسینی، ۲۲ ساله، در ۱۸ دی در کوچصفهان گیلان هدف گلوله جنگی قرار گرفت.",
+      "story_en": "Arin Hosseini, 22, was hit by a war bullet on 18 Dey in Kouchesfahan, Gilan.",
+      "photo_url": "https://base44.app/api/apps/696adb110733af80dcc579fb/files/mp/public/696adb110733af80dcc579fb/4ff97c0e1_103644.jpg",
+      "memorial_links": [
+        "https://x.com/1934641258875789312/status/2025333417827541393"
+      ],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_iranintl",
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_b78887c658",
+      "slug": "iman-salar-mohammad-pour-b78887",
+      "name": "ایمان سالارمحمد پور",
+      "name_en": "Iman Salar-Mohammad-Pour",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": 29,
+      "birth_year": 1373,
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "date_gregorian": "2024-01-08",
+      "city": "بندرعباس",
+      "province": "هرمزگان",
+      "cause": "اصابت گلوله",
+      "occupation": null,
+      "story": "جاویدنام ایمان سالارمحمد پور، ۲۹ ساله، در ۱۸ دی در اثر برخورد گلوله به پهلو در محله داماهی بندرعباس جانش رو از دست داد.",
+      "story_en": "Martyr Iman Salar Mohammad Pour, 29, died on 8th of January n Bandar Abbas.",
+      "photo_url": "https://base44.app/api/apps/696adb110733af80dcc579fb/files/mp/public/696adb110733af80dcc579fb/a8e132df1_102577.jpg",
+      "memorial_links": [
+        "https://x.com/1497171501497335810/status/2025458926653698473"
+      ],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_iranintl",
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_130aeaa82d",
+      "slug": "majid-jamshidi-gahrouei-130aea",
+      "name": "مجید جمشیدی گهروئی",
+      "name_en": "Majid Jamshidi Gahrouei",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": 38,
+      "birth_year": 1364,
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "date_gregorian": "2024-01-08",
+      "city": "گهرو",
+      "province": "چهارمحال و بختیاری",
+      "cause": "اصابت گلوله",
+      "occupation": null,
+      "story": "مجید جمشیدی گهروئی در فولادشهر اصفهان از پشت تیر خورد و در ۱۸ دی، در حالی که ۳۸ ساله بود، دو دختر ۶ و ۸ ساله داشت و به‌عنوان پدری بسیار مهربان و دلسوز توصیف شده است.",
+      "story_en": "Majid Jamshidi Gahrouei was shot from behind in Fooladshahr, Isfahan, on 18 Dey. He was 38 years old, had two daughters aged 6 and 8, and was described as a very kind and caring father.",
+      "photo_url": "https://pbs.twimg.com/media/HBvYV2sWwAAnx5k.jpg",
+      "memorial_links": [
+        "https://x.com/1577890391692484608/status/2025450348882677865"
+      ],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_iranintl",
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_2a9f8c2e68",
+      "slug": "moslem-zeyghami-nejad-2a9f8c",
+      "name": "مسلم ضیغمی نژاد",
+      "name_en": "Moslem Zeyghami Nejad",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": 37,
+      "birth_year": 1368,
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "date_gregorian": "2024-01-08",
+      "city": "کرمان",
+      "province": "کرمان",
+      "cause": "اصابت گلوله",
+      "occupation": null,
+      "story": "جاویدنام #مسلم_ضیغمی‌نژاد در ۱۸ دی‌ماه در میدان آزادی کرمان جانش را فدای میهن کرد.\n\nبر اساس روایت‌های منتشرشده، مأموران جمهوری اسلامی ابتدا با گلولهٔ جنگی او را از ناحیه پا هدف قرار دادند. مسلم با همان جراحت، خودش را به کوچهٔ اول خیابان بهشتی، کوچه ۳۸ رساند، اما مأموران رهایش نکردند. یکی از آن‌ها بالای سرش رفت و تیر خلاص را به شقیقه‌اش شلیک کرد.",
+      "story_en": "Moslem Zeighaminejad sacrificed his life for his homeland on January 8 in Azadi Square, Kerman.\nAccording to published accounts, agents of the Islamic Republic first shot him in the leg with live ammunition. Despite the injury, Moslem managed to reach Alley 38 off Beheshti Street, but the agents did not leave him alone. One of them stood over him and fired a final shot into his temple.",
+      "photo_url": "https://pbs.twimg.com/media/HBvW4B4WQAAkwoa.jpg",
+      "memorial_links": [
+        "https://x.com/1010980830083211270/status/2025448718418239932"
+      ],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_iranintl",
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_af53d060b7",
+      "slug": "matin-habibi-af53d0",
+      "name": "متین حبیبی",
+      "name_en": "Matin Habibi",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": 22,
+      "birth_year": 1380,
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "date_gregorian": "2024-01-08",
+      "city": "تهران",
+      "province": "تهران",
+      "cause": null,
+      "occupation": null,
+      "story": "متین حبیبی، ۲۲ ساله و اهل تهران، در ۱۸ دی جان باخت.",
+      "story_en": "Matin Habibi, 22, from Tehran, died on 18 Dey.",
+      "photo_url": "https://base44.app/api/apps/696adb110733af80dcc579fb/files/mp/public/696adb110733af80dcc579fb/1f3c64f88_matin.jpeg",
+      "memorial_links": [
+        "https://x.com/2016369574501896192/status/2025449371387494457"
+      ],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_iranintl",
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_822fe74e1d",
+      "slug": "amirreza-masoumi-822fe7",
+      "name": "امیررضا معصومی",
+      "name_en": "Amirreza Masoumi",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": 27,
+      "birth_year": 1377,
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "date_gregorian": "2024-01-08",
+      "city": "بندرعباس",
+      "province": "هرمزگان",
+      "cause": "اصابت گلوله",
+      "occupation": "مهندس و تکنسین پالایشگاه نفت",
+      "story": "امیررضا معصومی، ۲۷ ساله، در ۱۸ دی ۱۴۰۴ در بندرعباس با اصابت گلوله به قلبش جان‌باخت. او مهندس بود و در شهر بندرعباس کار می‌کرد.",
+      "story_en": "Amirreza Masoumi, 27 years old, was killed on 8th January in Bandar Abbas. He was an engineer and worked in the city of Bandar Abbas.",
+      "photo_url": "https://base44.app/api/apps/696adb110733af80dcc579fb/files/mp/public/696adb110733af80dcc579fb/34058d5f8_102023.jpg",
+      "memorial_links": [
+        "https://x.com/1934183173375627264/status/2025336045642879487",
+        "https://x.com/3436466283/status/2025642017909248385",
+        "https://x.com/1390022503494520835/status/2025675350382887173",
+        "https://x.com/1536696849981222915/status/2025939805037629934"
+      ],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_iranintl",
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_acc1b050eb",
+      "slug": "mehdi-heydar-arabi-acc1b0",
+      "name": "مهدی حیدر عربی",
+      "name_en": "Mehdi Heydar Arabi",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": 19,
+      "birth_year": 1382,
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "date_gregorian": "2024-01-08",
+      "city": "تهران",
+      "province": "تهران",
+      "cause": "اصابت گلوله",
+      "occupation": null,
+      "story": "مهدی حیدر عربی روز ۱۸ دی‌ماه در تهران با شلیک گلوله جنگی از ناحیه پشت هدف قرار گرفت و جان‌باخت.",
+      "story_en": "Mehdi Heydar Arabi was targeted by a live bullet shot to the back in Tehran on 18 Dey and was killed.",
+      "photo_url": "https://pbs.twimg.com/media/G_WM_6AXYAAE7zF.jpg",
+      "memorial_links": [
+        "https://x.com/1198691072769249281/status/2014671443284390042",
+        "https://x.com/1573456310405824516/status/2025351021443031249",
+        "https://x.com/allahbakhshii/status/2014671443284390042",
+        "https://x.com/missmarpel75/status/2014762997185466477",
+        "https://t.me/RememberTheirNames/807"
+      ],
+      "notable": false,
+      "verification": "reported",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_b00c60eeef",
+      "slug": "mansoureh-jamshidi-aliabadi-b00c60",
+      "name": "منصوره جمشیدی علی آبادی",
+      "name_en": "Mansoureh Jamshidi Aliabadi",
+      "event": "dey_1402",
+      "gender": "زن",
+      "age": null,
+      "birth_year": null,
+      "date_jalali": "۱۴۰۲/۱۰/۱۸",
+      "date_gregorian": "2024-01-08",
+      "city": "مشهد",
+      "province": "خراسان رضوی",
+      "cause": null,
+      "occupation": null,
+      "story": "منصوره جمشیدی علی‌آبادی، در ۱۸ دی ماه در مشهد.",
+      "story_en": "Mansoureh Jamshidi Aliabadi, on 18 Dey in Mashhad.",
+      "photo_url": null,
+      "memorial_links": [
+        "https://x.com/2019758113532874752/status/2025335253544358228"
+      ],
+      "notable": false,
+      "verification": "reported",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_09a77b151f",
+      "slug": "mohammad-mamloo-09a77b",
+      "name": "محمد مملو",
+      "name_en": "Mohammad Mamloo",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": null,
+      "birth_year": null,
+      "date_jalali": "۱۴۰۲/۱۰/۱۹",
+      "date_gregorian": "2024-01-09",
+      "city": "تهران",
+      "province": "تهران",
+      "cause": null,
+      "occupation": null,
+      "story": "محمد مملو در ۱۹ دی‌ماه در تهران توسط نیروهای سرکوبگر جمهوری اسلامی جان‌باخت.",
+      "story_en": "Mohammad Mamloo was killed in Tehran on 19 Dey by the repressive forces of the Islamic Republic.",
+      "photo_url": "https://pbs.twimg.com/media/G_YbbVcWMAEZkkT.jpg",
+      "memorial_links": [
+        "https://x.com/1198691072769249281/status/2014828044670623782"
+      ],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_iranintl",
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_9391b92301",
+      "slug": "reza-hasanzadeh-9391b9",
+      "name": "رضا حسن زاده",
+      "name_en": "Reza Hasanzadeh",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": 29,
+      "birth_year": 1373,
+      "date_jalali": "۱۴۰۲/۱۰/۱۹",
+      "date_gregorian": "2024-01-09",
+      "city": "تهران",
+      "province": "تهران",
+      "cause": "اصابت گلوله",
+      "occupation": null,
+      "story": "رضا حسن‌زاده، ۲۹ ساله، شب قبل از مراسم عقدش در نازی‌آباد تهران با تیر جنگی جان‌باخت.",
+      "story_en": "Reza Hasanzadeh, 29, was killed by a war bullet in Naziabad, Tehran, the night before his engagement ceremony.",
+      "photo_url": "https://pbs.twimg.com/media/HBuY8tNXoAAvwat.jpg",
+      "memorial_links": [
+        "https://x.com/2005735355761442816/status/2025380634772824486"
+      ],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_iranintl",
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_f29e55f7d7",
+      "slug": "hossein-bakhshi-f29e55",
+      "name": "حسین بخشی",
+      "name_en": "Hossein Bakhshi",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": 26,
+      "birth_year": 1378,
+      "date_jalali": "۱۴۰۲/۱۰/۱۹",
+      "date_gregorian": "2024-01-09",
+      "city": "قرچک",
+      "province": "تهران",
+      "cause": "اصابت گلوله",
+      "occupation": null,
+      "story": "حسین بخشی، ۲۶ ساله، در ۱۹ دی در قرچک با اصابت گلوله به سرش جان باخت. او دامادی بود که به مراسم نامزدی‌اش نرسید.",
+      "story_en": "Hossein Bakhshi, 26, died on 9th January in Qarchak. He was a groom who did not live to attend his engagement ceremony.",
+      "photo_url": "https://base44.app/api/apps/696adb110733af80dcc579fb/files/mp/public/696adb110733af80dcc579fb/bf06f77aa_102511.jpg",
+      "memorial_links": [
+        "https://x.com/1709246770604032000/status/2025450606081540357",
+        "https://javidnaman.iranintl.com/memorial/tCKl8UDDdoQQUGMvcUGw8j"
+      ],
+      "notable": false,
+      "verification": "documented",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_iranintl",
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_cb4b6a6e5d",
+      "slug": "meysam-mohammadian-jonghani-cb4b6a",
+      "name": "میثم محمدیان جونقانی",
+      "name_en": "Meysam Mohammadian Jonghani",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": 20,
+      "birth_year": 1382,
+      "date_jalali": "۱۴۰۲/۱۰/۱۹",
+      "date_gregorian": "2024-01-09",
+      "city": "جونقان",
+      "province": "چهارمحال و بختیاری",
+      "cause": null,
+      "occupation": null,
+      "story": "میثم محمدیان جونقانی، ۲۰ ساله، اهل شهر جونقان از استان چهارمحال و بختیاری، بیش از یک ماه است که ناپدید شده و هیچ‌گونه اطلاعی از وضعیت، محل نگهداری یا سلامت او در دست نیست. آخرین تماس یا نشانه‌ای که از میثم وجود دارد مربوط به ۱۹ دی‌ماه است و از آن تاریخ تاکنون، خانواده‌اش در بی‌خبری مطلق به‌سر می‌برند.",
+      "story_en": "Meysam Mohammadian Jonghani, a 20-year-old from the city of Jonqan in Chaharmahal and Bakhtiari province, has been missing for more than a month, and there is no information about his condition, whereabouts, or health. The last contact or sign from him dates back to 19 Dey, and since then his family has been in complete uncertainty.",
+      "photo_url": "https://pbs.twimg.com/media/HAv3riSbwAAQWfI.jpg",
+      "memorial_links": [
+        "https://x.com/1198691072769249281/status/2020981191516565576"
+      ],
+      "notable": false,
+      "verification": "reported",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_submission"
+      ]
+    },
+    {
+      "id": "jvn_0a8afb12b7",
+      "slug": "ali-poor-akrami-0a8afb",
+      "name": "علی پور اکرمی",
+      "name_en": "Ali Poor Akrami",
+      "event": "dey_1402",
+      "gender": "مرد",
+      "age": null,
+      "birth_year": null,
+      "date_jalali": "۱۴۰۲/۱۰/۲۱",
+      "date_gregorian": "2024-01-11",
+      "city": "تهران",
+      "province": "تهران",
+      "cause": null,
+      "occupation": null,
+      "story": "جاویدنام علی پور اکرمی، ۲۱ دی در پیروزی تهران.",
+      "story_en": "Martyr Ali Poor Akrami, on 21 Dey in Pirouzi, Tehran.",
+      "photo_url": "https://pbs.twimg.com/media/HBtq8bXWwAAa_03.jpg",
+      "memorial_links": [
+        "https://x.com/1841215750511443968/status/2025330060517868003"
+      ],
+      "notable": false,
+      "verification": "reported",
+      "flagged_review": null,
+      "sources": [
+        "javidnaam_submission"
+      ]
+    }
+  ]
+}
