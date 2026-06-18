@@ -7,14 +7,14 @@
 let ALL = [];
 let EVENTS = {};
 let META = {};
-let filterEvent = 'all';
-let filterVerif = 'all';
-let filterPhoto = true;    // پیش‌فرض: فقط دارای چهره
-let filterNotable = false; // فقط چهره‌های سرشناس
+let filterEvent = 'all';   // پیش‌فرض: همهٔ رویدادها
+let filterVerif = 'all';   // پیش‌فرض: همهٔ سطوحِ اعتبار
+let filterPhoto = false;   // پیش‌فرض: «دارای چهره» غیرفعال — همه نمایش داده می‌شوند
+let filterNotable = false; // پیش‌فرض: «سرشناس» غیرفعال
 let filterProvince = 'all'; // فیلتر استان
 let filterGender = 'all';   // فیلتر جنسیت
 let filterAge = 'all';      // فیلتر رده سنی
-let sortBy = 'relevance';   // مرتب‌سازی فعال
+let sortBy = 'age_asc';     // پیش‌فرض: کم‌سن‌ترین نخست
 let searchQ = '';
 let shown = 0;
 let footerLock = false; // وقتی کاربر «پرش به فوتر» می‌زند، لود خودکار موقتاً قفل می‌شود
@@ -509,9 +509,12 @@ function wireEvents(){
   const toggleNotable = document.getElementById('toggle-notable');
   if(toggleNotable) toggleNotable.addEventListener('click', ()=>{ filterNotable=!filterNotable; toggleNotable.classList.toggle('active',filterNotable); applyAndRender(true); });
 
-  // مرتب‌سازی
+  // مرتب‌سازی — مقدارِ منو را با پیش‌فرضِ کد هماهنگ می‌کنیم (کم‌سن‌ترین نخست)
   const sortSel = document.getElementById('jv-sort');
-  if(sortSel) sortSel.addEventListener('change', e=>{ sortBy = e.target.value; applyAndRender(true); });
+  if(sortSel){
+    sortSel.value = sortBy;
+    sortSel.addEventListener('change', e=>{ sortBy = e.target.value; applyAndRender(true); });
+  }
 
   // فیلتر استان / جنسیت / رده سنی
   const provSel = document.getElementById('jv-province');

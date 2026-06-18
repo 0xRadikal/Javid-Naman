@@ -19,8 +19,14 @@ export const ADMIN_HTML = /* html */ `<!DOCTYPE html>
   .tab.active{ background:var(--panel2); color:#fff; border-color:var(--acc); }
   .badge{ font-size:11px; padding:2px 8px; border-radius:999px; }
   .scroll::-webkit-scrollbar{ width:8px;height:8px } .scroll::-webkit-scrollbar-thumb{ background:#2a3550;border-radius:8px }
-  input,textarea,select{ background:var(--panel2); border:1px solid var(--line); border-radius:.6rem; color:#e6eaf2; }
+  input,textarea,select{ background:var(--panel2); border:1px solid var(--line); border-radius:.6rem; color:#e6eaf2; padding:.5rem .7rem; }
   input:focus,textarea:focus,select:focus{ outline:none;border-color:var(--acc2) }
+  /* رفعِ باگِ متنِ سفید روی پس‌زمینهٔ سفیدِ گزینه‌های منوی بازشوندهٔ select */
+  select{ -webkit-appearance:none;-moz-appearance:none;appearance:none;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239aa3b6' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+    background-repeat:no-repeat;background-position:left .7rem center;padding-left:2.2rem }
+  select option,select optgroup{ background:#1a2236;color:#e6eaf2 }
+  input::placeholder,textarea::placeholder{ color:#6b7488 }
   .row-enter{ animation:fade .25s ease both } @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1}}
   .pill{ width:9px;height:9px;border-radius:999px;display:inline-block }
   .spin{ animation:sp 1s linear infinite } @keyframes sp{to{transform:rotate(360deg)}}

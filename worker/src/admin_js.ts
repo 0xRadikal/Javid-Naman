@@ -178,6 +178,7 @@ const App = {
         <div class="text-xs text-gray-500 mt-1">\${this.esc(r.created_at)} · \${this.esc(r.reporter_name||'ناشناس')} · \${this.esc(r.country||'')}</div>
         \${r.admin_note?\`<div class="text-xs text-emerald-400/80 mt-1"><i class="fa-solid fa-pen"></i> \${this.esc(r.admin_note)}</div>\`:''}
         \${r.status==='open'?\`<div class="flex gap-2 mt-3 flex-wrap">
+          <button data-action="edit-person" data-pid="\${this.attr(r.person_id)}" class="btn px-3 py-1.5 text-sm bg-blue-600/80 hover:bg-blue-600 text-white"><i class="fa-solid fa-pen-to-square"></i> اصلاح اطلاعات</button>
           \${r.report_type==='duplicate'&&r.duplicate_of?\`<button data-action="open-merge" data-keep="\${this.attr(r.person_id)}" data-dup="\${this.attr(r.duplicate_of)}" data-keepname="\${this.attr(r.person_name||'')}" data-dupname="\${this.attr(r.duplicate_name||'')}" class="btn px-3 py-1.5 text-sm bg-orange-600/80 hover:bg-orange-600 text-white"><i class="fa-solid fa-code-merge"></i> ادغام تکراری‌ها</button>\`:''}
           <button data-action="report" data-id="\${r.id}" data-act="resolve" class="btn px-3 py-1.5 text-sm bg-emerald-600/80 hover:bg-emerald-600 text-white"><i class="fa-solid fa-check"></i> رسیدگی شد</button>
           <button data-action="report" data-id="\${r.id}" data-act="dismiss" class="btn px-3 py-1.5 text-sm bg-white/5 hover:bg-white/10"><i class="fa-solid fa-xmark"></i> رد گزارش</button>
@@ -209,6 +210,91 @@ const App = {
     const dup = keep === idA ? idB : idA;
     try{ await this.api('/admin/people/merge', {method:'POST', body: JSON.stringify({keep_id:keep, duplicate_id:dup})}); this.toast('ادغام شد'); this.closeModal(); this.viewReports(); this.refreshBadges(); }
     catch(e){ this.toast(e.message,'err'); }
+  },
+
+  // --- ویرایش/مدیریتِ کاملِ یک جاویدنام ---
+  // فهرستِ فیلدهای قابلِ ویرایش (کلیدِ data_json، برچسب، نوعِ ورودی)
+  PERSON_EDIT_FIELDS: [
+    ['n','نام','text'], ['ne','نام انگلیسی','text'], ['a','سن','number'],
+    ['g','جنسیت','gender'], ['e','رویداد','event'], ['c','شهر','text'],
+    ['pr','استان','text'], ['dj','تاریخِ جلالی (مثلاً ۱۴۰۴/۰۷/۲۵)','text'],
+    ['dg','تاریخِ مرتب‌سازی (YYYY-MM-DD)','text'], ['ca','شرحِ جان‌باختن','text'],
+    ['oc','شغل','text'], ['v','سطحِ اعتبار','verif'],
+    ['ph','نشانیِ عکس (URL)','url'], ['s','روایت/زندگی‌نامه','textarea'],
+    ['src_text','منابع','textarea'],
+  ],
+  async openPersonEditor(personId){
+    let d;
+    try{ d = await this.api('/admin/people/'+encodeURIComponent(personId)); }
+    catch(e){ this.toast(e.message,'err'); return; }
+    const f = d.fields || {};
+    const val = (k)=> f[k]==null ? '' : String(f[k]);
+    const inputFor = ([k,label,type])=>{
+      const v = this.attr(val(k));
+      let field;
+      if(type==='textarea'){
+        field = '<textarea data-fk="'+k+'" rows="3" class="w-full text-sm">'+this.esc(val(k))+'</textarea>';
+      } else if(type==='gender'){
+        const g = val(k);
+        field = '<select data-fk="'+k+'" class="w-full text-sm">'+
+          '<option value="" '+(g===''?'selected':'')+'>—</option>'+
+          '<option value="مرد" '+(g==='مرد'?'selected':'')+'>مرد</option>'+
+          '<option value="زن" '+(g==='زن'?'selected':'')+'>زن</option></select>';
+      } else if(type==='verif'){
+        const vv = val(k);
+        field = '<select data-fk="'+k+'" class="w-full text-sm">'+
+          '<option value="documented" '+(vv==='documented'?'selected':'')+'>مستند (documented)</option>'+
+          '<option value="reported" '+(vv!=='documented'?'selected':'')+'>گزارش‌شده (reported)</option></select>';
+      } else if(type==='event'){
+        const ev = val(k);
+        let opts = '<option value="">—</option>';
+        Object.keys(EVENTS_FA).forEach(code=>{ opts += '<option value="'+code+'" '+(ev===code?'selected':'')+'>'+EVENTS_FA[code]+'</option>'; });
+        if(ev && !EVENTS_FA[ev]) opts += '<option value="'+this.attr(ev)+'" selected>'+this.esc(ev)+'</option>';
+        field = '<select data-fk="'+k+'" class="w-full text-sm">'+opts+'</select>';
+      } else {
+        const dir = (k==='ne'||k==='ph') ? ' dir="ltr"' : '';
+        field = '<input data-fk="'+k+'" type="'+(type==='number'?'number':'text')+'"'+dir+' value="'+v+'" class="w-full text-sm">';
+      }
+      return '<div><label class="text-xs text-gray-400 block mb-1">'+this.esc(label)+'</label>'+field+'</div>';
+    };
+    const gridFields = this.PERSON_EDIT_FIELDS.filter(x=>x[2]!=='textarea').map(inputFor).join('');
+    const longFields = this.PERSON_EDIT_FIELDS.filter(x=>x[2]==='textarea').map(inputFor).join('');
+    const cn = d.counts || {};
+    this.showModal(
+      '<div class="flex items-center justify-between mb-3">'+
+        '<h3 class="font-bold text-lg"><i class="fa-solid fa-pen-to-square text-blue-400 ml-1"></i> اصلاحِ اطلاعاتِ جاویدنام</h3>'+
+        '<span class="text-xs text-gray-500" dir="ltr">'+this.esc(personId)+'</span>'+
+      '</div>'+
+      '<p class="text-xs text-gray-400 mb-3">هر فیلدی را که نادرست است اصلاح کنید؛ تنها فیلدهای تغییرکرده ذخیره می‌شوند.</p>'+
+      '<div class="grid grid-cols-2 gap-3 mb-3">'+gridFields+'</div>'+
+      '<div class="space-y-3 mb-3">'+longFields+'</div>'+
+      '<label class="flex items-center gap-2 text-sm mb-4"><input type="checkbox" id="ed-notable" class="w-5 h-5 accent-emerald-500" '+(d.notable?'checked':'')+'> چهرهٔ سرشناس</label>'+
+      '<div class="flex gap-2 flex-wrap">'+
+        '<button data-action="save-person" data-pid="'+this.attr(personId)+'" class="btn flex-1 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white"><i class="fa-solid fa-floppy-disk ml-1"></i> ذخیرهٔ تغییرات</button>'+
+        '<button data-action="delete-person" data-pid="'+this.attr(personId)+'" class="btn px-4 py-2.5 bg-red-600/80 hover:bg-red-600 text-white"><i class="fa-solid fa-trash"></i> حذف</button>'+
+        '<button data-action="close-modal" class="btn px-4 py-2.5 bg-white/5">انصراف</button>'+
+      '</div>'+
+      '<p class="text-[11px] text-gray-500 mt-3"><i class="fa-solid fa-circle-info"></i> این رکورد '+this.faNum(cn.comments||0)+' یادبود، '+this.faNum(cn.reports||0)+' گزارش و '+this.faNum(cn.photos||0)+' پیشنهادِ عکس دارد. حذف، همهٔ این‌ها را نیز پاک می‌کند.</p>'
+    );
+  },
+  async savePerson(personId){
+    const fields = {};
+    document.querySelectorAll('[data-fk]').forEach(el=>{ fields[el.dataset.fk] = el.value; });
+    const notable = document.getElementById('ed-notable')?.checked ? 1 : 0;
+    try{
+      await this.api('/admin/people/'+encodeURIComponent(personId), {method:'PATCH', body: JSON.stringify({fields, notable})});
+      this.toast('اطلاعات ذخیره شد ✅'); this.closeModal();
+      if(this.tab==='reports') this.viewReports();
+    }catch(e){ this.toast(e.message,'err'); }
+  },
+  async deletePerson(personId){
+    if(!confirm('این جاویدنام و همهٔ یادبودها/گزارش‌ها/پیشنهادهای عکسِ مربوط به آن برای همیشه حذف شوند؟')) return;
+    try{
+      await this.api('/admin/people/'+encodeURIComponent(personId), {method:'DELETE'});
+      this.toast('رکورد حذف شد'); this.closeModal();
+      this.refreshBadges();
+      if(this.tab==='reports') this.viewReports();
+    }catch(e){ this.toast(e.message,'err'); }
   },
 
   // --- پیشنهاد عکس ---
@@ -344,6 +430,9 @@ const App = {
       case 'sub': this.subAction(d.id, d.act); break;
       case 'open-merge': this.openMerge(d.keep, d.dup, d.keepname, d.dupname); break;
       case 'do-merge': this.doMerge(d.a, d.b); break;
+      case 'edit-person': this.openPersonEditor(d.pid); break;
+      case 'save-person': this.savePerson(d.pid); break;
+      case 'delete-person': this.deletePerson(d.pid); break;
       case 'close-modal': this.closeModal(); break;
       case 'save-settings': this.saveSettings(); break;
     }

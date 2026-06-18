@@ -194,11 +194,15 @@ admin.post('/photo-suggestions/:id/:action', requireAdmin, async (c) => {
 
   if (action === 'approve') {
     if (!isValidUrl(sug.photo_url)) return fail(c, 'URLِ عکس نامعتبر است');
-    const person = await c.env.DB.prepare('SELECT id FROM people WHERE id = ?').bind(sug.person_id).first();
+    const person = await c.env.DB.prepare('SELECT id, data_json FROM people WHERE id = ?').bind(sug.person_id).first<any>();
     if (!person) return fail(c, 'جاویدنامِ مربوطه دیگر وجود ندارد', 404);
-    // عکس را روی رکوردِ people ذخیره می‌کنیم (برای export بعدی به JSON)
-    await c.env.DB.prepare("UPDATE people SET photo_url = ?, updated_at = datetime('now') WHERE id = ?")
-      .bind(sug.photo_url, sug.person_id)
+    // عکس را هم روی ستونِ photo_url و هم داخلِ data_json (کلیدِ ph) ذخیره می‌کنیم
+    // تا هنگامِ export به JSON، عکس در پروفایلِ جاویدنام نمایش داده شود.
+    let pdata: any = {};
+    try { pdata = person.data_json ? JSON.parse(person.data_json) : {}; } catch { pdata = {}; }
+    pdata.ph = sug.photo_url;
+    await c.env.DB.prepare("UPDATE people SET photo_url = ?, data_json = ?, updated_at = datetime('now') WHERE id = ?")
+      .bind(sug.photo_url, JSON.stringify(pdata), sug.person_id)
       .run();
     await c.env.DB.prepare(
       "UPDATE photo_suggestions SET status='approved', reviewed_by=?, reviewed_at=datetime('now'), admin_note=? WHERE id=?"
@@ -316,6 +320,144 @@ admin.get('/people/search', requireAdmin, async (c) => {
     .bind(`%${q}%`, `%${q}%`)
     .all();
   return ok(c, { results });
+});
+
+// =====================================================================
+//  مدیریتِ کاملِ یک جاویدنام: مشاهده / ویرایش / حذف
+//  این بخش به ادمین اجازه می‌دهد اطلاعاتِ نادرست را اصلاح کند
+//  (مثلاً تغییرِ سال، شهر، سن، جنسیت، روایت و …) — نه فقط تأیید/رد.
+// =====================================================================
+
+// نگاشتِ ستون‌های people ⇄ کلیدهای فشردهٔ data_json (هماهنگ با فرانت‌اند)
+//   ستونِ جدول   |  کلیدِ data_json  |  برچسبِ فارسی
+const PERSON_FIELDS: Array<{ col?: string; jk: string; label: string; max: number; type?: 'int' | 'url' }> = [
+  { col: 'name', jk: 'n', label: 'نام', max: 100 },
+  { col: 'name_en', jk: 'ne', label: 'نام انگلیسی', max: 100 },
+  { jk: 'a', label: 'سن', max: 3, type: 'int' },
+  { jk: 'g', label: 'جنسیت', max: 20 },
+  { col: 'event', jk: 'e', label: 'رویداد', max: 40 },
+  { col: 'city', jk: 'c', label: 'شهر', max: 60 },
+  { jk: 'pr', label: 'استان', max: 60 },
+  { jk: 'dj', label: 'تاریخِ جلالی', max: 30 },
+  { jk: 'dg', label: 'تاریخِ مرتب‌سازی (YYYY-MM-DD)', max: 10 },
+  { jk: 'ca', label: 'شرحِ جان‌باختن', max: 200 },
+  { jk: 'oc', label: 'شغل', max: 100 },
+  { jk: 's', label: 'روایت/زندگی‌نامه', max: 5000 },
+  { col: 'photo_url', jk: 'ph', label: 'نشانیِ عکس', max: 1000, type: 'url' },
+  { jk: 'src_text', label: 'منابع', max: 2000 },
+  { jk: 'v', label: 'سطحِ اعتبار (documented/reported)', max: 20 },
+];
+
+// --- مشاهدهٔ کاملِ یک رکورد برای ویرایش ---
+admin.get('/people/:id', requireAdmin, async (c) => {
+  const id = clean(c.req.param('id'), 40);
+  const row = await c.env.DB.prepare('SELECT * FROM people WHERE id = ?').bind(id).first<any>();
+  if (!row) return fail(c, 'جاویدنام یافت نشد', 404);
+  let data: any = {};
+  try { data = row.data_json ? JSON.parse(row.data_json) : {}; } catch { data = {}; }
+  // ادغامِ ستون‌های اصلی روی data_json تا فرانت همیشه مقدارِ معتبر ببیند
+  const merged: Record<string, any> = { ...data };
+  merged.n = data.n ?? row.name;
+  merged.ne = data.ne ?? row.name_en;
+  merged.e = data.e ?? row.event;
+  merged.c = data.c ?? row.city;
+  merged.ph = data.ph ?? row.photo_url;
+  // شمارشِ مشارکت‌های وابسته (برای نمایش پیش از حذف)
+  const counts = await c.env.DB.prepare(
+    `SELECT
+       (SELECT COUNT(*) FROM comments WHERE person_id = ?1) AS comments,
+       (SELECT COUNT(*) FROM reports WHERE person_id = ?1) AS reports,
+       (SELECT COUNT(*) FROM photo_suggestions WHERE person_id = ?1) AS photos`
+  ).bind(id).first();
+  return ok(c, { id: row.id, notable: row.notable, fields: merged, counts });
+});
+
+// --- ویرایشِ یک رکورد ---
+admin.patch('/people/:id', requireAdmin, async (c) => {
+  const id = clean(c.req.param('id'), 40);
+  const adminId = c.get('adminId');
+  const body = await c.req.json().catch(() => ({}));
+  const incoming = (body && typeof body.fields === 'object' && body.fields) || {};
+
+  const row = await c.env.DB.prepare('SELECT * FROM people WHERE id = ?').bind(id).first<any>();
+  if (!row) return fail(c, 'جاویدنام یافت نشد', 404);
+
+  let data: any = {};
+  try { data = row.data_json ? JSON.parse(row.data_json) : {}; } catch { data = {}; }
+
+  const colUpdates: Record<string, any> = {};
+  for (const f of PERSON_FIELDS) {
+    if (!(f.jk in incoming)) continue; // فقط فیلدهای ارسالی را تغییر بده
+    let val: any = incoming[f.jk];
+    if (f.type === 'int') {
+      const n = parseInt(String(val), 10);
+      val = Number.isFinite(n) && n > 0 && n < 130 ? n : null;
+    } else {
+      val = clean(val, f.max);
+      if (f.type === 'url' && val && !isValidUrl(val)) return fail(c, 'نشانیِ عکس نامعتبر است');
+      if (val === '') val = null;
+    }
+    data[f.jk] = val;
+    if (f.col) colUpdates[f.col] = val;
+  }
+
+  // اعتبارِ نام نباید خالی شود
+  if ('n' in incoming && (!data.n || String(data.n).trim().length < 2)) return fail(c, 'نام نمی‌تواند خالی باشد');
+
+  // notable (سرشناس) جدا مدیریت می‌شود
+  let notable = row.notable;
+  if (typeof body.notable !== 'undefined') {
+    notable = body.notable ? 1 : 0;
+    data.nt = !!notable;
+  }
+
+  // ساختِ پویای UPDATE برای ستون‌های اصلی + data_json + notable
+  const sets: string[] = [];
+  const binds: any[] = [];
+  for (const [col, val] of Object.entries(colUpdates)) { sets.push(`${col} = ?`); binds.push(val); }
+  sets.push('notable = ?'); binds.push(notable);
+  sets.push('data_json = ?'); binds.push(JSON.stringify(data));
+  sets.push("updated_at = datetime('now')");
+  binds.push(id);
+
+  await c.env.DB.prepare(`UPDATE people SET ${sets.join(', ')} WHERE id = ?`).bind(...binds).run();
+  await audit(c.env.DB, adminId, 'edit_person', 'person', id, Object.keys(incoming).join(','));
+  return ok(c, { updated: true, id, notable, fields: data });
+});
+
+// --- حذفِ کاملِ یک رکورد (و مشارکت‌های وابسته) ---
+admin.delete('/people/:id', requireAdmin, async (c) => {
+  const id = clean(c.req.param('id'), 40);
+  const adminId = c.get('adminId');
+  const row = await c.env.DB.prepare('SELECT id, name FROM people WHERE id = ?').bind(id).first<any>();
+  if (!row) return fail(c, 'جاویدنام یافت نشد', 404);
+
+  // پاک‌سازیِ وابسته‌ها (در نبودِ ON DELETE CASCADE روی همهٔ جدول‌ها، صریح انجام می‌دهیم)
+  await c.env.DB.prepare('DELETE FROM comments WHERE person_id = ?').bind(id).run();
+  await c.env.DB.prepare('DELETE FROM photo_suggestions WHERE person_id = ?').bind(id).run();
+  await c.env.DB.prepare('DELETE FROM reports WHERE person_id = ?').bind(id).run();
+  await c.env.DB.prepare('DELETE FROM people WHERE id = ?').bind(id).run();
+  await audit(c.env.DB, adminId, 'delete_person', 'person', id, row.name || '');
+  return ok(c, { deleted: true, id });
+});
+
+// --- تغییرِ سریعِ وضعیتِ «سرشناس» (notable) ---
+admin.post('/people/:id/notable', requireAdmin, async (c) => {
+  const id = clean(c.req.param('id'), 40);
+  const body = await c.req.json().catch(() => ({}));
+  const notable = body.notable ? 1 : 0;
+  // data_json.nt را هم همگام می‌کنیم تا صفحهٔ عمومی هم‌خوان بماند
+  const row = await c.env.DB.prepare('SELECT data_json FROM people WHERE id = ?').bind(id).first<any>();
+  if (!row) return fail(c, 'جاویدنام یافت نشد', 404);
+  let data: any = {};
+  try { data = row.data_json ? JSON.parse(row.data_json) : {}; } catch { data = {}; }
+  data.nt = !!notable;
+  const res = await c.env.DB.prepare("UPDATE people SET notable = ?, data_json = ?, updated_at = datetime('now') WHERE id = ?")
+    .bind(notable, JSON.stringify(data), id)
+    .run();
+  if (!res.meta.changes) return fail(c, 'جاویدنام یافت نشد', 404);
+  await audit(c.env.DB, c.get('adminId'), 'set_notable', 'person', id, String(notable));
+  return ok(c, { notable });
 });
 
 // =====================================================================

@@ -261,23 +261,24 @@
      ════════════════════════════════════════════════════════ */
   function openReportPerson(person) {
     openModal(
-      '<i class="fa-solid fa-triangle-exclamation"></i> گزارشِ این جاویدنام',
+      '<i class="fa-solid fa-shield-heart"></i> کمک به درستیِ این یادبود',
       '<form id="cm-rp-form" class="cm-form">' +
-        '<p class="cm-hint">برای «' +
+        '<p class="cm-hint">این یادبود را با هم دقیق‌تر و درست‌تر نگه می‌داریم. ' +
+        'اگر در یادِ «' +
         esc(person.n) +
-        '» مشکلی می‌بینید؟ به ما خبر دهید تا بررسی کنیم.</p>' +
-        '<label class="cm-label">نوعِ گزارش</label>' +
+        '» نکته‌ای نادرست یا ناقص می‌بینید، با ما در میان بگذارید تا اصلاح کنیم. 🤍</p>' +
+        '<label class="cm-label">موضوع را انتخاب کنید</label>' +
         '<select name="report_type" class="cm-input">' +
-        '<option value="duplicate">رکوردِ تکراری است</option>' +
-        '<option value="wrong_info">اطلاعات نادرست است</option>' +
-        '<option value="inappropriate">محتوای نامناسب</option>' +
-        '<option value="other" selected>سایر موارد</option>' +
+        '<option value="wrong_info" selected>✏️ اطلاعاتی نادرست یا قدیمی است (مثلاً سال، شهر، سن)</option>' +
+        '<option value="duplicate">🔁 این نام پیش‌تر هم در فهرست آمده (تکراری)</option>' +
+        '<option value="inappropriate">🚩 محتوای نامناسب یا بی‌احترامی</option>' +
+        '<option value="other">💬 نکتهٔ دیگری دارم</option>' +
         '</select>' +
-        '<label class="cm-label">توضیحات</label>' +
-        '<textarea name="description" class="cm-input" rows="3" placeholder="توضیحِ مشکل…"></textarea>' +
+        '<label class="cm-label">توضیحِ شما (هرچه دقیق‌تر، بهتر)</label>' +
+        '<textarea name="description" class="cm-input" rows="3" placeholder="مثلاً: تاریخِ درست ۱۴۰۴ است نه ۹۸ — یا منبعی که اطلاعاتِ تازه را تأیید می‌کند…"></textarea>' +
         '<input name="reporter_name" class="cm-input" placeholder="نام شما (اختیاری)" maxlength="60">' +
         turnstileWidget('ts-rp') +
-        '<button type="submit" class="cm-btn cm-btn-warn"><i class="fa-solid fa-paper-plane"></i> ارسالِ گزارش</button>' +
+        '<button type="submit" class="cm-btn"><i class="fa-solid fa-paper-plane"></i> ارسال برای بازبینی</button>' +
         '</form>'
     );
     renderTurnstile();
@@ -298,7 +299,7 @@
           },
         });
         closeModal();
-        toast('گزارشِ شما ثبت شد و بررسی خواهد شد. سپاسگزاریم.');
+        toast('پیامِ شما ثبت شد و به‌زودی بازبینی می‌شود. سپاسگزاریم که به دقتِ این یاد کمک کردید 🤍');
       } catch (err) {
         toast(err.message, 'error');
         btn.disabled = false;
@@ -307,15 +308,22 @@
   }
 
   /* ════════════════════════════════════════════════════════
-     ۳) پیشنهادِ عکس (برای جاویدنامِ بدونِ تصویر)
+     ۳) پیشنهادِ عکس (برای همهٔ جاویدنام‌ها)
      ════════════════════════════════════════════════════════ */
   function openSuggestPhoto(person) {
+    const hasPhoto = !!person.ph;
     openModal(
-      '<i class="fa-solid fa-image"></i> پیشنهادِ عکس',
+      '<i class="fa-solid fa-image"></i> ' + (hasPhoto ? 'پیشنهادِ عکسِ بهتر' : 'پیشنهادِ عکس'),
       '<form id="cm-sp-form" class="cm-form">' +
-        '<p class="cm-hint">اگر تصویرِ موثقی از «' +
-        esc(person.n) +
-        '» سراغ دارید، نشانیِ آن را اینجا بگذارید. مدیر بررسی و در صورتِ صحت اضافه می‌کند.</p>' +
+        '<p class="cm-hint">' +
+        (hasPhoto
+          ? 'اگر تصویرِ روشن‌تر، باکیفیت‌تر یا موثق‌ترِ تازه‌ای از «' +
+            esc(person.n) +
+            '» سراغ دارید، نشانی‌اش را اینجا بگذارید تا جایگزینِ عکسِ کنونی شود. مدیر بررسی می‌کند.'
+          : 'اگر تصویرِ موثقی از «' +
+            esc(person.n) +
+            '» سراغ دارید، نشانیِ آن را اینجا بگذارید. مدیر بررسی و در صورتِ صحت اضافه می‌کند.') +
+        '</p>' +
         '<label class="cm-label">نشانیِ عکس (URL)</label>' +
         '<input name="photo_url" class="cm-input" type="url" dir="ltr" placeholder="https://…" required>' +
         '<label class="cm-label">منبع / توضیح</label>' +
@@ -442,16 +450,22 @@
      ════════════════════════════════════════════════════════ */
   function renderPersonWidgets(person) {
     const hasPhoto = !!person.ph;
+    // پیشنهادِ عکس برای *همهٔ* جاویدنام‌ها در دسترس است:
+    //  • اگر عکس ندارد → «پیشنهادِ عکس»
+    //  • اگر عکس دارد   → «پیشنهادِ عکسِ بهتر» (جایگزینی با تصویرِ موثق‌تر)
+    const photoLabel = hasPhoto
+      ? '<i class="fa-solid fa-image"></i> پیشنهادِ عکسِ بهتر'
+      : '<i class="fa-solid fa-image"></i> پیشنهادِ عکس';
     return (
       '<div class="cm-section" data-person="' +
       esc(person.id) +
       '">' +
       // نوارِ کنش‌ها
       '<div class="cm-actions">' +
-      '<button type="button" class="cm-chip" data-cm="report-person"><i class="fa-solid fa-triangle-exclamation"></i> گزارشِ این صفحه</button>' +
-      (!hasPhoto
-        ? '<button type="button" class="cm-chip cm-chip-accent" data-cm="suggest-photo"><i class="fa-solid fa-image"></i> پیشنهادِ عکس</button>'
-        : '') +
+      '<button type="button" class="cm-chip" data-cm="report-person"><i class="fa-solid fa-shield-heart"></i> اصلاح/گزارشِ اطلاعات</button>' +
+      '<button type="button" class="cm-chip cm-chip-accent" data-cm="suggest-photo">' +
+      photoLabel +
+      '</button>' +
       '</div>' +
       // یادبود/کامنت
       '<div class="cm-comments">' +

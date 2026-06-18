@@ -59,6 +59,10 @@
 - `GET  /api/admin/submissions?status=` · `POST /api/admin/submissions/:id/:action` (`approve|reject`)
 - `POST /api/admin/people/merge` `{keep_id, duplicate_id}` — ادغامِ تکراری
 - `GET  /api/admin/people/search?q=` — جست‌وجو برای انتخابِ مرجعِ ادغام
+- `GET  /api/admin/people/:id` — دریافتِ کاملِ اطلاعاتِ یک جاویدنام + شمارشِ کامنت/گزارش/عکس
+- `PATCH  /api/admin/people/:id` `{fields:{n,a,g,e,c,pr,dj,v,…}, notable}` — ویرایشِ اطلاعات (با اعتبارسنجیِ سن و URL)
+- `DELETE /api/admin/people/:id` — حذفِ رکورد + پاک‌سازیِ آبشاریِ داده‌های مرتبط
+- `POST   /api/admin/people/:id/notable` `{notable:bool}` — تغییرِ سریعِ وضعیتِ «سرشناس»
 - `GET  /api/admin/settings` · `POST /api/admin/settings` (key/value)
 
 ### پنلِ ادمین (تک‌صفحه‌ایِ SPA)

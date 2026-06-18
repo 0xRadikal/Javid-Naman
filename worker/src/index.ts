@@ -29,7 +29,7 @@ app.use('/api/*', async (c, next) => {
       if (allowed.includes('*')) return origin || '*';
       return allowed.includes(origin) ? origin : '';
     },
-    allowMethods: ['GET', 'POST', 'OPTIONS'],
+    allowMethods: ['GET', 'POST', 'PATCH', 'DELETE', 'OPTIONS'],
     allowHeaders: ['Content-Type', 'Authorization'],
     maxAge: 86400,
   });

@@ -209,14 +209,14 @@
         <div class="relative shrink-0">
           <i class="fa-solid fa-arrow-down-wide-short absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 text-xs pointer-events-none"></i>
           <select id="jv-sort" class="jv-select w-full sm:w-auto pr-9" aria-label="مرتب‌سازی">
-            <option value="relevance">مرتب‌سازی: پیش‌فرض (سرشناس و دارای چهره)</option>
-            <option value="age_asc">سن: کم‌سن‌ترین نخست</option>
+            <option value="age_asc" selected>سن: کم‌سن‌ترین نخست (پیش‌فرض)</option>
             <option value="age_desc">سن: مسن‌ترین نخست</option>
             <option value="date_desc">تاریخ: تازه‌ترین نخست</option>
             <option value="date_asc">تاریخ: قدیمی‌ترین نخست</option>
             <option value="event">بر اساس رویداد (زمانی)</option>
             <option value="name_asc">نام: الفبایی (الف→ی)</option>
             <option value="name_desc">نام: الفبایی (ی→الف)</option>
+            <option value="relevance">برجستگی (سرشناس و دارای چهره)</option>
           </select>
         </div>
         <!-- دکمهٔ جمع/باز کردن فیلترها -->
@@ -260,7 +260,7 @@
           <button data-v="documented" class="verif-btn px-3 py-1 rounded-full text-xs border border-white/15 transition">مستند</button>
           <button data-v="reported" class="verif-btn px-3 py-1 rounded-full text-xs border border-white/15 transition">گزارش‌شده</button>
           <span class="w-px h-4 bg-white/15 mx-1"></span>
-          <button id="toggle-photo" class="jv-toggle active"><i class="fa-solid fa-image"></i> دارای چهره</button>
+          <button id="toggle-photo" class="jv-toggle"><i class="fa-solid fa-image"></i> دارای چهره</button>
           <button id="toggle-notable" class="jv-toggle"><i class="fa-solid fa-star"></i> سرشناس</button>
         </div>
         <div id="event-filters" class="flex flex-wrap gap-2"></div>
